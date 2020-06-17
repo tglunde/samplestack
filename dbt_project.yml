@@ -1,0 +1,15 @@
+name: samplestack
+version: 0.0.1
+config-version: 2
+
+profile: exasol
+
+models:
+  samplestack:
+    datavault:
+      materialized: ephemeral
+    supernova:
+      materialized: view
+    businessrule:
+      schema: rule
+      materialized: view

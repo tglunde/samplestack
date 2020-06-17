@@ -1,0 +1,38 @@
+{
+	"deployable": true,
+	"hidden_in_system_deployment": false,
+	"source_type_id": "xmlpd",
+	"source_type_name": "XML Files / API",
+	"source_type_parameters": [
+		{
+			"source_type_parameter_id": "denormalize",
+			"source_type_parameter_value": false
+		},
+		{
+			"source_type_parameter_id": "urlwithfileoption",
+			"source_type_parameter_value": "file:///files/covid.xml"
+		},
+		{
+			"source_type_parameter_id": "httpmethod",
+			"source_type_parameter_value": "GET"
+		},
+		{
+			"source_type_parameter_id": "httpcontenttype",
+			"source_type_parameter_value": "application/xml"
+		},
+		{
+			"source_type_parameter_id": "httpbody",
+			"source_type_parameter_value": ""
+		},
+		{
+			"source_type_parameter_id": "httpheaders",
+			"source_type_parameter_value": [
+			]
+		}
+	],
+	"source_type_url": "",
+	"system_color": "#990000",
+	"system_comment": null,
+	"system_id": "CMPPRCDBXML",
+	"system_name": "CmpPrcDB.xml"
+}

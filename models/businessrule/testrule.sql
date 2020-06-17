@@ -1,0 +1,1 @@
+select * from {{ ref('h_xmlcomponent') }}

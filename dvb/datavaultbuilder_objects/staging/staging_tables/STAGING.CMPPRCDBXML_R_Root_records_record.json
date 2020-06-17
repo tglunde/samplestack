@@ -1,0 +1,186 @@
+{
+	"columns": [
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.Root",
+			"column_name": "Root",
+			"column_order": 1,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.cases",
+			"column_name": "cases",
+			"column_order": 2,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.continentExp",
+			"column_name": "continentExp",
+			"column_order": 3,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.countriesAndTerritories",
+			"column_name": "countriesAndTerritories",
+			"column_order": 4,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.countryterritoryCode",
+			"column_name": "countryterritoryCode",
+			"column_order": 5,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.dateRep",
+			"column_name": "dateRep",
+			"column_order": 6,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.day",
+			"column_name": "day",
+			"column_order": 7,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.deaths",
+			"column_name": "deaths",
+			"column_order": 8,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.geoId",
+			"column_name": "geoId",
+			"column_order": 9,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.month",
+			"column_name": "month",
+			"column_order": 10,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.popData2018",
+			"column_name": "popData2018",
+			"column_order": 11,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": "",
+			"column_id": "STAGING.CMPPRCDBXML_R_Root_records_record.year",
+			"column_name": "year",
+			"column_order": 12,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		}
+	],
+	"loading_batch_size": 50000,
+	"source_schema_name": "Root_records_record",
+	"source_schema_or_system_id": null,
+	"source_table_id": "Root_records_record",
+	"source_table_name": "Root_records_record",
+	"source_table_staging_id": "Root_records_record",
+	"source_table_type_id": "TABLE",
+	"staging_table_comment": null,
+	"staging_table_display_string": "Root Records Record [CMPPRCDBXML_R_Root_records_record]",
+	"staging_table_id": "STAGING.CMPPRCDBXML_R_Root_records_record",
+	"staging_table_name": "Root Records Record",
+	"system_id": "CMPPRCDBXML",
+	"where_clause_delta_part_template": null,
+	"where_clause_general_part": null
+}
