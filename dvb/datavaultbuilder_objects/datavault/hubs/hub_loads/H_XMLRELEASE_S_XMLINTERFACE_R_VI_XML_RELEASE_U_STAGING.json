@@ -1,0 +1,35 @@
+{
+	"business_key_prefix": "",
+	"business_key_short": "UPDATED, PRODUCT_NAME, RELEASE_GUID, COMPONENT_CMPPKGNAME, COMPONENT_VERSION",
+	"column_ids": [
+		{
+			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.UPDATED",
+			"column_order": 1
+		},
+		{
+			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.PRODUCT_NAME",
+			"column_order": 2
+		},
+		{
+			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_GUID",
+			"column_order": 3
+		},
+		{
+			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.COMPONENT_CMPPKGNAME",
+			"column_order": 4
+		},
+		{
+			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.COMPONENT_VERSION",
+			"column_order": 5
+		}
+	],
+	"datavault_category_id": "persistent_staging",
+	"hub_id": "H_XMLRELEASE",
+	"hub_load_display_name": "XMLINTERFACE: VI XML RELEASE U STAGING (UPDATED, PRODUCT_NAME, RELEASE_GUID, COMPONENT_CMPPKGNAME, COMPONENT_VERSION)",
+	"hub_load_id": "H_XMLRELEASE_S_XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING",
+	"keys_are_prehashed": false,
+	"keys_are_unique": true,
+	"staging_table_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING",
+	"system_id": "XMLINTERFACE",
+	"system_name": "XMLINTERFACE"
+}

@@ -1,0 +1,14 @@
+{
+	"column_ids": [
+	],
+	"functional_suffix_id": "AUTOSAR_ATTRIBUTES",
+	"functional_suffix_name": "AUTOSAR Attributes",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S__F_AUTOSAR_ATTRIBUTES",
+	"satellite_is_prototype": true,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": null,
+	"staging_table_id": "",
+	"system_id": "DVB_PROTOTYPE"
+}

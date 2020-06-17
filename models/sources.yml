@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+    - name: xml
+      schema: staging
+      tables:
+        - name: vi_xml_component
+        - name: vi_xml_delivery
+        - name: vi_xml_metric
+        - name: vi_xml_release

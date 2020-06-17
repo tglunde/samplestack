@@ -1,0 +1,14 @@
+{
+	"column_ids": [
+	],
+	"functional_suffix_id": "CODE_METRICS",
+	"functional_suffix_name": "Code Metrics",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S__F_CODE_METRICS",
+	"satellite_is_prototype": true,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": null,
+	"staging_table_id": "",
+	"system_id": "DVB_PROTOTYPE"
+}
