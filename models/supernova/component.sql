@@ -1,0 +1,1 @@
+select 1 as component_name from dual

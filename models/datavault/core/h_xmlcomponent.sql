@@ -1,3 +1,3 @@
 select 
-    xmlcomponent_h,xmlcomponent_bk,xmlcomponent_lt,xmlcomponent_s
-from {{ source('xml', 'vi_xml_component') }}
+    1 as first_name
+from dual
