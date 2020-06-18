@@ -33,6 +33,22 @@
 				}
 			],
 			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_COMPONENT\",\"satellites\":[{\"satellite_id\":\"S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_TEST_COVERAGE_METRICS\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_STATIC_CODE_METRICS_C.ImplPTH",
+					"column_name": "Estimated Static Program Paths",
+					"column_name_detail": "ImplPTH",
+					"column_nq_id": "ImplPTH",
+					"column_order": 3,
+					"column_orig_name": "Estimated Static Program Paths",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_COMPONENT\",\"satellites\":[{\"satellite_id\":\"S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_STATIC_CODE_METRICS\"}]}]}}"
 		}
 	],
 	"businessobject_set_id": "businessobject_set_H_COMPONENT",
@@ -42,6 +58,10 @@
 		{
 			"object_id": "H_COMPONENT",
 			"object_type": "hub"
+		},
+		{
+			"object_id": "S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_STATIC_CODE_METRICS",
+			"object_type": "satellite"
 		},
 		{
 			"object_id": "S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_TEST_COVERAGE_METRICS",
