@@ -1,0 +1,52 @@
+{
+	"column_ids": [
+		{
+			"character_maximum_length": 18,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_TEST_COVERAGE_METRICS_H.CREQsWithTraceToTCASE",
+			"column_is_used": true,
+			"column_name": "CREQ-TCASE Tracebility",
+			"column_name_detail": "CREQsWithTraceToTCASE",
+			"column_nq_id": "CREQsWithTraceToTCASE",
+			"column_order": 1,
+			"column_type": "attribute",
+			"complete_data_type": "DECIMAL(18,0)",
+			"conversion_type": {
+				"conversion_type_id": "varchar2integer",
+				"conversion_type_parameters": [
+				]
+			},
+			"data_type": "DECIMAL",
+			"datetime_precision": null,
+			"numeric_precision": 18,
+			"numeric_scale": 0
+		},
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_TEST_COVERAGE_METRICS_H.CREQsWithTraceToTCASE_RAW",
+			"column_is_used": true,
+			"column_name": "CREQsWithTraceToTCASE_RAW",
+			"column_name_detail": "",
+			"column_nq_id": "CREQsWithTraceToTCASE_RAW",
+			"column_order": 2,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		}
+	],
+	"functional_suffix_id": "TEST_COVERAGE_METRICS",
+	"functional_suffix_name": "Test Coverage Metrics",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S_DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE_F_TEST_COVERAGE_METRICS",
+	"satellite_is_prototype": false,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": "COMPONENT_METRICS_U_DBT_RULE",
+	"staging_table_id": "STAGING.DBT_RULE_R_COMPONENT_METRICS_U_DBT_RULE",
+	"system_id": "DBT_RULE"
+}

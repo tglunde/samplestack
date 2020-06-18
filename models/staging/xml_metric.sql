@@ -1,0 +1,10 @@
+select 
+    COMPONENT_NAME,
+    COMPONENT_VERSION,
+    SPECMETRIC_NAME,
+    METRIC_NAME,
+    METRIC_VALUE
+
+from {{ source('dvb_bo', 'XMLMETRIC_S_XMLINTERFACE') }}
+
+where UPDATED='20200605'
