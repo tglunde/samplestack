@@ -3,7 +3,7 @@
 	"additional_deployment_parameters": {
 		"business_ruleset_hierarchy_level": 0
 	},
-	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.COMPONENT_S_DBT_RULE\nAS\n\n  SELECT \n    bo.\"Business Key for Hub Component\",    -- Business Key for Hub Component\n    bo.\"CREQ-TCASE Tracebility\"             -- \"CREQsWithTraceToTCASE\" from Satellite Component > DBT_RULE > Test Coverage Metrics\n\n  FROM BUSINESSOBJECTS.COMPONENT_S_DBT_RULE bo",
+	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.COMPONENT_S_DBT_RULE\nAS\n\n  SELECT \n    bo.\"Business Key for Hub Component\",    -- Business Key for Hub Component\n    bo.\"CREQ-TCASE Tracebility\",            -- \"CREQsWithTraceToTCASE\" from Satellite Component > DBT_RULE > Test Coverage Metrics\n    bo.\"Estimated Static Program Paths\"     -- \"ImplPTH\" from Satellite Component > DBT_RULE > Static Code Metrics\n\n  FROM BUSINESSOBJECTS.COMPONENT_S_DBT_RULE bo",
 	"business_ruleset_comment": "",
 	"business_ruleset_name": "Unaltered default",
 	"business_ruleset_order": 1,
