@@ -1,0 +1,417 @@
+{
+	"businessobject_comment": "PSA for Component",
+	"businessobject_display_name": "XMLComponent > XMLINTERFACE > Default",
+	"businessobject_dropdown_entry_string": "XMLComponent",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Business Layer",
+					"column_id": "DATAVAULT.H_XMLCOMPONENT.XMLCOMPONENT_BK",
+					"column_name": "Business Key for Hub XMLComponent",
+					"column_name_detail": "XMLCOMPONENT_BK",
+					"column_nq_id": "XMLCOMPONENT_BK",
+					"column_order": 0,
+					"column_orig_name": "Business Key for Hub XMLComponent",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_XMLCOMPONENT\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.UPDATED",
+					"column_name": "UPDATED",
+					"column_name_detail": "",
+					"column_nq_id": "UPDATED",
+					"column_order": 1,
+					"column_orig_name": "UPDATED",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.NAMESPACE_GUID",
+					"column_name": "NAMESPACE_GUID",
+					"column_name_detail": "",
+					"column_nq_id": "NAMESPACE_GUID",
+					"column_order": 2,
+					"column_orig_name": "NAMESPACE_GUID",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.NAMESPACE_NAME",
+					"column_name": "NAMESPACE_NAME",
+					"column_name_detail": "",
+					"column_nq_id": "NAMESPACE_NAME",
+					"column_order": 3,
+					"column_orig_name": "NAMESPACE_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_GUID",
+					"column_name": "PACKAGE_GUID",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_GUID",
+					"column_order": 4,
+					"column_orig_name": "PACKAGE_GUID",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_NAME",
+					"column_name": "PACKAGE_NAME",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_NAME",
+					"column_order": 5,
+					"column_orig_name": "PACKAGE_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_AUTOSARCLUSTER",
+					"column_name": "PACKAGE_AUTOSARCLUSTER",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_AUTOSARCLUSTER",
+					"column_order": 6,
+					"column_orig_name": "PACKAGE_AUTOSARCLUSTER",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_CURRENTQUALITYPROCESS",
+					"column_name": "PACKAGE_CURRENTQUALITYPROCESS",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_CURRENTQUALITYPROCESS",
+					"column_order": 7,
+					"column_orig_name": "PACKAGE_CURRENTQUALITYPROCESS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_DESCRIPTION",
+					"column_name": "PACKAGE_DESCRIPTION",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_DESCRIPTION",
+					"column_order": 8,
+					"column_orig_name": "PACKAGE_DESCRIPTION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_HASSAFETYREQUIREMENTS",
+					"column_name": "PACKAGE_HASSAFETYREQUIREMENTS",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_HASSAFETYREQUIREMENTS",
+					"column_order": 9,
+					"column_orig_name": "PACKAGE_HASSAFETYREQUIREMENTS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_LAYER",
+					"column_name": "PACKAGE_LAYER",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_LAYER",
+					"column_order": 10,
+					"column_orig_name": "PACKAGE_LAYER",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_REPORTCLASSIFICATION",
+					"column_name": "PACKAGE_REPORTCLASSIFICATION",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_REPORTCLASSIFICATION",
+					"column_order": 11,
+					"column_orig_name": "PACKAGE_REPORTCLASSIFICATION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_REPORTINGQSTATUS",
+					"column_name": "PACKAGE_REPORTINGQSTATUS",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_REPORTINGQSTATUS",
+					"column_order": 12,
+					"column_orig_name": "PACKAGE_REPORTINGQSTATUS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_SHORTNAME",
+					"column_name": "PACKAGE_SHORTNAME",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_SHORTNAME",
+					"column_order": 13,
+					"column_orig_name": "PACKAGE_SHORTNAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_TARGETQUALITYPROCESS",
+					"column_name": "PACKAGE_TARGETQUALITYPROCESS",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_TARGETQUALITYPROCESS",
+					"column_order": 14,
+					"column_orig_name": "PACKAGE_TARGETQUALITYPROCESS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_TARGETQUALITYSTATUS",
+					"column_name": "PACKAGE_TARGETQUALITYSTATUS",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_TARGETQUALITYSTATUS",
+					"column_order": 15,
+					"column_orig_name": "PACKAGE_TARGETQUALITYSTATUS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_USEDINPRODUCT",
+					"column_name": "PACKAGE_USEDINPRODUCT",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_USEDINPRODUCT",
+					"column_order": 16,
+					"column_orig_name": "PACKAGE_USEDINPRODUCT",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.PACKAGE_USERGUIDRESPONSIBLE",
+					"column_name": "PACKAGE_USERGUIDRESPONSIBLE",
+					"column_name_detail": "",
+					"column_nq_id": "PACKAGE_USERGUIDRESPONSIBLE",
+					"column_order": 17,
+					"column_orig_name": "PACKAGE_USERGUIDRESPONSIBLE",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_GUID",
+					"column_name": "COMPONENT_GUID",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_GUID",
+					"column_order": 18,
+					"column_orig_name": "COMPONENT_GUID",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_VERSION",
+					"column_name": "COMPONENT_VERSION",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_VERSION",
+					"column_order": 19,
+					"column_orig_name": "COMPONENT_VERSION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_IMPLEMENTATIONVERSION",
+					"column_name": "COMPONENT_IMPLEMENTATIONVERSION",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_IMPLEMENTATIONVERSION",
+					"column_order": 20,
+					"column_orig_name": "COMPONENT_IMPLEMENTATIONVERSION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_CREATIONDATEALM",
+					"column_name": "COMPONENT_CREATIONDATEALM",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_CREATIONDATEALM",
+					"column_order": 21,
+					"column_orig_name": "COMPONENT_CREATIONDATEALM",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_MODTIMEALM",
+					"column_name": "COMPONENT_MODTIMEALM",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_MODTIMEALM",
+					"column_order": 22,
+					"column_orig_name": "COMPONENT_MODTIMEALM",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_REVISIONALM",
+					"column_name": "COMPONENT_REVISIONALM",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_REVISIONALM",
+					"column_order": 23,
+					"column_orig_name": "COMPONENT_REVISIONALM",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_CREATIONDATESVN",
+					"column_name": "COMPONENT_CREATIONDATESVN",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_CREATIONDATESVN",
+					"column_order": 24,
+					"column_orig_name": "COMPONENT_CREATIONDATESVN",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_REVISIONSVN",
+					"column_name": "COMPONENT_REVISIONSVN",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_REVISIONSVN",
+					"column_order": 25,
+					"column_orig_name": "COMPONENT_REVISIONSVN",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_LASTMODDATE",
+					"column_name": "COMPONENT_LASTMODDATE",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_LASTMODDATE",
+					"column_order": 26,
+					"column_orig_name": "COMPONENT_LASTMODDATE",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_SERVERURL",
+					"column_name": "COMPONENT_SERVERURL",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_SERVERURL",
+					"column_order": 27,
+					"column_orig_name": "COMPONENT_SERVERURL",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_DESCRIPTION",
+					"column_name": "COMPONENT_DESCRIPTION",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_DESCRIPTION",
+					"column_order": 28,
+					"column_orig_name": "COMPONENT_DESCRIPTION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_PATHTESTREPORTS",
+					"column_name": "COMPONENT_PATHTESTREPORTS",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_PATHTESTREPORTS",
+					"column_order": 29,
+					"column_orig_name": "COMPONENT_PATHTESTREPORTS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_QAAPPROVALNOTE",
+					"column_name": "COMPONENT_QAAPPROVALNOTE",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_QAAPPROVALNOTE",
+					"column_order": 30,
+					"column_orig_name": "COMPONENT_QAAPPROVALNOTE",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_QACHECK",
+					"column_name": "COMPONENT_QACHECK",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_QACHECK",
+					"column_order": 31,
+					"column_orig_name": "COMPONENT_QACHECK",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_QLEVEL",
+					"column_name": "COMPONENT_QLEVEL",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_QLEVEL",
+					"column_order": 32,
+					"column_orig_name": "COMPONENT_QLEVEL",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_RELEASESTATEMENT",
+					"column_name": "COMPONENT_RELEASESTATEMENT",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_RELEASESTATEMENT",
+					"column_order": 33,
+					"column_orig_name": "COMPONENT_RELEASESTATEMENT",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING_C.COMPONENT_REVISIONTESTREPORTS",
+					"column_name": "COMPONENT_REVISIONTESTREPORTS",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_REVISIONTESTREPORTS",
+					"column_order": 34,
+					"column_orig_name": "COMPONENT_REVISIONTESTREPORTS",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_XMLCOMPONENT\",\"satellites\":[{\"satellite_id\":\"S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_H_XMLCOMPONENT",
+	"businessobject_structure": null,
+	"businessobject_view_id": "BUSINESSOBJECTS.XMLCOMPONENT_S_XMLINTERFACE",
+	"dependent_objects": [
+		{
+			"object_id": "H_XMLCOMPONENT",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "S_XMLCOMPONENT_S_XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING",
+	"system_id": "XMLINTERFACE",
+	"system_name": "XMLINTERFACE"
+}
