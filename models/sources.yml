@@ -8,7 +8,11 @@ sources:
         - name: vi_xml_delivery
         - name: vi_xml_metric
         - name: vi_xml_release
-    - name: dvb_bo
-      schema: business_rules
+    - name: PSA
+      schema: BUSINESS_RULES
       tables:
         - name: XMLMETRIC_S_XMLINTERFACE
+    - name: RAW
+      schema: BUSINESS_RULES
+      tables:
+        - name: COMPONENT_S_DBT_STAGE

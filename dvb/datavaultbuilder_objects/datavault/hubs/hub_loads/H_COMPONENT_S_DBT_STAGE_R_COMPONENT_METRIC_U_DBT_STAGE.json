@@ -1,0 +1,23 @@
+{
+	"business_key_prefix": "",
+	"business_key_short": "COMPONENT_NAME, COMPONENT_VERSION",
+	"column_ids": [
+		{
+			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.COMPONENT_NAME",
+			"column_order": 1
+		},
+		{
+			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.COMPONENT_VERSION",
+			"column_order": 2
+		}
+	],
+	"datavault_category_id": "raw_vault",
+	"hub_id": "H_COMPONENT",
+	"hub_load_display_name": "DBT_STAGE: COMPONENT METRIC U DBT STAGE (COMPONENT_NAME, COMPONENT_VERSION)",
+	"hub_load_id": "H_COMPONENT_S_DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE",
+	"keys_are_prehashed": false,
+	"keys_are_unique": true,
+	"staging_table_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE",
+	"system_id": "DBT_STAGE",
+	"system_name": "DBT_STAGE"
+}
