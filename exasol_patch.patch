@@ -1,0 +1,48 @@
+From 94aeba6a450b1e2ce2b596b42651f88e3d556b86 Mon Sep 17 00:00:00 2001
+From: ilikutle <ilijakutle@gmail.com>
+Date: Mon, 24 Feb 2020 12:33:15 +0100
+Subject: [PATCH] Fixed exasol ephemeral model naming
+
+---
+ core/dbt/compilation.py | 4 +++-
+ core/dbt/utils.py       | 2 +-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/core/dbt/compilation.py b/core/dbt/compilation.py
+index e011fb20..ca9047b0 100644
+--- a/core/dbt/compilation.py
++++ b/core/dbt/compilation.py
+@@ -7,6 +7,8 @@ import dbt.utils
+ import dbt.include
+ import dbt.tracking
+ 
++from dbt.utils import add_ephemeral_model_prefix
++
+ from dbt.node_types import NodeType
+ from dbt.linker import Linker
+ 
+@@ -111,7 +113,7 @@ def recursively_prepend_ctes(model, manifest):
+         cte_to_add, new_prepended_ctes, manifest = recursively_prepend_ctes(
+             cte_to_add, manifest)
+         _extend_prepended_ctes(prepended_ctes, new_prepended_ctes)
+-        new_cte_name = '__dbt__CTE__{}'.format(cte_to_add.name)
++        new_cte_name = add_ephemeral_model_prefix(cte_to_add.name)
+         sql = ' {} as (\n{}\n)'.format(new_cte_name, cte_to_add.compiled_sql)
+         _add_prepended_cte(prepended_ctes, InjectedCTE(id=cte_id, sql=sql))
+ 
+diff --git a/core/dbt/utils.py b/core/dbt/utils.py
+index 100f11a3..6109878e 100644
+--- a/core/dbt/utils.py
++++ b/core/dbt/utils.py
+@@ -373,7 +373,7 @@ def filter_null_values(input: Dict[K_T, Optional[V_T]]) -> Dict[K_T, V_T]:
+ 
+ 
+ def add_ephemeral_model_prefix(s: str) -> str:
+-    return '__dbt__CTE__{}'.format(s)
++    return 'dbt__CTE__{}'.format(s)
+ 
+ 
+ def timestring() -> str:
+-- 
+2.21.0.windows.1
+
