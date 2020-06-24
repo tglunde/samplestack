@@ -1,0 +1,99 @@
+{
+	"businessobject_comment": "",
+	"businessobject_display_name": "Release > PSA > Release",
+	"businessobject_dropdown_entry_string": "Release - Release",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Release",
+					"column_id": "DATAVAULT.H_RELEASE.RELEASE_BK",
+					"column_name": "BK Release",
+					"column_name_detail": "RELEASE_BK",
+					"column_nq_id": "RELEASE_BK",
+					"column_order": 1,
+					"column_orig_name": "BK Release",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_RELEASE\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN_C.PRODUCT_NAME",
+					"column_name": "Product Name",
+					"column_name_detail": "",
+					"column_nq_id": "PRODUCT_NAME",
+					"column_order": 2,
+					"column_orig_name": "PRODUCT_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN_C.RELEASE_GUID",
+					"column_name": "Release GUID",
+					"column_name_detail": "",
+					"column_nq_id": "RELEASE_GUID",
+					"column_order": 4,
+					"column_orig_name": "RELEASE_GUID",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN_C.RELEASE_VERSION",
+					"column_name": "Release Version",
+					"column_name_detail": "",
+					"column_nq_id": "RELEASE_VERSION",
+					"column_order": 5,
+					"column_orig_name": "RELEASE_VERSION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_RELEASE\",\"satellites\":[{\"satellite_id\":\"S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Component",
+					"column_id": "DATAVAULT.H_COMPONENT.COMPONENT_BK",
+					"column_name": "BK Component",
+					"column_name_detail": "COMPONENT_BK",
+					"column_nq_id": "COMPONENT_BK",
+					"column_order": 3,
+					"column_orig_name": "BK Component",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_RELEASE\",\"links\":[{\"link_id\":\"L_RELEASE_T_COMPONENT\",\"hubs\":[{\"hub_id\":\"H_COMPONENT\"}]}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_H_RELEASE_C_RELEASE",
+	"businessobject_structure": null,
+	"businessobject_view_id": "BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE",
+	"dependent_objects": [
+		{
+			"object_id": "H_COMPONENT",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "H_RELEASE",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "L_RELEASE_T_COMPONENT",
+			"object_type": "link"
+		},
+		{
+			"object_id": "S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
+	"system_id": "PSA",
+	"system_name": "PSA"
+}

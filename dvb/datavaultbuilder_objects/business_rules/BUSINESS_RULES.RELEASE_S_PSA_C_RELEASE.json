@@ -1,0 +1,30 @@
+{
+	"accesslayer_priorization": 1,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.RELEASE_S_PSA_C_RELEASE\nAS\n\n  SELECT \n    bo.\"BK Release\",         -- Business Key for Hub Release\n    bo.\"Product Name\",       -- PRODUCT_NAME from Satellite Release > PSA > Main\n    bo.\"BK Component\",       -- Business Key for Hub Component\n    bo.\"Release GUID\",       -- RELEASE_GUID from Satellite Release > PSA > Main\n    bo.\"Release Version\"     -- RELEASE_VERSION from Satellite Release > PSA > Main\n\n  FROM BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE bo",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "BUSINESS_RULES.RELEASE_S_PSA_C_RELEASE",
+	"container_id": "H_RELEASE_C_RELEASE",
+	"dependent_objects": [
+		{
+			"object_id": "BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": false,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE"
+			}
+		]
+	},
+	"system_id": "PSA"
+}

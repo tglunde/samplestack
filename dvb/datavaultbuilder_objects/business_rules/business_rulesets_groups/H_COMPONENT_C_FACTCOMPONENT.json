@@ -1,0 +1,12 @@
+{
+	"business_rules_businessobject_container_display_name": "Component - FactComponent",
+	"business_rules_businessobject_container_id": "H_COMPONENT_C_FACTCOMPONENT",
+	"business_rules_businessobject_container_order": 3,
+	"business_rules_businessobject_systems": [
+		{
+			"related_businessobject_view_id": "BUSINESSOBJECTS.COMPONENT_S_PSA_C_FACTCOMPONENT",
+			"system_id": "PSA",
+			"system_order": 1
+		}
+	]
+}
