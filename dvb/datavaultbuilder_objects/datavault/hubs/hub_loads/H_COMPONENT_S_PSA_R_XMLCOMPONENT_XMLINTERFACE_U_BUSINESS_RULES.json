@@ -1,0 +1,27 @@
+{
+	"business_key_prefix": "",
+	"business_key_short": "NAMESPACE_NAME, PACKAGE_NAME, COMPONENT_VERSION",
+	"column_ids": [
+		{
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.NAMESPACE_NAME",
+			"column_order": 1
+		},
+		{
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_NAME",
+			"column_order": 2
+		},
+		{
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_VERSION",
+			"column_order": 3
+		}
+	],
+	"datavault_category_id": "raw_vault",
+	"hub_id": "H_COMPONENT",
+	"hub_load_display_name": "PSA: XMLCOMPONENT XMLINTERFACE U BUSINESS RULES (NAMESPACE_NAME, PACKAGE_NAME, COMPONENT_VERSION)",
+	"hub_load_id": "H_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"keys_are_prehashed": false,
+	"keys_are_unique": true,
+	"staging_table_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"system_id": "PSA",
+	"system_name": "PSA"
+}
