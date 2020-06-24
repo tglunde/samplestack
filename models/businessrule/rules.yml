@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: tcase_pro_creq
+    columns:
+      - name: component_version
+        tests:
+          - not_null
