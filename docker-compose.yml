@@ -1,0 +1,42 @@
+version: '3.7'
+
+x-dbt-build: &dbt-build
+  context: .
+  dockerfile: Dockerfile
+x-dbt-volumes: &dbt-volumes
+  - .:/usr/app
+
+services:
+
+  # https://hub.docker.com/u/fishtownanalytics
+  dbt_test:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    command: [ "test", "--profiles-dir", "/usr/app" ]
+
+  dbt_debug:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    command: [ "debug", "--profiles-dir", "/usr/app", "--project-dir", "/usr/app" ]
+
+  dbt_seed:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    command: [ "seed", "--profiles-dir", "/usr/app" ]
+
+  dbt_run:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    command: [ "run", "--profiles-dir", "/usr/app", "--project-dir", "/usr/app" ]
+
+  dbt_rpc:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    command: [ "rpc", "--profiles-dir", "/usr/app" ]
+
+  dbt_doc:
+    build: *dbt-build
+    volumes: *dbt-volumes
+    ports:
+    - 54081:8080
+    command: [ "dbt", "docs", "serve", "--profiles-dir", "/usr/app" ]

@@ -9,8 +9,8 @@ models:
     post-hook:
       - "grant select on {{this}} to public"
     staging:
-      materialized: view
       schema: stage
+      materialized: view
     datavault:
       materialized: ephemeral
     supernova:

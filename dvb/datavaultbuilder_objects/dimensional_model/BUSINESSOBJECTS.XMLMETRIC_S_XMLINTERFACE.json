@@ -1,17 +1,17 @@
 {
-	"businessobject_comment": "PSA BO for metrics",
+	"businessobject_comment": "Load Interface Metrics for PSA -> RAW",
 	"businessobject_display_name": "XMLMetric > XMLINTERFACE > Default",
 	"businessobject_dropdown_entry_string": "XMLMetric",
 	"businessobject_elements": [
 		{
 			"columns": [
 				{
-					"column_comment": "Business Key for Hub XMLMetric",
+					"column_comment": "Business Key for Business Layer",
 					"column_id": "DATAVAULT.H_XMLMETRIC.XMLMETRIC_BK",
 					"column_name": "Business Key for Hub XMLMetric",
 					"column_name_detail": "XMLMETRIC_BK",
 					"column_nq_id": "XMLMETRIC_BK",
-					"column_order": 1,
+					"column_order": 0,
 					"column_orig_name": "Business Key for Hub XMLMetric",
 					"conversion_type": null
 				}
@@ -20,6 +20,17 @@
 		},
 		{
 			"columns": [
+				{
+					"column_comment": "Load Time Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_name": "LDTS",
+					"column_name_detail": "XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_nq_id": "XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_order": 1,
+					"column_orig_name": "LTS XMLMetric - XMLINTERFACE - Default of VI_XML_METRIC_U_STAGING",
+					"complete_data_type": "TIMESTAMP",
+					"conversion_type": null
+				},
 				{
 					"column_comment": "",
 					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.UPDATED",
