@@ -1,0 +1,23 @@
+{
+	"business_key_prefix": "",
+	"business_key_short": "DELIVERY_CBDNUMBER, DELIVERY_GUID",
+	"column_ids": [
+		{
+			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_CBDNUMBER",
+			"column_order": 1
+		},
+		{
+			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_GUID",
+			"column_order": 2
+		}
+	],
+	"datavault_category_id": "raw_vault",
+	"hub_id": "H_DELIVERY",
+	"hub_load_display_name": "PSA: XMLDELIVERY XMLINTERFACE U BUSINESS RULES (DELIVERY_CBDNUMBER, DELIVERY_GUID)",
+	"hub_load_id": "H_DELIVERY_S_PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES",
+	"keys_are_prehashed": false,
+	"keys_are_unique": false,
+	"staging_table_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES",
+	"system_id": "PSA",
+	"system_name": "PSA"
+}
