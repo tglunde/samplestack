@@ -1,7 +1,7 @@
 {
 	"business_rules_businessobject_container_display_name": "XMLDelivery",
 	"business_rules_businessobject_container_id": "H_XMLDELIVERY_C_dvb_default",
-	"business_rules_businessobject_container_order": 3,
+	"business_rules_businessobject_container_order": 8,
 	"business_rules_businessobject_systems": [
 		{
 			"related_businessobject_view_id": "BUSINESSOBJECTS.XMLDELIVERY_S_XMLINTERFACE",
