@@ -1,0 +1,31 @@
+{
+	"column_ids": [
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES_H.COMPONENT_QLEVEL",
+			"column_is_used": true,
+			"column_name": "ALMPlus Status",
+			"column_name_detail": "COMPONENT_QLEVEL",
+			"column_nq_id": "COMPONENT_QLEVEL",
+			"column_order": 1,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		}
+	],
+	"functional_suffix_id": "",
+	"functional_suffix_name": "ALMPlus Status",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"satellite_is_prototype": false,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": "XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"staging_table_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"system_id": "PSA"
+}
