@@ -6,6 +6,11 @@ profile: exasol
 
 models:
   samplestack:
+    post-hook:
+      - "grant select on {{this}} to public"
+    staging:
+      schema: stage
+      materialized: view
     datavault:
       materialized: ephemeral
     supernova:

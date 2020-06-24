@@ -1,0 +1,120 @@
+{
+	"businessobject_comment": "Load Interface Metrics for PSA -> RAW",
+	"businessobject_display_name": "XMLMetric > XMLINTERFACE > Default",
+	"businessobject_dropdown_entry_string": "XMLMetric",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Business Layer",
+					"column_id": "DATAVAULT.H_XMLMETRIC.XMLMETRIC_BK",
+					"column_name": "Business Key for Hub XMLMetric",
+					"column_name_detail": "XMLMETRIC_BK",
+					"column_nq_id": "XMLMETRIC_BK",
+					"column_order": 0,
+					"column_orig_name": "Business Key for Hub XMLMetric",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_XMLMETRIC\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Load Time Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_name": "LDTS",
+					"column_name_detail": "XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_nq_id": "XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_LTC",
+					"column_order": 1,
+					"column_orig_name": "LTS XMLMetric - XMLINTERFACE - Default of VI_XML_METRIC_U_STAGING",
+					"complete_data_type": "TIMESTAMP",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.UPDATED",
+					"column_name": "UPDATED",
+					"column_name_detail": "",
+					"column_nq_id": "UPDATED",
+					"column_order": 2,
+					"column_orig_name": "UPDATED",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.COMPONENT_NAME",
+					"column_name": "COMPONENT_NAME",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_NAME",
+					"column_order": 3,
+					"column_orig_name": "COMPONENT_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.COMPONENT_VERSION",
+					"column_name": "COMPONENT_VERSION",
+					"column_name_detail": "",
+					"column_nq_id": "COMPONENT_VERSION",
+					"column_order": 4,
+					"column_orig_name": "COMPONENT_VERSION",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.SPECMETRIC_NAME",
+					"column_name": "SPECMETRIC_NAME",
+					"column_name_detail": "",
+					"column_nq_id": "SPECMETRIC_NAME",
+					"column_order": 5,
+					"column_orig_name": "SPECMETRIC_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.METRIC_NAME",
+					"column_name": "METRIC_NAME",
+					"column_name_detail": "",
+					"column_nq_id": "METRIC_NAME",
+					"column_order": 6,
+					"column_orig_name": "METRIC_NAME",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "DATAVAULT.S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING_C.METRIC_VALUE",
+					"column_name": "METRIC_VALUE",
+					"column_name_detail": "",
+					"column_nq_id": "METRIC_VALUE",
+					"column_order": 7,
+					"column_orig_name": "METRIC_VALUE",
+					"complete_data_type": "VARCHAR(2000000) UTF8",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"H_XMLMETRIC\",\"satellites\":[{\"satellite_id\":\"S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_H_XMLMETRIC",
+	"businessobject_structure": null,
+	"businessobject_view_id": "BUSINESSOBJECTS.XMLMETRIC_S_XMLINTERFACE",
+	"dependent_objects": [
+		{
+			"object_id": "H_XMLMETRIC",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "S_XMLMETRIC_S_XMLINTERFACE_R_VI_XML_METRIC_U_STAGING",
+	"system_id": "XMLINTERFACE",
+	"system_name": "XMLINTERFACE"
+}
