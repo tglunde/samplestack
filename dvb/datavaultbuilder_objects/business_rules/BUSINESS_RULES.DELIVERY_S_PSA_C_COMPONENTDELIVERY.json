@@ -3,7 +3,7 @@
 	"additional_deployment_parameters": {
 		"business_ruleset_hierarchy_level": 0
 	},
-	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.DELIVERY_S_PSA_C_COMPONENTDELIVERY\nAS\n\n  SELECT \n    bo.\"BK Delivery\",          -- Business Key for Hub Delivery\n    bo.\"Delivery GUID\",        -- DELIVERY_GUID from Satellite Delivery > PSA > Main\n    bo.\"Component Name\",       -- PACKAGE_NAME from Satellite Component > PSA > Main\n    bo.\"CBD Number\",           -- DELIVERY_CBDNUMBER from Satellite Delivery > PSA > Main\n    bo.\"Component Version\",    -- COMPONENT_VERSION from Satellite Component > PSA > Main\n    bo.\"Component GUID\",       -- COMPONENT_GUID from Satellite Component > PSA > Main\n    bo.\"Delivery Number\",      -- DELIVERY_DELIVERYNUMBER from Satellite Delivery > PSA > Main\n    bo.\"Customer\"              -- DELIVERY_CUSTOMER from Satellite Delivery > PSA > Main\n\n  FROM BUSINESSOBJECTS.DELIVERY_S_PSA_C_COMPONENTDELIVERY bo",
+	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.DELIVERY_S_PSA_C_COMPONENTDELIVERY\nAS\n\n  SELECT \n    bo.\"BK Component\",         -- Business Key for Hub Component\n    bo.\"BK Delivery\",          -- Business Key for Hub Delivery\n    bo.\"Delivery GUID\",        -- DELIVERY_GUID from Satellite Delivery > PSA > Main\n    bo.\"Component Name\",       -- PACKAGE_NAME from Satellite Component > PSA > Main\n    bo.\"CBD Number\",           -- DELIVERY_CBDNUMBER from Satellite Delivery > PSA > Main\n    bo.\"Component Version\",    -- COMPONENT_VERSION from Satellite Component > PSA > Main\n    bo.\"Component GUID\",       -- COMPONENT_GUID from Satellite Component > PSA > Main\n    bo.\"Delivery Number\",      -- DELIVERY_DELIVERYNUMBER from Satellite Delivery > PSA > Main\n    bo.\"Customer\"              -- DELIVERY_CUSTOMER from Satellite Delivery > PSA > Main\n\n  FROM BUSINESSOBJECTS.DELIVERY_S_PSA_C_COMPONENTDELIVERY bo",
 	"business_ruleset_comment": "",
 	"business_ruleset_name": "Unaltered default",
 	"business_ruleset_order": 1,
@@ -16,7 +16,7 @@
 			"object_type": "business_object"
 		}
 	],
-	"include_in_accesslayer": false,
+	"include_in_accesslayer": true,
 	"is_error_ruleset": false,
 	"is_unaltered_business_ruleset": true,
 	"quick_inserts": {

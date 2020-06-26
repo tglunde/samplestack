@@ -4,9 +4,9 @@ with metrics as (
         UPDATED,
         COMPONENT_NAME ,
         COMPONENT_VERSION ,
-	    "TCASES" as tcases,
-	    "CREQS" as creqs,
-        "CREQSWITHTRACETOTCASE" as creqswithtracetotcase
+	    "TCASEs" as tcases,
+	    "CREQs" as creqs,
+        "CREQsWithTraceToTCASE" as creqswithtracetotcase
         
     
     FROM {{ ref('bo_component_metric') }} 
