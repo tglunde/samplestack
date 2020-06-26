@@ -16,7 +16,7 @@
 			"object_type": "business_object"
 		}
 	],
-	"include_in_accesslayer": false,
+	"include_in_accesslayer": true,
 	"is_error_ruleset": false,
 	"is_unaltered_business_ruleset": true,
 	"quick_inserts": {

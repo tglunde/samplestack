@@ -1,5 +1,5 @@
 {
-	"accesslayer_priorization": 1,
+	"accesslayer_priorization": 0,
 	"additional_deployment_parameters": {
 		"business_ruleset_hierarchy_level": 0
 	},
@@ -16,7 +16,7 @@
 			"object_type": "business_object"
 		}
 	],
-	"include_in_accesslayer": false,
+	"include_in_accesslayer": true,
 	"is_error_ruleset": false,
 	"is_unaltered_business_ruleset": true,
 	"quick_inserts": {

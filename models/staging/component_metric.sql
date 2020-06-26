@@ -28,7 +28,7 @@ with metrics as (
         component_version,
         {{ dbt_utils.pivot(
             'metric_name', 
-            dbt_utils.get_column_values(ref('metric_name'),'metric_name'),
+            dbt_utils.get_column_values(ref('metric_name'),'metric_name_orig'),
             then_value='metric_value',
             else_value='NULL',
             agg='max'
