@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: qstat_xml_files
+    schema: staging
+    tables:
+      - name: XMLINTERFACE_R_VI_XML_DELIVERY_U_STAGING
+        description: information about components and the association to deliveries
+      - name: XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING
+        description: information about component versions
+      - name: XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING
+        description: information about components and the association to releases
+      - name: XMLINTERFACE_R_VI_XML_METRIC_U_STAGING
+        description: several metric groups and metrics with their value for component versions
+

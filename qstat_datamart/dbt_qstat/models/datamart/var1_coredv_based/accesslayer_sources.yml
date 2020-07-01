@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: access
+    schema: accesslayer
+    tables:
+      - name: release_c_release
+      - name: component_c_architecture
+      - name: component_c_packages
+      - name: component_c_factcomponent
+      - name: delivery_c_componentdelivery
