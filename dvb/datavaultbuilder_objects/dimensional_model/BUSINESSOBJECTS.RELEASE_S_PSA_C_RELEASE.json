@@ -77,8 +77,20 @@
 	"businessobject_view_id": "BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE",
 	"dependent_objects": [
 		{
+			"object_id": "H_COMPONENT",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "H_RELEASE",
+			"object_type": "hub"
+		},
+		{
 			"object_id": "L_RELEASE_T_COMPONENT",
 			"object_type": "link"
+		},
+		{
+			"object_id": "S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
+			"object_type": "satellite"
 		}
 	],
 	"granularity_satellite_id": "S_RELEASE_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",

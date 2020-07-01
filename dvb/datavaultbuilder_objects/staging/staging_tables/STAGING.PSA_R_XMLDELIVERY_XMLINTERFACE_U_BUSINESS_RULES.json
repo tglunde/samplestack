@@ -1,7 +1,7 @@
 {
 	"columns": [
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_INDBDATE",
 			"column_name": "DELIVERY_INDBDATE",
 			"column_order": 1,
@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_NAME",
 			"column_name": "COMPONENT_NAME",
 			"column_order": 2,
@@ -29,7 +29,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_BISBETA",
 			"column_name": "DELIVERY_BISBETA",
 			"column_order": 3,
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_CUSTOMER",
 			"column_name": "DELIVERY_CUSTOMER",
 			"column_order": 4,
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_REVISIONALM",
 			"column_name": "DELIVERY_REVISIONALM",
 			"column_order": 5,
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_DELIVERYTYPE",
 			"column_name": "DELIVERY_DELIVERYTYPE",
 			"column_order": 6,
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_TESTEDDERIVATE",
 			"column_name": "DELIVERY_TESTEDDERIVATE",
 			"column_order": 7,
@@ -99,7 +99,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_DELIVERYNUMBER",
 			"column_name": "DELIVERY_DELIVERYNUMBER",
 			"column_order": 8,
@@ -113,7 +113,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_ECUNAME",
 			"column_name": "DELIVERY_ECUNAME",
 			"column_order": 9,
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_CBDNUMBER",
 			"column_name": "DELIVERY_CBDNUMBER",
 			"column_order": 10,
@@ -141,7 +141,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_BISSAFETYRELEVANTC",
 			"column_name": "DELIVERY_BISSAFETYRELEVANTC",
 			"column_order": 11,
@@ -155,7 +155,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_GUID",
 			"column_name": "DELIVERY_GUID",
 			"column_order": 12,
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.PS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
 			"column_name": "PS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
 			"column_order": 13,
@@ -183,7 +183,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_PRODUCTTITLE",
 			"column_name": "DELIVERY_PRODUCTTITLE",
 			"column_order": 14,
@@ -197,7 +197,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_DELIVEREDDATE",
 			"column_name": "DELIVERY_DELIVEREDDATE",
 			"column_order": 15,
@@ -211,7 +211,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_VERSION",
 			"column_name": "COMPONENT_VERSION",
 			"column_order": 16,
@@ -225,7 +225,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.LTS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
 			"column_name": "LTS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
 			"column_order": 17,
@@ -239,7 +239,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.UPDATED",
 			"column_name": "UPDATED",
 			"column_order": 18,
@@ -253,7 +253,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_RELTYPE",
 			"column_name": "DELIVERY_RELTYPE",
 			"column_order": 19,
@@ -267,7 +267,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_TITLE",
 			"column_name": "DELIVERY_TITLE",
 			"column_order": 20,
@@ -281,7 +281,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.DELIVERY_PROGRAMTITLE",
 			"column_name": "DELIVERY_PROGRAMTITLE",
 			"column_order": 21,
@@ -295,7 +295,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES.Business Key for Hub XMLDelivery",
 			"column_name": "Business Key for Hub XMLDelivery",
 			"column_order": 22,
@@ -315,12 +315,12 @@
 	"source_table_id": "BUSINESS_RULES.XMLDELIVERY_S_XMLINTERFACE",
 	"source_table_name": "XMLDELIVERY_S_XMLINTERFACE",
 	"source_table_staging_id": "XMLDELIVERY_XMLINTERFACE",
-	"source_table_type_id": "VIEW",
-	"staging_table_comment": "",
+	"source_table_type_id": "",
+	"staging_table_comment": null,
 	"staging_table_display_string": "Business Rules.Xmldelivery S Xmlinterface (BUSINESS_RULES) [PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES]",
 	"staging_table_id": "STAGING.PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES",
 	"staging_table_name": "Business Rules.Xmldelivery S Xmlinterface",
 	"system_id": "PSA",
-	"where_clause_delta_part_template": "",
+	"where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
 	"where_clause_general_part": "updated = '20200605'"
 }

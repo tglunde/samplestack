@@ -3,8 +3,8 @@
 	"additional_deployment_parameters": {
 		"business_ruleset_hierarchy_level": 0
 	},
-	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.COMPONENT_S_PSA_C_ARCHITECTURE\nAS\n\n  SELECT \n    bo.\"BK Component\",    -- Business Key for Hub Component\n    bo.\"Cluster\",         -- PACKAGE_AUTOSARCLUSTER from Satellite Component > PSA > AutoSAR\n    bo.\"Modul\"            -- PACKAGE_SHORTNAME from Satellite Component > PSA > AutoSAR\n\n  FROM BUSINESSOBJECTS.COMPONENT_S_PSA_C_ARCHITECTURE bo",
-	"business_ruleset_comment": "",
+	"business_rules_view_code": "CREATE OR REPLACE VIEW BUSINESS_RULES.COMPONENT_S_PSA_C_ARCHITECTURE AS\nSELECT \n    bo.\"BK Component\",    -- Business Key for Hub Component\n    bo.\"Cluster\",         -- PACKAGE_AUTOSARCLUSTER from Satellite Component > PSA > AutoSAR\n    bo.\"Modul\"            -- PACKAGE_SHORTNAME from Satellite Component > PSA > AutoSAR\n\n  FROM BUSINESSOBJECTS.COMPONENT_S_PSA_C_ARCHITECTURE bo\n;",
+	"business_ruleset_comment": null,
 	"business_ruleset_name": "Unaltered default",
 	"business_ruleset_order": 1,
 	"business_ruleset_suffix_id": null,
