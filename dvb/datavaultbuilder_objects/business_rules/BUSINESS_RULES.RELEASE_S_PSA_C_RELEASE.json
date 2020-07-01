@@ -3,8 +3,8 @@
 	"additional_deployment_parameters": {
 		"business_ruleset_hierarchy_level": 0
 	},
-	"business_rules_view_code": "CREATE VIEW BUSINESS_RULES.RELEASE_S_PSA_C_RELEASE\nAS\n\n  SELECT \n    bo.\"BK Component\",       -- Business Key for Hub Component\n    bo.\"BK Release\",         -- Business Key for Hub Release\n    bo.\"Product Name\",       -- PRODUCT_NAME from Satellite Release > PSA > Main\n    bo.\"Release GUID\",       -- RELEASE_GUID from Satellite Release > PSA > Main\n    bo.\"Release Version\"     -- RELEASE_VERSION from Satellite Release > PSA > Main\n\n  FROM BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE bo",
-	"business_ruleset_comment": "",
+	"business_rules_view_code": "CREATE OR REPLACE VIEW BUSINESS_RULES.RELEASE_S_PSA_C_RELEASE AS\nSELECT \n    bo.\"BK Component\",       -- Business Key for Hub Component\n    bo.\"BK Release\",         -- Business Key for Hub Release\n    bo.\"Product Name\",       -- PRODUCT_NAME from Satellite Release > PSA > Main\n    bo.\"Release GUID\",       -- RELEASE_GUID from Satellite Release > PSA > Main\n    bo.\"Release Version\"     -- RELEASE_VERSION from Satellite Release > PSA > Main\n\n  FROM BUSINESSOBJECTS.RELEASE_S_PSA_C_RELEASE bo\n;",
+	"business_ruleset_comment": null,
 	"business_ruleset_name": "Unaltered default",
 	"business_ruleset_order": 1,
 	"business_ruleset_suffix_id": null,

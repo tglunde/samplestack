@@ -1,7 +1,7 @@
 {
 	"columns": [
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.UPDATED",
 			"column_name": "UPDATED",
 			"column_order": 1,
@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.COMPONENT_NAME",
 			"column_name": "COMPONENT_NAME",
 			"column_order": 2,
@@ -29,7 +29,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.COMPONENT_VERSION",
 			"column_name": "COMPONENT_VERSION",
 			"column_order": 3,
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.TCASES",
 			"column_name": "TCASES",
 			"column_order": 4,
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.CREQS",
 			"column_name": "CREQS",
 			"column_order": 5,
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.CREQSWITHTRACETOTCASE",
 			"column_name": "CREQSWITHTRACETOTCASE",
 			"column_order": 6,
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE.TCASE_PRO_CREQ",
 			"column_name": "TCASE_PRO_CREQ",
 			"column_order": 7,
@@ -106,11 +106,11 @@
 	"source_table_name": "TCASE_PRO_CREQ",
 	"source_table_staging_id": "TCASE_PRO_CREQ",
 	"source_table_type_id": "VIEW",
-	"staging_table_comment": "",
+	"staging_table_comment": null,
 	"staging_table_display_string": "Tcase Pro Creq (DBT_RULE) [DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE]",
 	"staging_table_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE",
 	"staging_table_name": "Tcase Pro Creq",
 	"system_id": "DBT_RULE",
-	"where_clause_delta_part_template": "",
-	"where_clause_general_part": ""
+	"where_clause_delta_part_template": null,
+	"where_clause_general_part": null
 }

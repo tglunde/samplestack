@@ -1,7 +1,7 @@
 {
 	"columns": [
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.UPDATED",
 			"column_name": "UPDATED",
 			"column_order": 1,
@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.LDTS",
 			"column_name": "LDTS",
 			"column_order": 2,
@@ -29,9 +29,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.LDTS_offset_sec",
-			"column_name": null,
+			"column_name": "LDTS_offset_sec",
 			"column_order": 3,
 			"complete_data_type": "DECIMAL(9,9)",
 			"jdbc_data_type": {
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.COMPONENT_NAME",
 			"column_name": "COMPONENT_NAME",
 			"column_order": 4,
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.COMPONENT_VERSION",
 			"column_name": "COMPONENT_VERSION",
 			"column_order": 5,
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXCAL",
 			"column_name": "MAXCAL",
 			"column_order": 6,
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRARULES",
 			"column_name": "MISRARULES",
 			"column_order": 7,
@@ -99,7 +99,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLDECISIONCOVERAGE_MEASURED",
 			"column_name": "OVERALLDECISIONCOVERAGE_MEASURED",
 			"column_order": 8,
@@ -113,7 +113,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_RUNTIMECOVERAGE",
 			"column_name": "STATUS_RUNTIMECOVERAGE",
 			"column_order": 9,
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_TESTREPORT",
 			"column_name": "STATUS_TESTREPORT",
 			"column_order": 10,
@@ -141,7 +141,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINPAR",
 			"column_name": "MINPAR",
 			"column_order": 11,
@@ -155,7 +155,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFRELEVANTSPECITEMSWITHMISSINGFULFILLMENT",
 			"column_name": "NROFRELEVANTSPECITEMSWITHMISSINGFULFILLMENT",
 			"column_order": 12,
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_NOTRELEVANT_NOTFULFILLED",
 			"column_name": "NROFSPECITEMS_NOTRELEVANT_NOTFULFILLED",
 			"column_order": 13,
@@ -183,7 +183,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANTNS",
 			"column_name": "NROFSPECITEMS_RELEVANTNS",
 			"column_order": 14,
@@ -197,7 +197,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_PREPROCESSORCOVERAGE",
 			"column_name": "STATUS_PREPROCESSORCOVERAGE",
 			"column_order": 15,
@@ -211,7 +211,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANTNS_NOTFULFILLED",
 			"column_name": "NROFSPECITEMS_RELEVANTNS_NOTFULFILLED",
 			"column_order": 16,
@@ -225,7 +225,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESFROMVTRNOTINTESTSPEC",
 			"column_name": "TCASESFROMVTRNOTINTESTSPEC",
 			"column_order": 17,
@@ -239,7 +239,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONDECISIONCOVERAGE",
 			"column_name": "CONFIGURATIONDECISIONCOVERAGE",
 			"column_order": 18,
@@ -253,7 +253,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.VTRTCASES",
 			"column_name": "VTRTCASES",
 			"column_order": 19,
@@ -267,7 +267,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINPTH",
 			"column_name": "MINPTH",
 			"column_order": 20,
@@ -281,7 +281,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXMIF",
 			"column_name": "MAXMIF",
 			"column_order": 21,
@@ -295,7 +295,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQSWITHSAFETYLEVEL",
 			"column_name": "CREQSWITHSAFETYLEVEL",
 			"column_order": 22,
@@ -309,7 +309,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASES",
 			"column_name": "TCASES",
 			"column_order": 23,
@@ -323,7 +323,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMSWITHMISSINGRELEVANCE",
 			"column_name": "NROFSPECITEMSWITHMISSINGRELEVANCE",
 			"column_order": 24,
@@ -337,7 +337,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQS",
 			"column_name": "CREQS",
 			"column_order": 25,
@@ -351,7 +351,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXFCTCOV",
 			"column_name": "MAXFCTCOV",
 			"column_order": 26,
@@ -365,7 +365,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANT_NOTFULFILLED",
 			"column_name": "NROFSPECITEMS_RELEVANT_NOTFULFILLED",
 			"column_order": 27,
@@ -379,7 +379,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESIGNFILES",
 			"column_name": "DESIGNFILES",
 			"column_order": 28,
@@ -393,7 +393,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINFCTCOV",
 			"column_name": "MINFCTCOV",
 			"column_order": 29,
@@ -407,7 +407,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_CODEMETRICS",
 			"column_name": "STATUS_CODEMETRICS",
 			"column_order": 30,
@@ -421,7 +421,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRACONFIGURATIONS",
 			"column_name": "MISRACONFIGURATIONS",
 			"column_order": 31,
@@ -435,7 +435,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DEVIATIONS_MAXOPENPERCONFIG",
 			"column_name": "DEVIATIONS_MAXOPENPERCONFIG",
 			"column_order": 32,
@@ -449,7 +449,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLDECISIONCOVERAGE",
 			"column_name": "OVERALLDECISIONCOVERAGE",
 			"column_order": 33,
@@ -463,7 +463,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONDECISIONCOVERAGE_MEASURED",
 			"column_name": "CONFIGURATIONDECISIONCOVERAGE_MEASURED",
 			"column_order": 34,
@@ -477,7 +477,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLFUNCTIONCOVERAGE",
 			"column_name": "OVERALLFUNCTIONCOVERAGE",
 			"column_order": 35,
@@ -491,7 +491,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.PPCOVERAGE",
 			"column_name": "PPCOVERAGE",
 			"column_order": 36,
@@ -505,7 +505,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINCAL",
 			"column_name": "MINCAL",
 			"column_order": 37,
@@ -519,7 +519,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OPENMAJORDEVIATIONS",
 			"column_name": "OPENMAJORDEVIATIONS",
 			"column_order": 38,
@@ -533,7 +533,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESIGNSUBMODULES",
 			"column_name": "DESIGNSUBMODULES",
 			"column_order": 39,
@@ -547,7 +547,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_TESTREPORT_PLANCOVERAGE",
 			"column_name": "STATUS_TESTREPORT_PLANCOVERAGE",
 			"column_order": 40,
@@ -561,7 +561,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESTESTED",
 			"column_name": "TCASESTESTED",
 			"column_order": 41,
@@ -575,7 +575,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OPENREQUIREDDEVIATIONS",
 			"column_name": "OPENREQUIREDDEVIATIONS",
 			"column_order": 42,
@@ -589,7 +589,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFIRRELEVANTSPECITEMSWITHFULFILLMENT",
 			"column_name": "NROFIRRELEVANTSPECITEMSWITHFULFILLMENT",
 			"column_order": 43,
@@ -603,7 +603,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_NOTRELEVANT_FULFILLEDWITHDEVIATIONS",
 			"column_name": "NROFSPECITEMS_NOTRELEVANT_FULFILLEDWITHDEVIATIONS",
 			"column_order": 44,
@@ -617,7 +617,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TESTSPECCHAPTERS",
 			"column_name": "TESTSPECCHAPTERS",
 			"column_order": 45,
@@ -631,7 +631,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXPTH",
 			"column_name": "MAXPTH",
 			"column_order": 46,
@@ -645,7 +645,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANT_FULFILLED",
 			"column_name": "NROFSPECITEMS_RELEVANT_FULFILLED",
 			"column_order": 47,
@@ -659,7 +659,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.IMPLCAL",
 			"column_name": "IMPLCAL",
 			"column_order": 48,
@@ -673,7 +673,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESCCONTAINER",
 			"column_name": "DESCCONTAINER",
 			"column_order": 49,
@@ -687,7 +687,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESCPARAMETER",
 			"column_name": "DESCPARAMETER",
 			"column_order": 50,
@@ -701,7 +701,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESFROMTESTSPEC",
 			"column_name": "TCASESFROMTESTSPEC",
 			"column_order": 51,
@@ -715,7 +715,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESPLANNED",
 			"column_name": "TCASESPLANNED",
 			"column_order": 52,
@@ -729,7 +729,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINDECCOV",
 			"column_name": "MINDECCOV",
 			"column_order": 53,
@@ -743,7 +743,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_TESTREPORT_TESTRESULT",
 			"column_name": "STATUS_TESTREPORT_TESTRESULT",
 			"column_order": 54,
@@ -757,7 +757,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_NOTRELEVANT",
 			"column_name": "NROFSPECITEMS_NOTRELEVANT",
 			"column_order": 55,
@@ -771,7 +771,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANTNS_FULFILLEDWITHDEVIATIONS",
 			"column_name": "NROFSPECITEMS_RELEVANTNS_FULFILLEDWITHDEVIATIONS",
 			"column_order": 56,
@@ -785,7 +785,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.IMPLMIF",
 			"column_name": "IMPLMIF",
 			"column_order": 57,
@@ -799,7 +799,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_NOTRELEVANT_FULFILLED",
 			"column_name": "NROFSPECITEMS_NOTRELEVANT_FULFILLED",
 			"column_order": 58,
@@ -813,7 +813,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.PPCOVERAGEQM",
 			"column_name": "PPCOVERAGEQM",
 			"column_order": 59,
@@ -827,7 +827,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXDECCOV",
 			"column_name": "MAXDECCOV",
 			"column_order": 60,
@@ -841,7 +841,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESIGNDIAGRAM",
 			"column_name": "DESIGNDIAGRAM",
 			"column_order": 61,
@@ -855,7 +855,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINMIF",
 			"column_name": "MINMIF",
 			"column_order": 62,
@@ -869,7 +869,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESNOTOK",
 			"column_name": "TCASESNOTOK",
 			"column_order": 63,
@@ -883,7 +883,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRA_RULESET",
 			"column_name": "MISRA_RULESET",
 			"column_order": 64,
@@ -897,7 +897,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLFUNCTIONCOVERAGE_MEASURED",
 			"column_name": "OVERALLFUNCTIONCOVERAGE_MEASURED",
 			"column_order": 65,
@@ -911,7 +911,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLBRANCHCOVERAGE",
 			"column_name": "OVERALLBRANCHCOVERAGE",
 			"column_order": 66,
@@ -925,7 +925,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESEXECUTIONCOVERAGE",
 			"column_name": "TCASESEXECUTIONCOVERAGE",
 			"column_order": 67,
@@ -939,7 +939,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.SAFETYMANUALITEMS",
 			"column_name": "SAFETYMANUALITEMS",
 			"column_order": 68,
@@ -953,7 +953,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MINCYC",
 			"column_name": "MINCYC",
 			"column_order": 69,
@@ -967,7 +967,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESIGNFEATURES",
 			"column_name": "DESIGNFEATURES",
 			"column_order": 70,
@@ -981,7 +981,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANT_FULFILLEDWITHDEVIATIONS",
 			"column_name": "NROFSPECITEMS_RELEVANT_FULFILLEDWITHDEVIATIONS",
 			"column_order": 71,
@@ -995,7 +995,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.IMPLCYC",
 			"column_name": "IMPLCYC",
 			"column_order": 72,
@@ -1009,7 +1009,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS",
 			"column_name": "NROFSPECITEMS",
 			"column_order": 73,
@@ -1023,7 +1023,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQSPECCHAPTERS",
 			"column_name": "CREQSPECCHAPTERS",
 			"column_order": 74,
@@ -1037,7 +1037,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONBRANCHCOVERAGE",
 			"column_name": "CONFIGURATIONBRANCHCOVERAGE",
 			"column_order": 75,
@@ -1051,7 +1051,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_TESTREPORT_PLAN",
 			"column_name": "STATUS_TESTREPORT_PLAN",
 			"column_order": 76,
@@ -1065,7 +1065,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANT",
 			"column_name": "NROFSPECITEMS_RELEVANT",
 			"column_order": 77,
@@ -1079,7 +1079,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESLINKEDWITHASILCREQ_EXECUTIONCOVERAGE",
 			"column_name": "TCASESLINKEDWITHASILCREQ_EXECUTIONCOVERAGE",
 			"column_order": 78,
@@ -1093,7 +1093,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.STATUS_MISRA",
 			"column_name": "STATUS_MISRA",
 			"column_order": 79,
@@ -1107,7 +1107,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRACONFIGOPENNOTJUSTYFIED",
 			"column_name": "MISRACONFIGOPENNOTJUSTYFIED",
 			"column_order": 80,
@@ -1121,7 +1121,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.UNJUSTIFIEDCODEMETRICVIOLATIONS",
 			"column_name": "UNJUSTIFIEDCODEMETRICVIOLATIONS",
 			"column_order": 81,
@@ -1135,7 +1135,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESFROMTESTSPECNOTINVTR",
 			"column_name": "TCASESFROMTESTSPECNOTINVTR",
 			"column_order": 82,
@@ -1149,7 +1149,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANT_FULFILLEDNS",
 			"column_name": "NROFSPECITEMS_RELEVANT_FULFILLEDNS",
 			"column_order": 83,
@@ -1163,7 +1163,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXCYC",
 			"column_name": "MAXCYC",
 			"column_order": 84,
@@ -1177,7 +1177,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TESTREPORTVERDICT",
 			"column_name": "TESTREPORTVERDICT",
 			"column_order": 85,
@@ -1191,7 +1191,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONBRANCHCOVERAGE_MEASURED",
 			"column_name": "CONFIGURATIONBRANCHCOVERAGE_MEASURED",
 			"column_order": 86,
@@ -1205,7 +1205,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.IMPLPTH",
 			"column_name": "IMPLPTH",
 			"column_order": 87,
@@ -1219,7 +1219,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQSWITHTRACETOTCASE",
 			"column_name": "CREQSWITHTRACETOTCASE",
 			"column_order": 88,
@@ -1233,7 +1233,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DEVIATIONS_MAXPERCONFIG",
 			"column_name": "DEVIATIONS_MAXPERCONFIG",
 			"column_order": 89,
@@ -1247,7 +1247,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRAMESSAGES",
 			"column_name": "MISRAMESSAGES",
 			"column_order": 90,
@@ -1261,7 +1261,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMSWHICHAREFULFILLEDANDHAVENOTRACE",
 			"column_name": "NROFSPECITEMSWHICHAREFULFILLEDANDHAVENOTRACE",
 			"column_order": 91,
@@ -1275,7 +1275,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRACONFIGOPENDEVIATION",
 			"column_name": "MISRACONFIGOPENDEVIATION",
 			"column_order": 92,
@@ -1289,7 +1289,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONFUNCTIONCOVERAGE",
 			"column_name": "CONFIGURATIONFUNCTIONCOVERAGE",
 			"column_order": 93,
@@ -1303,7 +1303,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OVERALLBRANCHCOVERAGE_MEASURED",
 			"column_name": "OVERALLBRANCHCOVERAGE_MEASURED",
 			"column_order": 94,
@@ -1317,7 +1317,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MAXPAR",
 			"column_name": "MAXPAR",
 			"column_order": 95,
@@ -1331,7 +1331,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.IMPLPAR",
 			"column_name": "IMPLPAR",
 			"column_order": 96,
@@ -1345,7 +1345,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESPASSEDORJUSTIFIED",
 			"column_name": "TCASESPASSEDORJUSTIFIED",
 			"column_order": 97,
@@ -1359,7 +1359,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DESIGNFUNCTIONS",
 			"column_name": "DESIGNFUNCTIONS",
 			"column_order": 98,
@@ -1373,7 +1373,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMSWHICHAREFULFILLEDWITHDEVIATIONANDHAVENODEVIATIONTEXT",
 			"column_name": "NROFSPECITEMSWHICHAREFULFILLEDWITHDEVIATIONANDHAVENODEVIATIONTEXT",
 			"column_order": 99,
@@ -1387,7 +1387,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANTNS_FULFILLEDNS",
 			"column_name": "NROFSPECITEMS_RELEVANTNS_FULFILLEDNS",
 			"column_order": 100,
@@ -1401,7 +1401,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CONFIGURATIONFUNCTIONCOVERAGE_MEASURED",
 			"column_name": "CONFIGURATIONFUNCTIONCOVERAGE_MEASURED",
 			"column_order": 101,
@@ -1415,7 +1415,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.SAFETYMANUALCHAPTER",
 			"column_name": "SAFETYMANUALCHAPTER",
 			"column_order": 102,
@@ -1429,7 +1429,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_NOTRELEVANT_FULFILLEDNS",
 			"column_name": "NROFSPECITEMS_NOTRELEVANT_FULFILLEDNS",
 			"column_order": 103,
@@ -1443,7 +1443,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NROFSPECITEMS_RELEVANTNS_FULFILLED",
 			"column_name": "NROFSPECITEMS_RELEVANTNS_FULFILLED",
 			"column_order": 104,
@@ -1457,9 +1457,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.misraConfigOpenDeviation",
-			"column_name": null,
+			"column_name": "misraConfigOpenDeviation",
 			"column_order": 105,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1471,9 +1471,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxDecCov",
-			"column_name": null,
+			"column_name": "MaxDecCov",
 			"column_order": 106,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1485,9 +1485,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_Relevant_FulfilledWithDeviations",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_Relevant_FulfilledWithDeviations",
 			"column_order": 107,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1499,9 +1499,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DesignFunctions",
-			"column_name": null,
+			"column_name": "DesignFunctions",
 			"column_order": 108,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1513,9 +1513,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_NotRelevant",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_NotRelevant",
 			"column_order": 109,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1527,9 +1527,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_RelevantNS_Fulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_RelevantNS_Fulfilled",
 			"column_order": 110,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1541,9 +1541,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinPAR",
-			"column_name": null,
+			"column_name": "MinPAR",
 			"column_order": 111,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1555,9 +1555,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_TestReport_Plan",
-			"column_name": null,
+			"column_name": "Status_TestReport_Plan",
 			"column_order": 112,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1569,9 +1569,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationDecisionCoverage_Measured",
-			"column_name": null,
+			"column_name": "ConfigurationDecisionCoverage_Measured",
 			"column_order": 113,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1583,9 +1583,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsNotOK",
-			"column_name": null,
+			"column_name": "TCASEsNotOK",
 			"column_order": 114,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1597,9 +1597,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQsWithSafetyLevel",
-			"column_name": null,
+			"column_name": "CREQsWithSafetyLevel",
 			"column_order": 115,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1611,9 +1611,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_CodeMetrics",
-			"column_name": null,
+			"column_name": "Status_CodeMetrics",
 			"column_order": 116,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1625,9 +1625,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TcasesFromVtrNotInTestSpec",
-			"column_name": null,
+			"column_name": "TcasesFromVtrNotInTestSpec",
 			"column_order": 117,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1639,9 +1639,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_Relevant_Fulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_Relevant_Fulfilled",
 			"column_order": 118,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1653,9 +1653,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_RelevantNS_FulfilledWithDeviations",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_RelevantNS_FulfilledWithDeviations",
 			"column_order": 119,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1667,9 +1667,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_TestReport_PlanCoverage",
-			"column_name": null,
+			"column_name": "Status_TestReport_PlanCoverage",
 			"column_order": 120,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1681,9 +1681,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DesignSubModules",
-			"column_name": null,
+			"column_name": "DesignSubModules",
 			"column_order": 121,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1695,9 +1695,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems",
-			"column_name": null,
+			"column_name": "NrOfSpecItems",
 			"column_order": 122,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1709,9 +1709,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_NotRelevant_FulfilledNS",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_NotRelevant_FulfilledNS",
 			"column_order": 123,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1723,9 +1723,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ImplCAL",
-			"column_name": null,
+			"column_name": "ImplCAL",
 			"column_order": 124,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1737,9 +1737,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationDecisionCoverage",
-			"column_name": null,
+			"column_name": "ConfigurationDecisionCoverage",
 			"column_order": 125,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1751,9 +1751,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfRelevantSpecItemsWithMissingFulfillment",
-			"column_name": null,
+			"column_name": "NrOfRelevantSpecItemsWithMissingFulfillment",
 			"column_order": 126,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1765,9 +1765,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationFunctionCoverage_Measured",
-			"column_name": null,
+			"column_name": "ConfigurationFunctionCoverage_Measured",
 			"column_order": 127,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1779,9 +1779,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.PPCoverage",
-			"column_name": null,
+			"column_name": "PPCoverage",
 			"column_order": 128,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1793,9 +1793,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallFunctionCoverage",
-			"column_name": null,
+			"column_name": "OverallFunctionCoverage",
 			"column_order": 129,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1807,9 +1807,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxFctCov",
-			"column_name": null,
+			"column_name": "MaxFctCov",
 			"column_order": 130,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1821,9 +1821,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxPAR",
-			"column_name": null,
+			"column_name": "MaxPAR",
 			"column_order": 131,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1835,9 +1835,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.UnjustifiedCodeMetricViolations",
-			"column_name": null,
+			"column_name": "UnjustifiedCodeMetricViolations",
 			"column_order": 132,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1849,9 +1849,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfIrrelevantSpecItemsWithFulfillment",
-			"column_name": null,
+			"column_name": "NrOfIrrelevantSpecItemsWithFulfillment",
 			"column_order": 133,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1863,9 +1863,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_TestReport",
-			"column_name": null,
+			"column_name": "Status_TestReport",
 			"column_order": 134,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1877,9 +1877,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallBranchCoverage_Measured",
-			"column_name": null,
+			"column_name": "OverallBranchCoverage_Measured",
 			"column_order": 135,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1891,9 +1891,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_Relevant_FulfilledNS",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_Relevant_FulfilledNS",
 			"column_order": 136,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1905,9 +1905,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsPlanned",
-			"column_name": null,
+			"column_name": "TCASEsPlanned",
 			"column_order": 137,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1919,9 +1919,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_RelevantNS_FulfilledNS",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_RelevantNS_FulfilledNS",
 			"column_order": 138,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1933,9 +1933,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ImplPTH",
-			"column_name": null,
+			"column_name": "ImplPTH",
 			"column_order": 139,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1947,9 +1947,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.PPCoverageQM",
-			"column_name": null,
+			"column_name": "PPCoverageQM",
 			"column_order": 140,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1961,9 +1961,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_RelevantNS_NotFulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_RelevantNS_NotFulfilled",
 			"column_order": 141,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1975,9 +1975,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQsWithTraceToTCASE",
-			"column_name": null,
+			"column_name": "CREQsWithTraceToTCASE",
 			"column_order": 142,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -1989,9 +1989,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DescContainer",
-			"column_name": null,
+			"column_name": "DescContainer",
 			"column_order": 143,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2003,9 +2003,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_NotRelevant_FulfilledWithDeviations",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_NotRelevant_FulfilledWithDeviations",
 			"column_order": 144,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2017,9 +2017,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ImplPAR",
-			"column_name": null,
+			"column_name": "ImplPAR",
 			"column_order": 145,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2031,9 +2031,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxPTH",
-			"column_name": null,
+			"column_name": "MaxPTH",
 			"column_order": 146,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2045,9 +2045,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsExecutionCoverage",
-			"column_name": null,
+			"column_name": "TCASEsExecutionCoverage",
 			"column_order": 147,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2059,9 +2059,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallFunctionCoverage_Measured",
-			"column_name": null,
+			"column_name": "OverallFunctionCoverage_Measured",
 			"column_order": 148,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2073,9 +2073,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DescParameter",
-			"column_name": null,
+			"column_name": "DescParameter",
 			"column_order": 149,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2087,9 +2087,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_MISRA",
-			"column_name": null,
+			"column_name": "Status_MISRA",
 			"column_order": 150,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2101,9 +2101,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MISRA_RuleSet",
-			"column_name": null,
+			"column_name": "MISRA_RuleSet",
 			"column_order": 151,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2115,9 +2115,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationBranchCoverage",
-			"column_name": null,
+			"column_name": "ConfigurationBranchCoverage",
 			"column_order": 152,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2129,9 +2129,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinPTH",
-			"column_name": null,
+			"column_name": "MinPTH",
 			"column_order": 153,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2143,9 +2143,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_Relevant",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_Relevant",
 			"column_order": 154,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2157,9 +2157,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinCYC",
-			"column_name": null,
+			"column_name": "MinCYC",
 			"column_order": 155,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2171,9 +2171,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.misraConfigurations",
-			"column_name": null,
+			"column_name": "misraConfigurations",
 			"column_order": 156,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2185,9 +2185,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxCYC",
-			"column_name": null,
+			"column_name": "MaxCYC",
 			"column_order": 157,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2199,9 +2199,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEs",
-			"column_name": null,
+			"column_name": "TCASEs",
 			"column_order": 158,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2213,9 +2213,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsPassedOrJustified",
-			"column_name": null,
+			"column_name": "TCASEsPassedOrJustified",
 			"column_order": 159,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2227,9 +2227,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallDecisionCoverage_Measured",
-			"column_name": null,
+			"column_name": "OverallDecisionCoverage_Measured",
 			"column_order": 160,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2241,9 +2241,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CReqSpecChapters",
-			"column_name": null,
+			"column_name": "CReqSpecChapters",
 			"column_order": 161,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2255,9 +2255,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASESFromTestSpec",
-			"column_name": null,
+			"column_name": "TCASESFromTestSpec",
 			"column_order": 162,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2269,9 +2269,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_NotRelevant_Fulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_NotRelevant_Fulfilled",
 			"column_order": 163,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2283,9 +2283,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinCAL",
-			"column_name": null,
+			"column_name": "MinCAL",
 			"column_order": 164,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2297,9 +2297,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DesignFiles",
-			"column_name": null,
+			"column_name": "DesignFiles",
 			"column_order": 165,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2311,9 +2311,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.SafetyManualChapter",
-			"column_name": null,
+			"column_name": "SafetyManualChapter",
 			"column_order": 166,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2325,9 +2325,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.misraRules",
-			"column_name": null,
+			"column_name": "misraRules",
 			"column_order": 167,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2339,9 +2339,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TcasesFromTestSpecNotInVtr",
-			"column_name": null,
+			"column_name": "TcasesFromTestSpecNotInVtr",
 			"column_order": 168,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2353,9 +2353,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ImplCYC",
-			"column_name": null,
+			"column_name": "ImplCYC",
 			"column_order": 169,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2367,9 +2367,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_NotRelevant_NotFulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_NotRelevant_NotFulfilled",
 			"column_order": 170,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2381,9 +2381,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItemsWithMissingRelevance",
-			"column_name": null,
+			"column_name": "NrOfSpecItemsWithMissingRelevance",
 			"column_order": 171,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2395,9 +2395,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_RelevantNS",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_RelevantNS",
 			"column_order": 172,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2409,9 +2409,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ImplMIF",
-			"column_name": null,
+			"column_name": "ImplMIF",
 			"column_order": 173,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2423,9 +2423,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItemsWhichAreFulfilledAndHaveNoTrace",
-			"column_name": null,
+			"column_name": "NrOfSpecItemsWhichAreFulfilledAndHaveNoTrace",
 			"column_order": 174,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2437,9 +2437,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxCAL",
-			"column_name": null,
+			"column_name": "MaxCAL",
 			"column_order": 175,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2451,9 +2451,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationFunctionCoverage",
-			"column_name": null,
+			"column_name": "ConfigurationFunctionCoverage",
 			"column_order": 176,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2465,9 +2465,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.misraConfigOpenNotJustyfied",
-			"column_name": null,
+			"column_name": "misraConfigOpenNotJustyfied",
 			"column_order": 177,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2479,9 +2479,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsLinkedWithASILCREQ_ExecutionCoverage",
-			"column_name": null,
+			"column_name": "TCASEsLinkedWithASILCREQ_ExecutionCoverage",
 			"column_order": 178,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2493,9 +2493,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.SafetyManualItems",
-			"column_name": null,
+			"column_name": "SafetyManualItems",
 			"column_order": 179,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2507,9 +2507,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallBranchCoverage",
-			"column_name": null,
+			"column_name": "OverallBranchCoverage",
 			"column_order": 180,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2521,9 +2521,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinMIF",
-			"column_name": null,
+			"column_name": "MinMIF",
 			"column_order": 181,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2535,9 +2535,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_PreprocessorCoverage",
-			"column_name": null,
+			"column_name": "Status_PreprocessorCoverage",
 			"column_order": 182,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2549,9 +2549,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DesignDiagram",
-			"column_name": null,
+			"column_name": "DesignDiagram",
 			"column_order": 183,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2563,9 +2563,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinDecCov",
-			"column_name": null,
+			"column_name": "MinDecCov",
 			"column_order": 184,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2577,9 +2577,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TestReportVerdict",
-			"column_name": null,
+			"column_name": "TestReportVerdict",
 			"column_order": 185,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2591,9 +2591,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_RuntimeCoverage",
-			"column_name": null,
+			"column_name": "Status_RuntimeCoverage",
 			"column_order": 186,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2605,9 +2605,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MinFctCov",
-			"column_name": null,
+			"column_name": "MinFctCov",
 			"column_order": 187,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2619,9 +2619,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Deviations_MaxOpenPerConfig",
-			"column_name": null,
+			"column_name": "Deviations_MaxOpenPerConfig",
 			"column_order": 188,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2633,9 +2633,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.misraMessages",
-			"column_name": null,
+			"column_name": "misraMessages",
 			"column_order": 189,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2647,9 +2647,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItemsWhichAreFulfilledWithDeviationAndHaveNoDeviationText",
-			"column_name": null,
+			"column_name": "NrOfSpecItemsWhichAreFulfilledWithDeviationAndHaveNoDeviationText",
 			"column_order": 190,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2661,9 +2661,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.vtrTCASEs",
-			"column_name": null,
+			"column_name": "vtrTCASEs",
 			"column_order": 191,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2675,9 +2675,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OpenMajorDeviations",
-			"column_name": null,
+			"column_name": "OpenMajorDeviations",
 			"column_order": 192,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2689,9 +2689,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TCASEsTested",
-			"column_name": null,
+			"column_name": "TCASEsTested",
 			"column_order": 193,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2703,9 +2703,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.CREQs",
-			"column_name": null,
+			"column_name": "CREQs",
 			"column_order": 194,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2717,9 +2717,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.MaxMIF",
-			"column_name": null,
+			"column_name": "MaxMIF",
 			"column_order": 195,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2731,9 +2731,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.DesignFeatures",
-			"column_name": null,
+			"column_name": "DesignFeatures",
 			"column_order": 196,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2745,9 +2745,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OpenRequiredDeviations",
-			"column_name": null,
+			"column_name": "OpenRequiredDeviations",
 			"column_order": 197,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2759,9 +2759,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Deviations_MaxPerConfig",
-			"column_name": null,
+			"column_name": "Deviations_MaxPerConfig",
 			"column_order": 198,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2773,9 +2773,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.TestSpecChapters",
-			"column_name": null,
+			"column_name": "TestSpecChapters",
 			"column_order": 199,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2787,9 +2787,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.ConfigurationBranchCoverage_Measured",
-			"column_name": null,
+			"column_name": "ConfigurationBranchCoverage_Measured",
 			"column_order": 200,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2801,9 +2801,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.Status_TestReport_TestResult",
-			"column_name": null,
+			"column_name": "Status_TestReport_TestResult",
 			"column_order": 201,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2815,9 +2815,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.OverallDecisionCoverage",
-			"column_name": null,
+			"column_name": "OverallDecisionCoverage",
 			"column_order": 202,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2829,9 +2829,9 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE.NrOfSpecItems_Relevant_NotFulfilled",
-			"column_name": null,
+			"column_name": "NrOfSpecItems_Relevant_NotFulfilled",
 			"column_order": 203,
 			"complete_data_type": "VARCHAR(2000000) UTF8",
 			"jdbc_data_type": {
@@ -2850,11 +2850,11 @@
 	"source_table_name": "COMPONENT_METRIC",
 	"source_table_staging_id": "COMPONENT_METRIC",
 	"source_table_type_id": "",
-	"staging_table_comment": "",
+	"staging_table_comment": null,
 	"staging_table_display_string": "Component Metric (DBT_STAGE) [DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE]",
 	"staging_table_id": "STAGING.DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE",
 	"staging_table_name": "Component Metric",
 	"system_id": "DBT_STAGE",
-	"where_clause_delta_part_template": "",
+	"where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
 	"where_clause_general_part": "updated = '20200605'"
 }

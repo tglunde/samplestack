@@ -126,8 +126,24 @@
 	"businessobject_view_id": "BUSINESSOBJECTS.DELIVERY_S_PSA_C_COMPONENTDELIVERY",
 	"dependent_objects": [
 		{
+			"object_id": "H_COMPONENT",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "H_DELIVERY",
+			"object_type": "hub"
+		},
+		{
 			"object_id": "L_COMPONENT_T_DELIVERY",
 			"object_type": "link"
+		},
+		{
+			"object_id": "S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
+			"object_type": "satellite"
+		},
+		{
+			"object_id": "S_DELIVERY_S_PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
+			"object_type": "satellite"
 		}
 	],
 	"granularity_satellite_id": "S_DELIVERY_S_PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES_F_MAIN",
