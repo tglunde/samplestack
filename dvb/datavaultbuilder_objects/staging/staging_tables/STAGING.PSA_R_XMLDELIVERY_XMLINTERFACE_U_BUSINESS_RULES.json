@@ -322,5 +322,5 @@
 	"staging_table_name": "Business Rules.Xmldelivery S Xmlinterface",
 	"system_id": "PSA",
 	"where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
-	"where_clause_general_part": "updated = '20200605'"
+	"where_clause_general_part": ""
 }
