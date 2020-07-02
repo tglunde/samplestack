@@ -2856,5 +2856,5 @@
 	"staging_table_name": "Component Metric",
 	"system_id": "DBT_STAGE",
 	"where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
-	"where_clause_general_part": "updated = '20200605'"
+	"where_clause_general_part": ""
 }
