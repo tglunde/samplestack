@@ -1,0 +1,22 @@
+
+version: 2
+
+models:
+  - name: r_qsr_var1_released_component_1_1_1
+    description: v1.1.1snapshot of released components and their metrics and inicators, based on DVB BOs
+    columns:
+      - name: t_component
+        description: technical ID / UUID of the component version
+        tests:
+            - unique
+            - not_null
+      - name: m_component_cnt
+        description: number of components
+      - name: m_creq_tcase_traceability
+        description: 'percent indicator: ratio of number of CREQS with TCASE tracings to number of CREQS'
+      - name: pi_pth
+        description: xml source provided Performance Indicator PTH
+      - name: pi_lmtpth
+        description: calculated Performance Indicator limited PTH
+                        
+    

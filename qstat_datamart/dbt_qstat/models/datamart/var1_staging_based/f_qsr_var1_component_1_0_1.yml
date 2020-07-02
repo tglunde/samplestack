@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: f_qsr_var1_component_1_0_1
+    description: v1.0.1snapshot of delivery dimension / variant 1, based on staging table XMLINTERFACE_R_VI_XML_DELIVERY_U_STAGING
+    columns:
+      - name: customer
+        description: name of customer
+      - name: delivery_guid
+        description: technical ID / UUID of delivery
+      - name: delivery_cbd_number 
+        description: CBD number of delivery
+      - name: delivery_number
+        description: some none unique number
+      - name: t_cmp_delivery_guid
+        description: 'technical ID / UUID of delivery (TODO: redesign for surrogate)'
+        tests:
+          - unique
+          - not_null
+
+    

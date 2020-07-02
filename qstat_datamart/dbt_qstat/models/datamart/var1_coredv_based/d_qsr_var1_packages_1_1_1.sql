@@ -1,3 +1,9 @@
+{{
+  config(
+	tags = [ 'dimension']
+	)
+}}
+
   SELECT
     cmp."Namespace Name" as namespace_name,
     cmp."Layer" as package_layer,
@@ -12,4 +18,4 @@
     cmp."Component GUID" as t_package_guid,
     cmp."BK Component" as t_cmp_packages
   FROM 
-    {{ source( 'access', 'component_c_packages' ) }} cmp
+    {{ source( 'DV-AL', 'component_c_packages' ) }} cmp

@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: access
+  - name: DV-AL
     schema: accesslayer
     tables:
       - name: release_c_release

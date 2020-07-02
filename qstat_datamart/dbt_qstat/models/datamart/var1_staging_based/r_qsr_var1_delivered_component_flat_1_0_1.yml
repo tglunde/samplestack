@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: r_qsr_var1_delivered_component_flat_1_0_1
+    description: v1.0.1snapshot of a flattable with delivered components and metrics, based on staging table XMLINTERFACE_R_VI_XML_DELIVERY_U_STAGING
+    columns:
+      - name: m_creq_tcase_traceability
+        description: Metric Percentage of CREQs with connected TCASEs
+      - name: pi_pth
+        description: xml source provided Performance Indicator PTH
+      - name: pi_lmtpth
+        description: calculated Performance Indicator limited PTH
+    

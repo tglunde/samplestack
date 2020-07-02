@@ -1,19 +1,21 @@
+
 SELECT 
-   f.M_CREQ_TCASE_TRACEABILITY, f.PI_PTH, 
-   f.m_component_cnt  
-   -- , f.PTH , f.M_MINPTH, f.M_MAXPTH 
- , r.RELEASE_NAME, r.RELEASE_PRODUCT_NAME
+   f.M_CREQ_TCASE_TRACEABILITY, f.PI_PTH, f.m_component_cnt  
+ , f.M_MINPTH, f.M_MAXPTH
+ , f.pi_lmtpth as pi_logpth
+ , f.pi_lmtpth 
  , d.DELIVERY_CBD_NUMBER ,d.DELIVERY_NUMBER 
  , d.DELIVERY_GUID , d.CUSTOMER 
+ , r.RELEASE_NAME, r.PRODUCT_NAME
  , a.CLUSTER_NAME , a.MODULE_NAME 
- , pi.ALMPLUS_QUALITY_STATUS, pi.IMPLEMENTATION_VERSION 
+ , pi.ALMPLUS_QUALITY_STATUS , pi.IMPLEMENTATION_VERSION 
  , pi.NAMESPACE_NAME , pi.PACKAGE_LAYER 
  , pi.PACKAGE_NAME, pi.COMPONENT_VERSION
  , pi.COMPONENT_NAME 
- , 'NYI' AS DATA_STATUS , '' AS DATA_STATUS_DT 
+ , 'NYI' as DATA_STATUS , '' AS DATA_STATUS_DT 
 FROM 
-  DATAMART.F_QSR_VAR1_COMPONENT_1_1_1 f
-JOIN DATAMART.D_QSR_VAR1_RELEASE_1_1_1 r  ON f.T_CMP_RELEASE_GUID = r.T_CMP_RELEASE_GUID 
-JOIN DATAMART.D_QSR_VAR1_ARCHITECTURE_1_1_0 a ON f.T_CMP_ARCHITECTURE_GUID = a.T_CMP_ARCHITECTURE_GUID 
-JOIN DATAMART.D_QSR_VAR1_PACKAGES_1_1_0 pi ON f.T_CMP_PACKAGES_GUID = pi.T_CMP_PACKAGEDEF_GUID 
-JOIN DATAMART.D_QSR_VAR1_COMPONENTDELIVERY_XTND_1_1_0 d  ON f.t_cmp_delivery_guid = d.T_CMP_DELIVERY_GUID
+  {{ ref('f_qsr_var1_component_1_1_1') }} f
+JOIN {{ ref('d_qsr_var1_release_1_1_1') }} r  ON f.t_component = r.T_CMP_RELEASE 
+JOIN {{ ref('d_qsr_var1_architecture_1_1_1') }} a ON f.t_component = a.T_CMP_ARCHITECTURE 
+JOIN {{ ref('d_qsr_var1_packages_1_1_1') }} pi ON f.t_component = pi.T_CMP_PACKAGES 
+JOIN {{ ref('d_qsr_var1_componentdelivery_xtnd_1_1_1') }} d  ON f.t_component = d.T_CMP_DELIVERY

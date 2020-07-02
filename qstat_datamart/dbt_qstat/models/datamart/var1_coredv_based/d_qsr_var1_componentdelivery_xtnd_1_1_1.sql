@@ -1,3 +1,9 @@
+{{
+  config(
+	tags = [ 'dimension']
+	)
+}}
+
   select 
   distinct
   dlvry."Customer" as customer,
@@ -9,4 +15,4 @@
   dlvry."Component GUID" as component_guid,
   dlvry."BK Component" as t_cmp_delivery
  from
-    {{ source('access', 'delivery_c_componentdelivery')}} dlvry
+    {{ source('DV-AL', 'delivery_c_componentdelivery')}} dlvry
