@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: DV-AL
+    description: DataVault AccessLayer created by DataVault Builder
     schema: accesslayer
     tables:
       - name: release_c_release
