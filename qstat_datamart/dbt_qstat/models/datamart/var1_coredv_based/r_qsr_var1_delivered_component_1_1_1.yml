@@ -2,8 +2,8 @@
 version: 2
 
 models:
-  - name: r_qsr_var1_released_component_1_1_1
-    description: v1.1.1snapshot of released components and their metrics and indicators, based on DVB BOs
+  - name: r_qsr_var1_delivered_component_1_1_1
+    description: v1.1.1snapshot of components in a delivery and their metrics and indicators, based on DVB BOs
     columns:
       - name: t_component
         description: technical ID / UUID of the component version

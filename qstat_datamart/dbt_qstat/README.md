@@ -1,5 +1,7 @@
 Welcome to your new dbt project!
 
+See the docs folder and the different yml files in the models folder for POC specific documentation.
+
 ### Using the starter project
 
 Try running the following commands:

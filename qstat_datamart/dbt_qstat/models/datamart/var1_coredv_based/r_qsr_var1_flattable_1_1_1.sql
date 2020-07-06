@@ -1,4 +1,10 @@
 
+{{
+  config(
+	tags = [ 'flattable', 'reporting' ]
+	)
+}}
+
 SELECT 
    f.M_CREQ_TCASE_TRACEABILITY, f.PI_PTH, f.m_component_cnt  
  , f.M_MINPTH, f.M_MAXPTH
