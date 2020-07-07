@@ -253,17 +253,6 @@
 				},
 				{
 					"column_comment": "",
-					"column_id": "DATAVAULT.S_COMPONENT_S_DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE_C.TESTSPECCHAPTERS",
-					"column_name": "TESTSPECCHAPTERS",
-					"column_name_detail": "",
-					"column_nq_id": "TESTSPECCHAPTERS",
-					"column_order": 23,
-					"column_orig_name": "TESTSPECCHAPTERS",
-					"complete_data_type": "VARCHAR(2000000) UTF8",
-					"conversion_type": null
-				},
-				{
-					"column_comment": "",
 					"column_id": "DATAVAULT.S_COMPONENT_S_DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE_C.Status_RuntimeCoverage",
 					"column_name": "Status_RuntimeCoverage",
 					"column_name_detail": "",
