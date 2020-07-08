@@ -1,274 +1,274 @@
 {
-    "businessobject_comment": "",
-    "businessobject_display_name": "XMLDelivery > XMLINTERFACE > Default",
-    "businessobject_dropdown_entry_string": "XMLDelivery",
-    "businessobject_elements": [
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub XMLDelivery",
-                    "column_id": "datavault.h_xmldelivery.xmldelivery_bk",
-                    "column_name": "business key for hub xmldelivery",
-                    "column_name_detail": "xmldelivery_bk",
-                    "column_nq_id": "xmldelivery_bk",
-                    "column_order": 1,
-                    "column_orig_name": "Business Key for Hub XMLDelivery",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmldelivery\"}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "Entry Present in Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.v_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_epc",
-                    "column_name": "ps xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging",
-                    "column_name_detail": "",
-                    "column_nq_id": "v_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_epc",
-                    "column_order": 2,
-                    "column_orig_name": "PS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "Load Time Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
-                    "column_name": "lts xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging",
-                    "column_name_detail": "xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
-                    "column_nq_id": "xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
-                    "column_order": 3,
-                    "column_orig_name": "LTS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.updated",
-                    "column_name": "updated",
-                    "column_name_detail": "",
-                    "column_nq_id": "updated",
-                    "column_order": 4,
-                    "column_orig_name": "UPDATED",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_guid",
-                    "column_name": "delivery_guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_guid",
-                    "column_order": 5,
-                    "column_orig_name": "DELIVERY_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_cbdnumber",
-                    "column_name": "delivery_cbdnumber",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_cbdnumber",
-                    "column_order": 6,
-                    "column_orig_name": "DELIVERY_CBDNUMBER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_revisionalm",
-                    "column_name": "delivery_revisionalm",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_revisionalm",
-                    "column_order": 7,
-                    "column_orig_name": "DELIVERY_REVISIONALM",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_title",
-                    "column_name": "delivery_title",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_title",
-                    "column_order": 8,
-                    "column_orig_name": "DELIVERY_TITLE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_customer",
-                    "column_name": "delivery_customer",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_customer",
-                    "column_order": 9,
-                    "column_orig_name": "DELIVERY_CUSTOMER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_delivereddate",
-                    "column_name": "delivery_delivereddate",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_delivereddate",
-                    "column_order": 10,
-                    "column_orig_name": "DELIVERY_DELIVEREDDATE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_deliverytype",
-                    "column_name": "delivery_deliverytype",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_deliverytype",
-                    "column_order": 11,
-                    "column_orig_name": "DELIVERY_DELIVERYTYPE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_deliverynumber",
-                    "column_name": "delivery_deliverynumber",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_deliverynumber",
-                    "column_order": 12,
-                    "column_orig_name": "DELIVERY_DELIVERYNUMBER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_ecuname",
-                    "column_name": "delivery_ecuname",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_ecuname",
-                    "column_order": 13,
-                    "column_orig_name": "DELIVERY_ECUNAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_indbdate",
-                    "column_name": "delivery_indbdate",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_indbdate",
-                    "column_order": 14,
-                    "column_orig_name": "DELIVERY_INDBDATE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_producttitle",
-                    "column_name": "delivery_producttitle",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_producttitle",
-                    "column_order": 15,
-                    "column_orig_name": "DELIVERY_PRODUCTTITLE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_programtitle",
-                    "column_name": "delivery_programtitle",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_programtitle",
-                    "column_order": 16,
-                    "column_orig_name": "DELIVERY_PROGRAMTITLE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_reltype",
-                    "column_name": "delivery_reltype",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_reltype",
-                    "column_order": 17,
-                    "column_orig_name": "DELIVERY_RELTYPE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_bisbeta",
-                    "column_name": "delivery_bisbeta",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_bisbeta",
-                    "column_order": 18,
-                    "column_orig_name": "DELIVERY_BISBETA",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_bissafetyrelevantc",
-                    "column_name": "delivery_bissafetyrelevantc",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_bissafetyrelevantc",
-                    "column_order": 19,
-                    "column_orig_name": "DELIVERY_BISSAFETYRELEVANTC",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_testedderivate",
-                    "column_name": "delivery_testedderivate",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_testedderivate",
-                    "column_order": 20,
-                    "column_orig_name": "DELIVERY_TESTEDDERIVATE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.component_name",
-                    "column_name": "component_name",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_name",
-                    "column_order": 21,
-                    "column_orig_name": "COMPONENT_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.component_version",
-                    "column_name": "component_version",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_version",
-                    "column_order": 22,
-                    "column_orig_name": "COMPONENT_VERSION",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmldelivery\",\"satellites\":[{\"satellite_id\":\"s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging\"}]}]}}"
-        }
-    ],
-    "businessobject_set_id": "businessobject_set_h_xmldelivery",
-    "businessobject_structure": null,
-    "businessobject_view_id": "businessobjects.xmldelivery_s_xmlinterface",
-    "dependent_objects": [
-        {
-            "object_id": "h_xmldelivery",
-            "object_type": "hub"
-        },
-        {
-            "object_id": "s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging",
-            "object_type": "satellite"
-        }
-    ],
-    "granularity_satellite_id": "s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging",
-    "system_id": "xmlinterface",
-    "system_name": "XMLINTERFACE"
+	"businessobject_comment": "",
+	"businessobject_display_name": "XMLDelivery > XMLINTERFACE > Default",
+	"businessobject_dropdown_entry_string": "XMLDelivery",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub XMLDelivery",
+					"column_id": "datavault.h_xmldelivery.xmldelivery_bk",
+					"column_name": "business key for hub xmldelivery",
+					"column_name_detail": "xmldelivery_bk",
+					"column_nq_id": "xmldelivery_bk",
+					"column_order": 1,
+					"column_orig_name": "business key for hub xmldelivery",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmldelivery\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Entry Present in Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.v_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_epc",
+					"column_name": "ps xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging",
+					"column_name_detail": "",
+					"column_nq_id": "v_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_epc",
+					"column_order": 2,
+					"column_orig_name": "PS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
+					"complete_data_type": "bit",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "Load Time Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
+					"column_name": "lts xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging",
+					"column_name_detail": "xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
+					"column_nq_id": "xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_ltc",
+					"column_order": 3,
+					"column_orig_name": "LTS XMLDelivery - XMLINTERFACE - Default of VI_XML_DELIVERY_U_STAGING",
+					"complete_data_type": "datetime2(7)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.updated",
+					"column_name": "updated",
+					"column_name_detail": "",
+					"column_nq_id": "updated",
+					"column_order": 4,
+					"column_orig_name": "updated",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_guid",
+					"column_name": "delivery_guid",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_guid",
+					"column_order": 5,
+					"column_orig_name": "delivery_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_cbdnumber",
+					"column_name": "delivery_cbdnumber",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_cbdnumber",
+					"column_order": 6,
+					"column_orig_name": "delivery_cbdnumber",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_revisionalm",
+					"column_name": "delivery_revisionalm",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_revisionalm",
+					"column_order": 7,
+					"column_orig_name": "delivery_revisionalm",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_title",
+					"column_name": "delivery_title",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_title",
+					"column_order": 8,
+					"column_orig_name": "delivery_title",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_customer",
+					"column_name": "delivery_customer",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_customer",
+					"column_order": 9,
+					"column_orig_name": "delivery_customer",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_delivereddate",
+					"column_name": "delivery_delivereddate",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_delivereddate",
+					"column_order": 10,
+					"column_orig_name": "delivery_delivereddate",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_deliverytype",
+					"column_name": "delivery_deliverytype",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_deliverytype",
+					"column_order": 11,
+					"column_orig_name": "delivery_deliverytype",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_deliverynumber",
+					"column_name": "delivery_deliverynumber",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_deliverynumber",
+					"column_order": 12,
+					"column_orig_name": "delivery_deliverynumber",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_ecuname",
+					"column_name": "delivery_ecuname",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_ecuname",
+					"column_order": 13,
+					"column_orig_name": "delivery_ecuname",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_indbdate",
+					"column_name": "delivery_indbdate",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_indbdate",
+					"column_order": 14,
+					"column_orig_name": "delivery_indbdate",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_producttitle",
+					"column_name": "delivery_producttitle",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_producttitle",
+					"column_order": 15,
+					"column_orig_name": "delivery_producttitle",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_programtitle",
+					"column_name": "delivery_programtitle",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_programtitle",
+					"column_order": 16,
+					"column_orig_name": "delivery_programtitle",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_reltype",
+					"column_name": "delivery_reltype",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_reltype",
+					"column_order": 17,
+					"column_orig_name": "delivery_reltype",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_bisbeta",
+					"column_name": "delivery_bisbeta",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_bisbeta",
+					"column_order": 18,
+					"column_orig_name": "delivery_bisbeta",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_bissafetyrelevantc",
+					"column_name": "delivery_bissafetyrelevantc",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_bissafetyrelevantc",
+					"column_order": 19,
+					"column_orig_name": "delivery_bissafetyrelevantc",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.delivery_testedderivate",
+					"column_name": "delivery_testedderivate",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_testedderivate",
+					"column_order": 20,
+					"column_orig_name": "delivery_testedderivate",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.component_name",
+					"column_name": "component_name",
+					"column_name_detail": "",
+					"column_nq_id": "component_name",
+					"column_order": 21,
+					"column_orig_name": "component_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging_c.component_version",
+					"column_name": "component_version",
+					"column_name_detail": "",
+					"column_nq_id": "component_version",
+					"column_order": 22,
+					"column_orig_name": "component_version",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmldelivery\",\"satellites\":[{\"satellite_id\":\"s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_h_xmldelivery",
+	"businessobject_structure": null,
+	"businessobject_view_id": "businessobjects.xmldelivery_s_xmlinterface",
+	"dependent_objects": [
+		{
+			"object_id": "h_xmldelivery",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "s_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging",
+	"system_id": "xmlinterface",
+	"system_name": "XMLINTERFACE"
 }

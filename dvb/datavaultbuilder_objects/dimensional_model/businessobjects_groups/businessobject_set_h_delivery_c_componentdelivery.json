@@ -1,8 +1,8 @@
 {
-    "businessobject_set_display_name": "Delivery > ComponentDelivery",
-    "businessobject_set_id": "businessobject_set_h_delivery_c_componentdelivery",
-    "functional_suffix_id": "componentdelivery",
-    "functional_suffix_name": "ComponentDelivery",
-    "start_hub_id": "h_delivery",
-    "start_hub_name": "Delivery"
+	"businessobject_set_display_name": "Delivery > ComponentDelivery",
+	"businessobject_set_id": "businessobject_set_h_delivery_c_componentdelivery",
+	"functional_suffix_id": "componentdelivery",
+	"functional_suffix_name": "ComponentDelivery",
+	"start_hub_id": "h_delivery",
+	"start_hub_name": "Delivery"
 }

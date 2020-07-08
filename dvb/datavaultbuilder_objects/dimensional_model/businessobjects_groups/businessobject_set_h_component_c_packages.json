@@ -1,8 +1,8 @@
 {
-    "businessobject_set_display_name": "Component > Packages",
-    "businessobject_set_id": "businessobject_set_h_component_c_packages",
-    "functional_suffix_id": "packages",
-    "functional_suffix_name": "Packages",
-    "start_hub_id": "h_component",
-    "start_hub_name": "Component"
+	"businessobject_set_display_name": "Component > Packages",
+	"businessobject_set_id": "businessobject_set_h_component_c_packages",
+	"functional_suffix_id": "packages",
+	"functional_suffix_name": "Packages",
+	"start_hub_id": "h_component",
+	"start_hub_name": "Component"
 }

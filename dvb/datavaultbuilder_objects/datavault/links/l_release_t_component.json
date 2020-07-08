@@ -1,10 +1,10 @@
 {
-    "hub_a_id": "h_release",
-    "hub_b_id": "h_component",
-    "link_comment": "",
-    "link_id": "l_release_t_component",
-    "link_subject_area_name": "QM",
-    "link_suffix_id": null,
-    "link_suffix_name": "",
-    "link_type": "many_to_many"
+	"hub_a_id": "h_release",
+	"hub_b_id": "h_component",
+	"link_comment": "",
+	"link_id": "l_release_t_component",
+	"link_subject_area_name": "QM",
+	"link_suffix_id": null,
+	"link_suffix_name": "",
+	"link_type": "many_to_many"
 }

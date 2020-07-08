@@ -1,12 +1,12 @@
 {
-    "business_rules_businessobject_container_display_name": "Release - Release",
-    "business_rules_businessobject_container_id": "h_release_c_release",
-    "business_rules_businessobject_container_order": 6,
-    "business_rules_businessobject_systems": [
-        {
-            "related_businessobject_view_id": "businessobjects.release_s_psa_c_release",
-            "system_id": "psa",
-            "system_order": 1
-        }
-    ]
+	"business_rules_businessobject_container_display_name": "Release - Release",
+	"business_rules_businessobject_container_id": "h_release_c_release",
+	"business_rules_businessobject_container_order": 7,
+	"business_rules_businessobject_systems": [
+		{
+			"related_businessobject_view_id": "businessobjects.release_s_psa_c_release",
+			"system_id": "psa",
+			"system_order": 1
+		}
+	]
 }

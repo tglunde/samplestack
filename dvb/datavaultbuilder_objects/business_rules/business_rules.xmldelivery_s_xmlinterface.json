@@ -1,30 +1,30 @@
 {
-    "accesslayer_priorization": 1,
-    "additional_deployment_parameters": {
-        "business_ruleset_hierarchy_level": 0
-    },
-    "business_rules_view_code": "create or replace view business_rules.xmldelivery_s_xmlinterface as\nselect \n    bo.\"business key for hub xmldelivery\",                                         -- business key for hub xmldelivery\n    bo.\"ps xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging\",     -- entry present in satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.\"lts xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging\",    -- load time satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.updated,                                                                  -- updated from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_guid,                                                            -- delivery_guid from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_cbdnumber,                                                       -- delivery_cbdnumber from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_revisionalm,                                                     -- delivery_revisionalm from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_title,                                                           -- delivery_title from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_customer,                                                        -- delivery_customer from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_delivereddate,                                                   -- delivery_delivereddate from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_deliverytype,                                                    -- delivery_deliverytype from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_deliverynumber,                                                  -- delivery_deliverynumber from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_ecuname,                                                         -- delivery_ecuname from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_indbdate,                                                        -- delivery_indbdate from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_producttitle,                                                    -- delivery_producttitle from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_programtitle,                                                    -- delivery_programtitle from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_reltype,                                                         -- delivery_reltype from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_bisbeta,                                                         -- delivery_bisbeta from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_bissafetyrelevantc,                                              -- delivery_bissafetyrelevantc from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.delivery_testedderivate,                                                  -- delivery_testedderivate from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.component_name,                                                           -- component_name from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n    bo.component_version                                                         -- component_version from satellite xmldelivery > xmlinterface > default of vi_xml_delivery_u_staging\n\n  from businessobjects.xmldelivery_s_xmlinterface bo\n;",
-    "business_ruleset_comment": null,
-    "business_ruleset_name": "Unaltered default",
-    "business_ruleset_order": 1,
-    "business_ruleset_suffix_id": null,
-    "business_ruleset_view_id": "business_rules.xmldelivery_s_xmlinterface",
-    "container_id": "h_xmldelivery_c_dvb_default",
-    "dependent_objects": [
-        {
-            "object_id": "businessobjects.xmldelivery_s_xmlinterface",
-            "object_type": "business_object"
-        }
-    ],
-    "include_in_accesslayer": false,
-    "is_error_ruleset": false,
-    "is_unaltered_business_ruleset": true,
-    "quick_inserts": {
-        "quick_insert_list": [
-            {
-                "quick_insert_table_id": "businessobjects.xmldelivery_s_xmlinterface"
-            }
-        ]
-    },
-    "system_id": "xmlinterface"
+	"accesslayer_priorization": 1,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW [business_rules].[xmldelivery_s_xmlinterface]\nAS\n\n  SELECT \n    bo.[business key for hub xmldelivery],                                         -- Business Key for Hub XMLDelivery\n    bo.[ps xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging],     -- Entry Present in Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[lts xmldelivery - xmlinterface - default of vi_xml_delivery_u_staging],    -- Load Time Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[updated],                                                                  -- [updated] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_guid],                                                            -- [delivery_guid] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_cbdnumber],                                                       -- [delivery_cbdnumber] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_revisionalm],                                                     -- [delivery_revisionalm] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_title],                                                           -- [delivery_title] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_customer],                                                        -- [delivery_customer] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_delivereddate],                                                   -- [delivery_delivereddate] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_deliverytype],                                                    -- [delivery_deliverytype] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_deliverynumber],                                                  -- [delivery_deliverynumber] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_ecuname],                                                         -- [delivery_ecuname] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_indbdate],                                                        -- [delivery_indbdate] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_producttitle],                                                    -- [delivery_producttitle] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_programtitle],                                                    -- [delivery_programtitle] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_reltype],                                                         -- [delivery_reltype] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_bisbeta],                                                         -- [delivery_bisbeta] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_bissafetyrelevantc],                                              -- [delivery_bissafetyrelevantc] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[delivery_testedderivate],                                                  -- [delivery_testedderivate] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[component_name],                                                           -- [component_name] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n    bo.[component_version]                                                         -- [component_version] from Satellite XMLDelivery > XMLINTERFACE > Default of VI_XML_DELIVERY_U_STAGING\n\n  FROM [businessobjects].[xmldelivery_s_xmlinterface] AS bo\n;\n",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "business_rules.xmldelivery_s_xmlinterface",
+	"container_id": "h_xmldelivery_c_dvb_default",
+	"dependent_objects": [
+		{
+			"object_id": "businessobjects.xmldelivery_s_xmlinterface",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": false,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "businessobjects.xmldelivery_s_xmlinterface"
+			}
+		]
+	},
+	"system_id": "xmlinterface"
 }

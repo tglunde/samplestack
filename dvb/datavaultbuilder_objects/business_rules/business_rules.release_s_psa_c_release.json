@@ -1,30 +1,30 @@
 {
-    "accesslayer_priorization": 1,
-    "additional_deployment_parameters": {
-        "business_ruleset_hierarchy_level": 0
-    },
-    "business_rules_view_code": "create or replace view business_rules.release_s_psa_c_release as\nselect \n    bo.\"bk component\",       -- business key for hub component\n    bo.\"bk release\",         -- business key for hub release\n    bo.\"product name\",       -- product_name from satellite release > psa > main\n    bo.\"release guid\",       -- release_guid from satellite release > psa > main\n    bo.\"release version\"     -- release_version from satellite release > psa > main\n\n  from businessobjects.release_s_psa_c_release bo\n;",
-    "business_ruleset_comment": null,
-    "business_ruleset_name": "Unaltered default",
-    "business_ruleset_order": 1,
-    "business_ruleset_suffix_id": null,
-    "business_ruleset_view_id": "business_rules.release_s_psa_c_release",
-    "container_id": "h_release_c_release",
-    "dependent_objects": [
-        {
-            "object_id": "businessobjects.release_s_psa_c_release",
-            "object_type": "business_object"
-        }
-    ],
-    "include_in_accesslayer": true,
-    "is_error_ruleset": false,
-    "is_unaltered_business_ruleset": true,
-    "quick_inserts": {
-        "quick_insert_list": [
-            {
-                "quick_insert_table_id": "businessobjects.release_s_psa_c_release"
-            }
-        ]
-    },
-    "system_id": "psa"
+	"accesslayer_priorization": 1,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW [business_rules].[release_s_psa_c_release]\nAS\n\n  SELECT \n    bo.[bk component],       -- Business Key for Hub Component\n    bo.[bk release],         -- Business Key for Hub Release\n    bo.[product name],       -- [product_name] from Satellite Release > PSA > Main\n    bo.[release guid],       -- [release_guid] from Satellite Release > PSA > Main\n    bo.[release version]     -- [release_version] from Satellite Release > PSA > Main\n\n  FROM [businessobjects].[release_s_psa_c_release] AS bo\n;\n",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "business_rules.release_s_psa_c_release",
+	"container_id": "h_release_c_release",
+	"dependent_objects": [
+		{
+			"object_id": "businessobjects.release_s_psa_c_release",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": true,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "businessobjects.release_s_psa_c_release"
+			}
+		]
+	},
+	"system_id": "psa"
 }

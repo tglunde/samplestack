@@ -1,30 +1,30 @@
 {
-    "accesslayer_priorization": 1,
-    "additional_deployment_parameters": {
-        "business_ruleset_hierarchy_level": 0
-    },
-    "business_rules_view_code": "create or replace view business_rules.xmlrelease_s_xmlinterface as\nselect \n    bo.\"business key for hub xmlrelease\",                                        -- business key for hub xmlrelease\n    bo.\"ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging\",     -- entry present in satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.\"lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging\",    -- load time satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.updated,                                                                -- updated from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.product_name,                                                           -- product_name from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_creationdatealm,                                                -- release_creationdatealm from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_creationdatesvn,                                                -- release_creationdatesvn from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_guid,                                                           -- release_guid from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_lastmoddate,                                                    -- release_lastmoddate from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_modtimealm,                                                     -- release_modtimealm from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_revisionalm,                                                    -- release_revisionalm from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_revisionsvn,                                                    -- release_revisionsvn from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.release_version,                                                        -- release_version from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.component_guid,                                                         -- component_guid from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.component_cmppkgname,                                                   -- component_cmppkgname from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n    bo.component_version                                                       -- component_version from satellite xmlrelease > xmlinterface > default of vi_xml_release_u_staging\n\n  from businessobjects.xmlrelease_s_xmlinterface bo\n;",
-    "business_ruleset_comment": null,
-    "business_ruleset_name": "Unaltered default",
-    "business_ruleset_order": 1,
-    "business_ruleset_suffix_id": null,
-    "business_ruleset_view_id": "business_rules.xmlrelease_s_xmlinterface",
-    "container_id": "h_xmlrelease_c_dvb_default",
-    "dependent_objects": [
-        {
-            "object_id": "businessobjects.xmlrelease_s_xmlinterface",
-            "object_type": "business_object"
-        }
-    ],
-    "include_in_accesslayer": false,
-    "is_error_ruleset": false,
-    "is_unaltered_business_ruleset": true,
-    "quick_inserts": {
-        "quick_insert_list": [
-            {
-                "quick_insert_table_id": "businessobjects.xmlrelease_s_xmlinterface"
-            }
-        ]
-    },
-    "system_id": "xmlinterface"
+	"accesslayer_priorization": 1,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW [business_rules].[xmlrelease_s_xmlinterface]\nAS\n\n  SELECT \n    bo.[business key for hub xmlrelease],                                        -- Business Key for Hub XMLRelease\n    bo.[ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging],     -- Entry Present in Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging],    -- Load Time Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[updated],                                                                -- [updated] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[product_name],                                                           -- [product_name] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_creationdatealm],                                                -- [release_creationdatealm] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_creationdatesvn],                                                -- [release_creationdatesvn] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_guid],                                                           -- [release_guid] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_lastmoddate],                                                    -- [release_lastmoddate] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_modtimealm],                                                     -- [release_modtimealm] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_revisionalm],                                                    -- [release_revisionalm] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_revisionsvn],                                                    -- [release_revisionsvn] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[release_version],                                                        -- [release_version] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[component_guid],                                                         -- [component_guid] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[component_cmppkgname],                                                   -- [component_cmppkgname] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n    bo.[component_version]                                                       -- [component_version] from Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING\n\n  FROM [businessobjects].[xmlrelease_s_xmlinterface] AS bo\n;\n",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "business_rules.xmlrelease_s_xmlinterface",
+	"container_id": "h_xmlrelease_c_dvb_default",
+	"dependent_objects": [
+		{
+			"object_id": "businessobjects.xmlrelease_s_xmlinterface",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": false,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "businessobjects.xmlrelease_s_xmlinterface"
+			}
+		]
+	},
+	"system_id": "xmlinterface"
 }

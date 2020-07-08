@@ -1,147 +1,147 @@
 {
-    "businessobject_comment": "",
-    "businessobject_display_name": "Component > PSA > Packages",
-    "businessobject_dropdown_entry_string": "Component - Packages",
-    "businessobject_elements": [
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub Component",
-                    "column_id": "datavault.h_component.component_bk",
-                    "column_name": "bk component",
-                    "column_name_detail": "component_bk",
-                    "column_nq_id": "component_bk",
-                    "column_order": 1,
-                    "column_orig_name": "BK Component",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\"}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace_c.namespace_name",
-                    "column_name": "namespace name",
-                    "column_name_detail": "",
-                    "column_nq_id": "namespace_name",
-                    "column_order": 2,
-                    "column_orig_name": "NAMESPACE_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace_c.namespace_guid",
-                    "column_name": "namespace guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "namespace_guid",
-                    "column_order": 3,
-                    "column_orig_name": "NAMESPACE_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace\"}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.package_name",
-                    "column_name": "component name",
-                    "column_name_detail": "",
-                    "column_nq_id": "package_name",
-                    "column_order": 4,
-                    "column_orig_name": "PACKAGE_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_version",
-                    "column_name": "component version",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_version",
-                    "column_order": 7,
-                    "column_orig_name": "COMPONENT_VERSION",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_guid",
-                    "column_name": "component guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_guid",
-                    "column_order": 8,
-                    "column_orig_name": "COMPONENT_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main\"}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_c.component_qlevel",
-                    "column_name": "almplus status",
-                    "column_name_detail": "component_qlevel",
-                    "column_nq_id": "component_qlevel",
-                    "column_order": 5,
-                    "column_orig_name": "ALMPlus Status",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules\"}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_c.package_layer",
-                    "column_name": "layer",
-                    "column_name_detail": "package_layer",
-                    "column_nq_id": "package_layer",
-                    "column_order": 6,
-                    "column_orig_name": "Layer",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar\"}]}]}}"
-        }
-    ],
-    "businessobject_set_id": "businessobject_set_h_component_c_packages",
-    "businessobject_structure": null,
-    "businessobject_view_id": "businessobjects.component_s_psa_c_packages",
-    "dependent_objects": [
-        {
-            "object_id": "h_component",
-            "object_type": "hub"
-        },
-        {
-            "object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules",
-            "object_type": "satellite"
-        },
-        {
-            "object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar",
-            "object_type": "satellite"
-        },
-        {
-            "object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main",
-            "object_type": "satellite"
-        },
-        {
-            "object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace",
-            "object_type": "satellite"
-        }
-    ],
-    "granularity_satellite_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main",
-    "system_id": "psa",
-    "system_name": "PSA"
+	"businessobject_comment": "",
+	"businessobject_display_name": "Component > PSA > Packages",
+	"businessobject_dropdown_entry_string": "Component - Packages",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Component",
+					"column_id": "datavault.h_component.component_bk",
+					"column_name": "bk component",
+					"column_name_detail": "component_bk",
+					"column_nq_id": "component_bk",
+					"column_order": 1,
+					"column_orig_name": "bk component",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace_c.namespace_name",
+					"column_name": "namespace name",
+					"column_name_detail": "",
+					"column_nq_id": "namespace_name",
+					"column_order": 2,
+					"column_orig_name": "namespace_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace_c.namespace_guid",
+					"column_name": "namespace guid",
+					"column_name_detail": "",
+					"column_nq_id": "namespace_guid",
+					"column_order": 3,
+					"column_orig_name": "namespace_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.package_name",
+					"column_name": "component name",
+					"column_name_detail": "",
+					"column_nq_id": "package_name",
+					"column_order": 4,
+					"column_orig_name": "package_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_version",
+					"column_name": "component version",
+					"column_name_detail": "",
+					"column_nq_id": "component_version",
+					"column_order": 7,
+					"column_orig_name": "component_version",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_guid",
+					"column_name": "component guid",
+					"column_name_detail": "",
+					"column_nq_id": "component_guid",
+					"column_order": 8,
+					"column_orig_name": "component_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_c.component_qlevel",
+					"column_name": "almplus status",
+					"column_name_detail": "component_qlevel",
+					"column_nq_id": "component_qlevel",
+					"column_order": 5,
+					"column_orig_name": "almplus status",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_c.package_layer",
+					"column_name": "layer",
+					"column_name_detail": "package_layer",
+					"column_nq_id": "package_layer",
+					"column_order": 6,
+					"column_orig_name": "layer",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_h_component_c_packages",
+	"businessobject_structure": null,
+	"businessobject_view_id": "businessobjects.component_s_psa_c_packages",
+	"dependent_objects": [
+		{
+			"object_id": "h_component",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules",
+			"object_type": "satellite"
+		},
+		{
+			"object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar",
+			"object_type": "satellite"
+		},
+		{
+			"object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main",
+			"object_type": "satellite"
+		},
+		{
+			"object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_namespace",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main",
+	"system_id": "psa",
+	"system_name": "PSA"
 }

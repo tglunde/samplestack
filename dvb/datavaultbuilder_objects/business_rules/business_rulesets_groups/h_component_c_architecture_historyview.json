@@ -1,12 +1,12 @@
 {
-    "business_rules_businessobject_container_display_name": "Component - Architecture Historyview",
-    "business_rules_businessobject_container_id": "h_component_c_architecture_historyview",
-    "business_rules_businessobject_container_order": 2,
-    "business_rules_businessobject_systems": [
-        {
-            "related_businessobject_view_id": "businessobjects.component_s_psa_c_architecture_historyview",
-            "system_id": "psa",
-            "system_order": 1
-        }
-    ]
+	"business_rules_businessobject_container_display_name": "Component - Architecture Historyview",
+	"business_rules_businessobject_container_id": "h_component_c_architecture_historyview",
+	"business_rules_businessobject_container_order": 3,
+	"business_rules_businessobject_systems": [
+		{
+			"related_businessobject_view_id": "businessobjects.component_s_psa_c_architecture_historyview",
+			"system_id": "psa",
+			"system_order": 1
+		}
+	]
 }

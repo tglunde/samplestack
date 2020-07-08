@@ -1,1474 +1,1474 @@
 {
-    "columns": [
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.updated",
-            "column_name": "updated",
-            "column_order": 1,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ldts",
-            "column_name": "ldts",
-            "column_order": 2,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 93,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ldts_offset_sec",
-            "column_name": "ldts_offset_sec",
-            "column_order": 3,
-            "complete_data_type": "DECIMAL(9,9)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "DECIMAL",
-                "jdbc_data_type_id": 2,
-                "numeric_precision": 9,
-                "numeric_scale": 9
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.component_name",
-            "column_name": "component_name",
-            "column_order": 4,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.component_version",
-            "column_name": "component_version",
-            "column_order": 5,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigopendeviation",
-            "column_name": "misraconfigopendeviation",
-            "column_order": 105,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxdeccov",
-            "column_name": "maxdeccov",
-            "column_order": 106,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilledwithdeviations",
-            "column_name": "nrofspecitems_relevant_fulfilledwithdeviations",
-            "column_order": 107,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfunctions",
-            "column_name": "designfunctions",
-            "column_order": 108,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant",
-            "column_name": "nrofspecitems_notrelevant",
-            "column_order": 109,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilled",
-            "column_name": "nrofspecitems_relevantns_fulfilled",
-            "column_order": 110,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minpar",
-            "column_name": "minpar",
-            "column_order": 111,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_plan",
-            "column_name": "status_testreport_plan",
-            "column_order": 112,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationdecisioncoverage_measured",
-            "column_name": "configurationdecisioncoverage_measured",
-            "column_order": 113,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesnotok",
-            "column_name": "tcasesnotok",
-            "column_order": 114,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqswithsafetylevel",
-            "column_name": "creqswithsafetylevel",
-            "column_order": 115,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_codemetrics",
-            "column_name": "status_codemetrics",
-            "column_order": 116,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromvtrnotintestspec",
-            "column_name": "tcasesfromvtrnotintestspec",
-            "column_order": 117,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilled",
-            "column_name": "nrofspecitems_relevant_fulfilled",
-            "column_order": 118,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilledwithdeviations",
-            "column_name": "nrofspecitems_relevantns_fulfilledwithdeviations",
-            "column_order": 119,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_plancoverage",
-            "column_name": "status_testreport_plancoverage",
-            "column_order": 120,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designsubmodules",
-            "column_name": "designsubmodules",
-            "column_order": 121,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems",
-            "column_name": "nrofspecitems",
-            "column_order": 122,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilledns",
-            "column_name": "nrofspecitems_notrelevant_fulfilledns",
-            "column_order": 123,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implcal",
-            "column_name": "implcal",
-            "column_order": 124,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationdecisioncoverage",
-            "column_name": "configurationdecisioncoverage",
-            "column_order": 125,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofrelevantspecitemswithmissingfulfillment",
-            "column_name": "nrofrelevantspecitemswithmissingfulfillment",
-            "column_order": 126,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationfunctioncoverage_measured",
-            "column_name": "configurationfunctioncoverage_measured",
-            "column_order": 127,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ppcoverage",
-            "column_name": "ppcoverage",
-            "column_order": 128,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallfunctioncoverage",
-            "column_name": "overallfunctioncoverage",
-            "column_order": 129,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxfctcov",
-            "column_name": "maxfctcov",
-            "column_order": 130,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxpar",
-            "column_name": "maxpar",
-            "column_order": 131,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.unjustifiedcodemetricviolations",
-            "column_name": "unjustifiedcodemetricviolations",
-            "column_order": 132,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofirrelevantspecitemswithfulfillment",
-            "column_name": "nrofirrelevantspecitemswithfulfillment",
-            "column_order": 133,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport",
-            "column_name": "status_testreport",
-            "column_order": 134,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallbranchcoverage_measured",
-            "column_name": "overallbranchcoverage_measured",
-            "column_order": 135,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilledns",
-            "column_name": "nrofspecitems_relevant_fulfilledns",
-            "column_order": 136,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesplanned",
-            "column_name": "tcasesplanned",
-            "column_order": 137,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilledns",
-            "column_name": "nrofspecitems_relevantns_fulfilledns",
-            "column_order": 138,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implpth",
-            "column_name": "implpth",
-            "column_order": 139,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ppcoverageqm",
-            "column_name": "ppcoverageqm",
-            "column_order": 140,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_notfulfilled",
-            "column_name": "nrofspecitems_relevantns_notfulfilled",
-            "column_order": 141,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqswithtracetotcase",
-            "column_name": "creqswithtracetotcase",
-            "column_order": 142,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.desccontainer",
-            "column_name": "desccontainer",
-            "column_order": 143,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilledwithdeviations",
-            "column_name": "nrofspecitems_notrelevant_fulfilledwithdeviations",
-            "column_order": 144,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implpar",
-            "column_name": "implpar",
-            "column_order": 145,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxpth",
-            "column_name": "maxpth",
-            "column_order": 146,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesexecutioncoverage",
-            "column_name": "tcasesexecutioncoverage",
-            "column_order": 147,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallfunctioncoverage_measured",
-            "column_name": "overallfunctioncoverage_measured",
-            "column_order": 148,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.descparameter",
-            "column_name": "descparameter",
-            "column_order": 149,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_misra",
-            "column_name": "status_misra",
-            "column_order": 150,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misra_ruleset",
-            "column_name": "misra_ruleset",
-            "column_order": 151,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationbranchcoverage",
-            "column_name": "configurationbranchcoverage",
-            "column_order": 152,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minpth",
-            "column_name": "minpth",
-            "column_order": 153,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant",
-            "column_name": "nrofspecitems_relevant",
-            "column_order": 154,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mincyc",
-            "column_name": "mincyc",
-            "column_order": 155,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigurations",
-            "column_name": "misraconfigurations",
-            "column_order": 156,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxcyc",
-            "column_name": "maxcyc",
-            "column_order": 157,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcases",
-            "column_name": "tcases",
-            "column_order": 158,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasespassedorjustified",
-            "column_name": "tcasespassedorjustified",
-            "column_order": 159,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overalldecisioncoverage_measured",
-            "column_name": "overalldecisioncoverage_measured",
-            "column_order": 160,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqspecchapters",
-            "column_name": "creqspecchapters",
-            "column_order": 161,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromtestspec",
-            "column_name": "tcasesfromtestspec",
-            "column_order": 162,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilled",
-            "column_name": "nrofspecitems_notrelevant_fulfilled",
-            "column_order": 163,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mincal",
-            "column_name": "mincal",
-            "column_order": 164,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfiles",
-            "column_name": "designfiles",
-            "column_order": 165,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.safetymanualchapter",
-            "column_name": "safetymanualchapter",
-            "column_order": 166,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misrarules",
-            "column_name": "misrarules",
-            "column_order": 167,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromtestspecnotinvtr",
-            "column_name": "tcasesfromtestspecnotinvtr",
-            "column_order": 168,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implcyc",
-            "column_name": "implcyc",
-            "column_order": 169,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_notfulfilled",
-            "column_name": "nrofspecitems_notrelevant_notfulfilled",
-            "column_order": 170,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswithmissingrelevance",
-            "column_name": "nrofspecitemswithmissingrelevance",
-            "column_order": 171,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns",
-            "column_name": "nrofspecitems_relevantns",
-            "column_order": 172,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implmif",
-            "column_name": "implmif",
-            "column_order": 173,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswhicharefulfilledandhavenotrace",
-            "column_name": "nrofspecitemswhicharefulfilledandhavenotrace",
-            "column_order": 174,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxcal",
-            "column_name": "maxcal",
-            "column_order": 175,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationfunctioncoverage",
-            "column_name": "configurationfunctioncoverage",
-            "column_order": 176,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigopennotjustyfied",
-            "column_name": "misraconfigopennotjustyfied",
-            "column_order": 177,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcaseslinkedwithasilcreq_executioncoverage",
-            "column_name": "tcaseslinkedwithasilcreq_executioncoverage",
-            "column_order": 178,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.safetymanualitems",
-            "column_name": "safetymanualitems",
-            "column_order": 179,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallbranchcoverage",
-            "column_name": "overallbranchcoverage",
-            "column_order": 180,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minmif",
-            "column_name": "minmif",
-            "column_order": 181,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_preprocessorcoverage",
-            "column_name": "status_preprocessorcoverage",
-            "column_order": 182,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designdiagram",
-            "column_name": "designdiagram",
-            "column_order": 183,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mindeccov",
-            "column_name": "mindeccov",
-            "column_order": 184,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.testreportverdict",
-            "column_name": "testreportverdict",
-            "column_order": 185,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_runtimecoverage",
-            "column_name": "status_runtimecoverage",
-            "column_order": 186,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minfctcov",
-            "column_name": "minfctcov",
-            "column_order": 187,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.deviations_maxopenperconfig",
-            "column_name": "deviations_maxopenperconfig",
-            "column_order": 188,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misramessages",
-            "column_name": "misramessages",
-            "column_order": 189,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswhicharefulfilledwithdeviationandhavenodeviationtext",
-            "column_name": "nrofspecitemswhicharefulfilledwithdeviationandhavenodeviationtext",
-            "column_order": 190,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.vtrtcases",
-            "column_name": "vtrtcases",
-            "column_order": 191,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.openmajordeviations",
-            "column_name": "openmajordeviations",
-            "column_order": 192,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasestested",
-            "column_name": "tcasestested",
-            "column_order": 193,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqs",
-            "column_name": "creqs",
-            "column_order": 194,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxmif",
-            "column_name": "maxmif",
-            "column_order": 195,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfeatures",
-            "column_name": "designfeatures",
-            "column_order": 196,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.openrequireddeviations",
-            "column_name": "openrequireddeviations",
-            "column_order": 197,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.deviations_maxperconfig",
-            "column_name": "deviations_maxperconfig",
-            "column_order": 198,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.testspecchapters",
-            "column_name": "testspecchapters",
-            "column_order": 199,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationbranchcoverage_measured",
-            "column_name": "configurationbranchcoverage_measured",
-            "column_order": 200,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_testresult",
-            "column_name": "status_testreport_testresult",
-            "column_order": 201,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overalldecisioncoverage",
-            "column_name": "overalldecisioncoverage",
-            "column_order": 202,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_notfulfilled",
-            "column_name": "nrofspecitems_relevant_notfulfilled",
-            "column_order": 203,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        }
-    ],
-    "loading_batch_size": 50000,
-    "source_schema_name": "DBT_STAGE",
-    "source_schema_or_system_id": "DBT_STAGE",
-    "source_table_id": "dbt_stage.component_metric",
-    "source_table_name": "COMPONENT_METRIC",
-    "source_table_staging_id": "component_metric",
-    "source_table_type_id": "",
-    "staging_table_comment": null,
-    "staging_table_display_string": "Component Metric (DBT_STAGE) [DBT_STAGE_R_COMPONENT_METRIC_U_DBT_STAGE]",
-    "staging_table_id": "staging.dbt_stage_r_component_metric_u_dbt_stage",
-    "staging_table_name": "Component Metric",
-    "system_id": "dbt_stage",
-    "where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
-    "where_clause_general_part": ""
+	"columns": [
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.updated",
+			"column_name": "updated",
+			"column_order": 1,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ldts",
+			"column_name": "ldts",
+			"column_order": 2,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ldts_offset_sec",
+			"column_name": "ldts_offset_sec",
+			"column_order": 3,
+			"complete_data_type": "decimal(9,9)",
+			"jdbc_data_type": {
+				"character_maximum_length": 5,
+				"data_type_name": "decimal",
+				"jdbc_data_type_id": 3,
+				"numeric_precision": 9,
+				"numeric_scale": 9
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.component_name",
+			"column_name": "component_name",
+			"column_order": 4,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.component_version",
+			"column_name": "component_version",
+			"column_order": 5,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigopendeviation",
+			"column_name": "misraconfigopendeviation",
+			"column_order": 6,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxdeccov",
+			"column_name": "maxdeccov",
+			"column_order": 7,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilledwithdeviations",
+			"column_name": "nrofspecitems_relevant_fulfilledwithdeviations",
+			"column_order": 8,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfunctions",
+			"column_name": "designfunctions",
+			"column_order": 9,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant",
+			"column_name": "nrofspecitems_notrelevant",
+			"column_order": 10,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilled",
+			"column_name": "nrofspecitems_relevantns_fulfilled",
+			"column_order": 11,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minpar",
+			"column_name": "minpar",
+			"column_order": 12,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_plan",
+			"column_name": "status_testreport_plan",
+			"column_order": 13,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationdecisioncoverage_measured",
+			"column_name": "configurationdecisioncoverage_measured",
+			"column_order": 14,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesnotok",
+			"column_name": "tcasesnotok",
+			"column_order": 15,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqswithsafetylevel",
+			"column_name": "creqswithsafetylevel",
+			"column_order": 16,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_codemetrics",
+			"column_name": "status_codemetrics",
+			"column_order": 17,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromvtrnotintestspec",
+			"column_name": "tcasesfromvtrnotintestspec",
+			"column_order": 18,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilled",
+			"column_name": "nrofspecitems_relevant_fulfilled",
+			"column_order": 19,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilledwithdeviations",
+			"column_name": "nrofspecitems_relevantns_fulfilledwithdeviations",
+			"column_order": 20,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_plancoverage",
+			"column_name": "status_testreport_plancoverage",
+			"column_order": 21,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designsubmodules",
+			"column_name": "designsubmodules",
+			"column_order": 22,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems",
+			"column_name": "nrofspecitems",
+			"column_order": 23,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilledns",
+			"column_name": "nrofspecitems_notrelevant_fulfilledns",
+			"column_order": 24,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implcal",
+			"column_name": "implcal",
+			"column_order": 25,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationdecisioncoverage",
+			"column_name": "configurationdecisioncoverage",
+			"column_order": 26,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofrelevantspecitemswithmissingfulfillment",
+			"column_name": "nrofrelevantspecitemswithmissingfulfillment",
+			"column_order": 27,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationfunctioncoverage_measured",
+			"column_name": "configurationfunctioncoverage_measured",
+			"column_order": 28,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ppcoverage",
+			"column_name": "ppcoverage",
+			"column_order": 29,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallfunctioncoverage",
+			"column_name": "overallfunctioncoverage",
+			"column_order": 30,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxfctcov",
+			"column_name": "maxfctcov",
+			"column_order": 31,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxpar",
+			"column_name": "maxpar",
+			"column_order": 32,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.unjustifiedcodemetricviolations",
+			"column_name": "unjustifiedcodemetricviolations",
+			"column_order": 33,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofirrelevantspecitemswithfulfillment",
+			"column_name": "nrofirrelevantspecitemswithfulfillment",
+			"column_order": 34,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport",
+			"column_name": "status_testreport",
+			"column_order": 35,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallbranchcoverage_measured",
+			"column_name": "overallbranchcoverage_measured",
+			"column_order": 36,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_fulfilledns",
+			"column_name": "nrofspecitems_relevant_fulfilledns",
+			"column_order": 37,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesplanned",
+			"column_name": "tcasesplanned",
+			"column_order": 38,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_fulfilledns",
+			"column_name": "nrofspecitems_relevantns_fulfilledns",
+			"column_order": 39,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implpth",
+			"column_name": "implpth",
+			"column_order": 40,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.ppcoverageqm",
+			"column_name": "ppcoverageqm",
+			"column_order": 41,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns_notfulfilled",
+			"column_name": "nrofspecitems_relevantns_notfulfilled",
+			"column_order": 42,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqswithtracetotcase",
+			"column_name": "creqswithtracetotcase",
+			"column_order": 43,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.desccontainer",
+			"column_name": "desccontainer",
+			"column_order": 44,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilledwithdeviations",
+			"column_name": "nrofspecitems_notrelevant_fulfilledwithdeviations",
+			"column_order": 45,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implpar",
+			"column_name": "implpar",
+			"column_order": 46,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxpth",
+			"column_name": "maxpth",
+			"column_order": 47,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesexecutioncoverage",
+			"column_name": "tcasesexecutioncoverage",
+			"column_order": 48,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallfunctioncoverage_measured",
+			"column_name": "overallfunctioncoverage_measured",
+			"column_order": 49,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.descparameter",
+			"column_name": "descparameter",
+			"column_order": 50,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_misra",
+			"column_name": "status_misra",
+			"column_order": 51,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misra_ruleset",
+			"column_name": "misra_ruleset",
+			"column_order": 52,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationbranchcoverage",
+			"column_name": "configurationbranchcoverage",
+			"column_order": 53,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minpth",
+			"column_name": "minpth",
+			"column_order": 54,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant",
+			"column_name": "nrofspecitems_relevant",
+			"column_order": 55,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mincyc",
+			"column_name": "mincyc",
+			"column_order": 56,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigurations",
+			"column_name": "misraconfigurations",
+			"column_order": 57,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxcyc",
+			"column_name": "maxcyc",
+			"column_order": 58,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcases",
+			"column_name": "tcases",
+			"column_order": 59,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasespassedorjustified",
+			"column_name": "tcasespassedorjustified",
+			"column_order": 60,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overalldecisioncoverage_measured",
+			"column_name": "overalldecisioncoverage_measured",
+			"column_order": 61,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqspecchapters",
+			"column_name": "creqspecchapters",
+			"column_order": 62,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromtestspec",
+			"column_name": "tcasesfromtestspec",
+			"column_order": 63,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_fulfilled",
+			"column_name": "nrofspecitems_notrelevant_fulfilled",
+			"column_order": 64,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mincal",
+			"column_name": "mincal",
+			"column_order": 65,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfiles",
+			"column_name": "designfiles",
+			"column_order": 66,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.safetymanualchapter",
+			"column_name": "safetymanualchapter",
+			"column_order": 67,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misrarules",
+			"column_name": "misrarules",
+			"column_order": 68,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasesfromtestspecnotinvtr",
+			"column_name": "tcasesfromtestspecnotinvtr",
+			"column_order": 69,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implcyc",
+			"column_name": "implcyc",
+			"column_order": 70,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_notrelevant_notfulfilled",
+			"column_name": "nrofspecitems_notrelevant_notfulfilled",
+			"column_order": 71,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswithmissingrelevance",
+			"column_name": "nrofspecitemswithmissingrelevance",
+			"column_order": 72,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevantns",
+			"column_name": "nrofspecitems_relevantns",
+			"column_order": 73,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.implmif",
+			"column_name": "implmif",
+			"column_order": 74,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswhicharefulfilledandhavenotrace",
+			"column_name": "nrofspecitemswhicharefulfilledandhavenotrace",
+			"column_order": 75,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxcal",
+			"column_name": "maxcal",
+			"column_order": 76,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationfunctioncoverage",
+			"column_name": "configurationfunctioncoverage",
+			"column_order": 77,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misraconfigopennotjustyfied",
+			"column_name": "misraconfigopennotjustyfied",
+			"column_order": 78,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcaseslinkedwithasilcreq_executioncoverage",
+			"column_name": "tcaseslinkedwithasilcreq_executioncoverage",
+			"column_order": 79,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.safetymanualitems",
+			"column_name": "safetymanualitems",
+			"column_order": 80,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overallbranchcoverage",
+			"column_name": "overallbranchcoverage",
+			"column_order": 81,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minmif",
+			"column_name": "minmif",
+			"column_order": 82,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_preprocessorcoverage",
+			"column_name": "status_preprocessorcoverage",
+			"column_order": 83,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designdiagram",
+			"column_name": "designdiagram",
+			"column_order": 84,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.mindeccov",
+			"column_name": "mindeccov",
+			"column_order": 85,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.testreportverdict",
+			"column_name": "testreportverdict",
+			"column_order": 86,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_runtimecoverage",
+			"column_name": "status_runtimecoverage",
+			"column_order": 87,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.minfctcov",
+			"column_name": "minfctcov",
+			"column_order": 88,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.deviations_maxopenperconfig",
+			"column_name": "deviations_maxopenperconfig",
+			"column_order": 89,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.misramessages",
+			"column_name": "misramessages",
+			"column_order": 90,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitemswhicharefulfilledwithdeviationandhavenodeviationtext",
+			"column_name": "nrofspecitemswhicharefulfilledwithdeviationandhavenodeviationtext",
+			"column_order": 91,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.vtrtcases",
+			"column_name": "vtrtcases",
+			"column_order": 92,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.openmajordeviations",
+			"column_name": "openmajordeviations",
+			"column_order": 93,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.tcasestested",
+			"column_name": "tcasestested",
+			"column_order": 94,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.creqs",
+			"column_name": "creqs",
+			"column_order": 95,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.maxmif",
+			"column_name": "maxmif",
+			"column_order": 96,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.designfeatures",
+			"column_name": "designfeatures",
+			"column_order": 97,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.openrequireddeviations",
+			"column_name": "openrequireddeviations",
+			"column_order": 98,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.deviations_maxperconfig",
+			"column_name": "deviations_maxperconfig",
+			"column_order": 99,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.testspecchapters",
+			"column_name": "testspecchapters",
+			"column_order": 100,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.configurationbranchcoverage_measured",
+			"column_name": "configurationbranchcoverage_measured",
+			"column_order": 101,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.status_testreport_testresult",
+			"column_name": "status_testreport_testresult",
+			"column_order": 102,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.overalldecisioncoverage",
+			"column_name": "overalldecisioncoverage",
+			"column_order": 103,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_stage_r_component_metric_u_dbt_stage.nrofspecitems_relevant_notfulfilled",
+			"column_name": "nrofspecitems_relevant_notfulfilled",
+			"column_order": 104,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		}
+	],
+	"loading_batch_size": 50000,
+	"source_schema_name": "dbt_stage",
+	"source_schema_or_system_id": "dbt_stage",
+	"source_table_id": "dbt_stage.component_metric",
+	"source_table_name": "component_metric",
+	"source_table_staging_id": "component_metric",
+	"source_table_type_id": "",
+	"staging_table_comment": null,
+	"staging_table_display_string": "Component Metric (dbt_stage) [dbt_stage_r_component_metric_u_dbt_stage]",
+	"staging_table_id": "staging.dbt_stage_r_component_metric_u_dbt_stage",
+	"staging_table_name": "Component Metric",
+	"system_id": "dbt_stage",
+	"where_clause_delta_part_template": "updated = '{{DELIVERYDATE}}'",
+	"where_clause_general_part": ""
 }

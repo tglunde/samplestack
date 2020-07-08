@@ -1,120 +1,120 @@
 {
-    "businessobject_comment": "Load Interface Metrics for PSA -> RAW",
-    "businessobject_display_name": "XMLMetric > XMLINTERFACE > Default",
-    "businessobject_dropdown_entry_string": "XMLMetric",
-    "businessobject_elements": [
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Business Layer",
-                    "column_id": "datavault.h_xmlmetric.xmlmetric_bk",
-                    "column_name": "business key for hub xmlmetric",
-                    "column_name_detail": "xmlmetric_bk",
-                    "column_nq_id": "xmlmetric_bk",
-                    "column_order": 0,
-                    "column_orig_name": "Business Key for Hub XMLMetric",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlmetric\"}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "Load Time Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
-                    "column_name": "ldts",
-                    "column_name_detail": "xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
-                    "column_nq_id": "xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
-                    "column_order": 1,
-                    "column_orig_name": "LTS XMLMetric - XMLINTERFACE - Default of VI_XML_METRIC_U_STAGING",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.updated",
-                    "column_name": "updated",
-                    "column_name_detail": "",
-                    "column_nq_id": "updated",
-                    "column_order": 2,
-                    "column_orig_name": "UPDATED",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.component_name",
-                    "column_name": "component_name",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_name",
-                    "column_order": 3,
-                    "column_orig_name": "COMPONENT_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.component_version",
-                    "column_name": "component_version",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_version",
-                    "column_order": 4,
-                    "column_orig_name": "COMPONENT_VERSION",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.specmetric_name",
-                    "column_name": "specmetric_name",
-                    "column_name_detail": "",
-                    "column_nq_id": "specmetric_name",
-                    "column_order": 5,
-                    "column_orig_name": "SPECMETRIC_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.metric_name",
-                    "column_name": "metric_name",
-                    "column_name_detail": "",
-                    "column_nq_id": "metric_name",
-                    "column_order": 6,
-                    "column_orig_name": "METRIC_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.metric_value",
-                    "column_name": "metric_value",
-                    "column_name_detail": "",
-                    "column_nq_id": "metric_value",
-                    "column_order": 7,
-                    "column_orig_name": "METRIC_VALUE",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlmetric\",\"satellites\":[{\"satellite_id\":\"s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging\"}]}]}}"
-        }
-    ],
-    "businessobject_set_id": "businessobject_set_h_xmlmetric",
-    "businessobject_structure": null,
-    "businessobject_view_id": "businessobjects.xmlmetric_s_xmlinterface",
-    "dependent_objects": [
-        {
-            "object_id": "h_xmlmetric",
-            "object_type": "hub"
-        },
-        {
-            "object_id": "s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging",
-            "object_type": "satellite"
-        }
-    ],
-    "granularity_satellite_id": "s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging",
-    "system_id": "xmlinterface",
-    "system_name": "XMLINTERFACE"
+	"businessobject_comment": "Load Interface Metrics for PSA -> RAW",
+	"businessobject_display_name": "XMLMetric > XMLINTERFACE > Default",
+	"businessobject_dropdown_entry_string": "XMLMetric",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Business Layer",
+					"column_id": "datavault.h_xmlmetric.xmlmetric_bk",
+					"column_name": "business key for hub xmlmetric",
+					"column_name_detail": "xmlmetric_bk",
+					"column_nq_id": "xmlmetric_bk",
+					"column_order": 0,
+					"column_orig_name": "business key for hub xmlmetric",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlmetric\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Load Time Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
+					"column_name": "ldts",
+					"column_name_detail": "xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
+					"column_nq_id": "xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_ltc",
+					"column_order": 1,
+					"column_orig_name": "LTS XMLMetric - XMLINTERFACE - Default of VI_XML_METRIC_U_STAGING",
+					"complete_data_type": "datetime2(7)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.updated",
+					"column_name": "updated",
+					"column_name_detail": "",
+					"column_nq_id": "updated",
+					"column_order": 2,
+					"column_orig_name": "updated",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.component_name",
+					"column_name": "component_name",
+					"column_name_detail": "",
+					"column_nq_id": "component_name",
+					"column_order": 3,
+					"column_orig_name": "component_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.component_version",
+					"column_name": "component_version",
+					"column_name_detail": "",
+					"column_nq_id": "component_version",
+					"column_order": 4,
+					"column_orig_name": "component_version",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.specmetric_name",
+					"column_name": "specmetric_name",
+					"column_name_detail": "",
+					"column_nq_id": "specmetric_name",
+					"column_order": 5,
+					"column_orig_name": "specmetric_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.metric_name",
+					"column_name": "metric_name",
+					"column_name_detail": "",
+					"column_nq_id": "metric_name",
+					"column_order": 6,
+					"column_orig_name": "metric_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging_c.metric_value",
+					"column_name": "metric_value",
+					"column_name_detail": "",
+					"column_nq_id": "metric_value",
+					"column_order": 7,
+					"column_orig_name": "metric_value",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlmetric\",\"satellites\":[{\"satellite_id\":\"s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_h_xmlmetric",
+	"businessobject_structure": null,
+	"businessobject_view_id": "businessobjects.xmlmetric_s_xmlinterface",
+	"dependent_objects": [
+		{
+			"object_id": "h_xmlmetric",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "s_xmlmetric_s_xmlinterface_r_vi_xml_metric_u_staging",
+	"system_id": "xmlinterface",
+	"system_name": "XMLINTERFACE"
 }

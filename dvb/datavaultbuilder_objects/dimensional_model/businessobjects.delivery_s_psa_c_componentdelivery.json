@@ -1,136 +1,152 @@
 {
-    "businessobject_comment": "",
-    "businessobject_display_name": "Delivery > PSA > ComponentDelivery",
-    "businessobject_dropdown_entry_string": "Delivery - ComponentDelivery",
-    "businessobject_elements": [
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub Component",
-                    "column_id": "datavault.h_component.component_bk",
-                    "column_name": "bk component",
-                    "column_name_detail": "component_bk",
-                    "column_nq_id": "component_bk",
-                    "column_order": 1,
-                    "column_orig_name": "BK Component",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"links\":[{\"link_id\":\"l_component_t_delivery\",\"hubs\":[{\"hub_id\":\"h_component\"}]}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub Delivery",
-                    "column_id": "datavault.h_delivery.delivery_bk",
-                    "column_name": "bk delivery",
-                    "column_name_detail": "delivery_bk",
-                    "column_nq_id": "delivery_bk",
-                    "column_order": 2,
-                    "column_orig_name": "BK Delivery",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\"}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_guid",
-                    "column_name": "delivery guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_guid",
-                    "column_order": 3,
-                    "column_orig_name": "DELIVERY_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_cbdnumber",
-                    "column_name": "cbd number",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_cbdnumber",
-                    "column_order": 5,
-                    "column_orig_name": "DELIVERY_CBDNUMBER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_deliverynumber",
-                    "column_name": "delivery number",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_deliverynumber",
-                    "column_order": 8,
-                    "column_orig_name": "DELIVERY_DELIVERYNUMBER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_customer",
-                    "column_name": "customer",
-                    "column_name_detail": "",
-                    "column_nq_id": "delivery_customer",
-                    "column_order": 9,
-                    "column_orig_name": "DELIVERY_CUSTOMER",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"satellites\":[{\"satellite_id\":\"s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main\"}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.package_name",
-                    "column_name": "component name",
-                    "column_name_detail": "",
-                    "column_nq_id": "package_name",
-                    "column_order": 4,
-                    "column_orig_name": "PACKAGE_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_version",
-                    "column_name": "component version",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_version",
-                    "column_order": 6,
-                    "column_orig_name": "COMPONENT_VERSION",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_guid",
-                    "column_name": "component guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "component_guid",
-                    "column_order": 7,
-                    "column_orig_name": "COMPONENT_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"links\":[{\"link_id\":\"l_component_t_delivery\",\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main\"}]}]}]}]}}"
-        }
-    ],
-    "businessobject_set_id": "businessobject_set_h_delivery_c_componentdelivery",
-    "businessobject_structure": null,
-    "businessobject_view_id": "businessobjects.delivery_s_psa_c_componentdelivery",
-    "dependent_objects": [
-        {
-            "object_id": "l_component_t_delivery",
-            "object_type": "link"
-        }
-    ],
-    "granularity_satellite_id": "s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main",
-    "system_id": "psa",
-    "system_name": "PSA"
+	"businessobject_comment": "",
+	"businessobject_display_name": "Delivery > PSA > ComponentDelivery",
+	"businessobject_dropdown_entry_string": "Delivery - ComponentDelivery",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Component",
+					"column_id": "datavault.h_component.component_bk",
+					"column_name": "bk component",
+					"column_name_detail": "component_bk",
+					"column_nq_id": "component_bk",
+					"column_order": 1,
+					"column_orig_name": "bk component",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"links\":[{\"link_id\":\"l_component_t_delivery\",\"hubs\":[{\"hub_id\":\"h_component\"}]}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Delivery",
+					"column_id": "datavault.h_delivery.delivery_bk",
+					"column_name": "bk delivery",
+					"column_name_detail": "delivery_bk",
+					"column_nq_id": "delivery_bk",
+					"column_order": 2,
+					"column_orig_name": "bk delivery",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_guid",
+					"column_name": "delivery guid",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_guid",
+					"column_order": 3,
+					"column_orig_name": "delivery_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_cbdnumber",
+					"column_name": "cbd number",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_cbdnumber",
+					"column_order": 5,
+					"column_orig_name": "delivery_cbdnumber",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_deliverynumber",
+					"column_name": "delivery number",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_deliverynumber",
+					"column_order": 8,
+					"column_orig_name": "delivery_deliverynumber",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main_c.delivery_customer",
+					"column_name": "customer",
+					"column_name_detail": "",
+					"column_nq_id": "delivery_customer",
+					"column_order": 9,
+					"column_orig_name": "delivery_customer",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"satellites\":[{\"satellite_id\":\"s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main\"}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.package_name",
+					"column_name": "component name",
+					"column_name_detail": "",
+					"column_nq_id": "package_name",
+					"column_order": 4,
+					"column_orig_name": "package_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_version",
+					"column_name": "component version",
+					"column_name_detail": "",
+					"column_nq_id": "component_version",
+					"column_order": 6,
+					"column_orig_name": "component_version",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main_c.component_guid",
+					"column_name": "component guid",
+					"column_name_detail": "",
+					"column_nq_id": "component_guid",
+					"column_order": 7,
+					"column_orig_name": "component_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_delivery\",\"links\":[{\"link_id\":\"l_component_t_delivery\",\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main\"}]}]}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_h_delivery_c_componentdelivery",
+	"businessobject_structure": null,
+	"businessobject_view_id": "businessobjects.delivery_s_psa_c_componentdelivery",
+	"dependent_objects": [
+		{
+			"object_id": "h_component",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "h_delivery",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "l_component_t_delivery",
+			"object_type": "link"
+		},
+		{
+			"object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_main",
+			"object_type": "satellite"
+		},
+		{
+			"object_id": "s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "s_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules_f_main",
+	"system_id": "psa",
+	"system_name": "PSA"
 }

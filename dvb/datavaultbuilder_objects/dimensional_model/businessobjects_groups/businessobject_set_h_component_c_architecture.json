@@ -1,8 +1,8 @@
 {
-    "businessobject_set_display_name": "Component > Architecture",
-    "businessobject_set_id": "businessobject_set_h_component_c_architecture",
-    "functional_suffix_id": "architecture",
-    "functional_suffix_name": "Architecture",
-    "start_hub_id": "h_component",
-    "start_hub_name": "Component"
+	"businessobject_set_display_name": "Component > Architecture",
+	"businessobject_set_id": "businessobject_set_h_component_c_architecture",
+	"functional_suffix_id": "architecture",
+	"functional_suffix_name": "Architecture",
+	"start_hub_id": "h_component",
+	"start_hub_name": "Component"
 }

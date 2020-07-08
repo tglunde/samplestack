@@ -1,30 +1,30 @@
 {
-    "accesslayer_priorization": 0,
-    "additional_deployment_parameters": {
-        "business_ruleset_hierarchy_level": 0
-    },
-    "business_rules_view_code": "create or replace view business_rules.component_s_psa_c_packages as\nselect \n    bo.\"bk component\",         -- business key for hub component\n    bo.\"namespace name\",       -- namespace_name from satellite component > psa > namespace\n    bo.\"namespace guid\",       -- namespace_guid from satellite component > psa > namespace\n    bo.\"component name\",       -- package_name from satellite component > psa > main\n    bo.\"almplus status\",       -- component_qlevel from satellite component > psa > almplus status\n    bo.\"layer\",                -- package_layer from satellite component > psa > autosar\n    bo.\"component version\",    -- component_version from satellite component > psa > main\n    bo.\"component guid\"        -- component_guid from satellite component > psa > main\n\n  from businessobjects.component_s_psa_c_packages bo\n;",
-    "business_ruleset_comment": null,
-    "business_ruleset_name": "Unaltered default",
-    "business_ruleset_order": 1,
-    "business_ruleset_suffix_id": null,
-    "business_ruleset_view_id": "business_rules.component_s_psa_c_packages",
-    "container_id": "h_component_c_packages",
-    "dependent_objects": [
-        {
-            "object_id": "businessobjects.component_s_psa_c_packages",
-            "object_type": "business_object"
-        }
-    ],
-    "include_in_accesslayer": true,
-    "is_error_ruleset": false,
-    "is_unaltered_business_ruleset": true,
-    "quick_inserts": {
-        "quick_insert_list": [
-            {
-                "quick_insert_table_id": "businessobjects.component_s_psa_c_packages"
-            }
-        ]
-    },
-    "system_id": "psa"
+	"accesslayer_priorization": 0,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW [business_rules].[component_s_psa_c_packages]\nAS\n\n  SELECT \n    bo.[bk component],         -- Business Key for Hub Component\n    bo.[namespace name],       -- [namespace_name] from Satellite Component > PSA > Namespace\n    bo.[namespace guid],       -- [namespace_guid] from Satellite Component > PSA > Namespace\n    bo.[component name],       -- [package_name] from Satellite Component > PSA > Main\n    bo.[almplus status],       -- [component_qlevel] from Satellite Component > PSA > ALMPlus Status\n    bo.[layer],                -- [package_layer] from Satellite Component > PSA > AutoSAR\n    bo.[component version],    -- [component_version] from Satellite Component > PSA > Main\n    bo.[component guid]        -- [component_guid] from Satellite Component > PSA > Main\n\n  FROM [businessobjects].[component_s_psa_c_packages] AS bo\n;\n",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "business_rules.component_s_psa_c_packages",
+	"container_id": "h_component_c_packages",
+	"dependent_objects": [
+		{
+			"object_id": "businessobjects.component_s_psa_c_packages",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": true,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "businessobjects.component_s_psa_c_packages"
+			}
+		]
+	},
+	"system_id": "psa"
 }

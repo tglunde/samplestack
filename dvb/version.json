@@ -1,9 +1,9 @@
 {
-    "dvb_version": {
-        "build": "0",
-        "client_db_type_id": "mssql",
-        "major": 5,
-        "minor": 0,
-        "revision": 0
-    }
+	"dvb_version": {
+		"build": "0",
+		"client_db_type_id": "mssql",
+		"major": 5,
+		"minor": 0,
+		"revision": 0
+	}
 }

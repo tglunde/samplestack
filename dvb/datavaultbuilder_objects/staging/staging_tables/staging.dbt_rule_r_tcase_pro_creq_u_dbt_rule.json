@@ -1,116 +1,116 @@
 {
-    "columns": [
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.updated",
-            "column_name": "updated",
-            "column_order": 1,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_name",
-            "column_name": "component_name",
-            "column_order": 2,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_version",
-            "column_name": "component_version",
-            "column_order": 3,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.tcases",
-            "column_name": "tcases",
-            "column_order": 4,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.creqs",
-            "column_name": "creqs",
-            "column_order": 5,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.creqswithtracetotcase",
-            "column_name": "creqswithtracetotcase",
-            "column_order": 6,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.tcase_pro_creq",
-            "column_name": "tcase_pro_creq",
-            "column_order": 7,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 8,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        }
-    ],
-    "loading_batch_size": 50000,
-    "source_schema_name": "DBT_RULE",
-    "source_schema_or_system_id": "DBT_RULE",
-    "source_table_id": "dbt_rule.tcase_pro_creq",
-    "source_table_name": "TCASE_PRO_CREQ",
-    "source_table_staging_id": "tcase_pro_creq",
-    "source_table_type_id": "VIEW",
-    "staging_table_comment": null,
-    "staging_table_display_string": "Tcase Pro Creq (DBT_RULE) [DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE]",
-    "staging_table_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule",
-    "staging_table_name": "Tcase Pro Creq",
-    "system_id": "dbt_rule",
-    "where_clause_delta_part_template": null,
-    "where_clause_general_part": null
+	"columns": [
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.updated",
+			"column_name": "updated",
+			"column_order": 1,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_name",
+			"column_name": "component_name",
+			"column_order": 2,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_version",
+			"column_name": "component_version",
+			"column_order": 3,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.tcases",
+			"column_name": "tcases",
+			"column_order": 4,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.creqs",
+			"column_name": "creqs",
+			"column_order": 5,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.creqswithtracetotcase",
+			"column_name": "creqswithtracetotcase",
+			"column_order": 6,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.tcase_pro_creq",
+			"column_name": "tcase_pro_creq",
+			"column_order": 7,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		}
+	],
+	"loading_batch_size": 50000,
+	"source_schema_name": "dbt_rule",
+	"source_schema_or_system_id": "dbt_rule",
+	"source_table_id": "dbt_rule.tcase_pro_creq",
+	"source_table_name": "tcase_pro_creq",
+	"source_table_staging_id": "tcase_pro_creq",
+	"source_table_type_id": "VIEW",
+	"staging_table_comment": null,
+	"staging_table_display_string": "Tcase Pro Creq (dbt_rule) [dbt_rule_r_tcase_pro_creq_u_dbt_rule]",
+	"staging_table_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule",
+	"staging_table_name": "Tcase Pro Creq",
+	"system_id": "dbt_rule",
+	"where_clause_delta_part_template": "",
+	"where_clause_general_part": ""
 }

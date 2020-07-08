@@ -1,242 +1,242 @@
 {
-    "columns": [
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.product_name",
-            "column_name": "product_name",
-            "column_order": 1,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_creationdatealm",
-            "column_name": "release_creationdatealm",
-            "column_order": 2,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_lastmoddate",
-            "column_name": "release_lastmoddate",
-            "column_order": 3,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_revisionalm",
-            "column_name": "release_revisionalm",
-            "column_order": 4,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
-            "column_name": "lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
-            "column_order": 5,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 93,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
-            "column_name": "ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
-            "column_order": 6,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 16,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_modtimealm",
-            "column_name": "release_modtimealm",
-            "column_order": 7,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.updated",
-            "column_name": "updated",
-            "column_order": 8,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_guid",
-            "column_name": "component_guid",
-            "column_order": 9,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_guid",
-            "column_name": "release_guid",
-            "column_order": 10,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_creationdatesvn",
-            "column_name": "release_creationdatesvn",
-            "column_order": 11,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_cmppkgname",
-            "column_name": "component_cmppkgname",
-            "column_order": 12,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_version",
-            "column_name": "component_version",
-            "column_order": 13,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_version",
-            "column_name": "release_version",
-            "column_order": 14,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.business key for hub xmlrelease",
-            "column_name": "business key for hub xmlrelease",
-            "column_order": 15,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        },
-        {
-            "column_comment": null,
-            "column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_revisionsvn",
-            "column_name": "release_revisionsvn",
-            "column_order": 16,
-            "complete_data_type": "varchar(8000)",
-            "jdbc_data_type": {
-                "character_maximum_length": 8000,
-                "data_type_name": "varchar",
-                "jdbc_data_type_id": 12,
-                "numeric_precision": null,
-                "numeric_scale": null
-            }
-        }
-    ],
-    "loading_batch_size": 50000,
-    "source_schema_name": "BUSINESS_RULES",
-    "source_schema_or_system_id": "PSA",
-    "source_table_id": "business_rules.xmlrelease_s_xmlinterface",
-    "source_table_name": "XMLRELEASE_S_XMLINTERFACE",
-    "source_table_staging_id": "xmlrelease_xmlinterface",
-    "source_table_type_id": "",
-    "staging_table_comment": null,
-    "staging_table_display_string": "Business Rules.Xmlrelease S Xmlinterface (BUSINESS_RULES) [PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES]",
-    "staging_table_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules",
-    "staging_table_name": "Business Rules.Xmlrelease S Xmlinterface",
-    "system_id": "psa",
-    "where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
-    "where_clause_general_part": ""
+	"columns": [
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.product_name",
+			"column_name": "product_name",
+			"column_order": 1,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_creationdatealm",
+			"column_name": "release_creationdatealm",
+			"column_order": 2,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_lastmoddate",
+			"column_name": "release_lastmoddate",
+			"column_order": 3,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_revisionalm",
+			"column_name": "release_revisionalm",
+			"column_order": 4,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+			"column_name": "lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+			"column_order": 5,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+			"column_name": "ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+			"column_order": 6,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_modtimealm",
+			"column_name": "release_modtimealm",
+			"column_order": 7,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.updated",
+			"column_name": "updated",
+			"column_order": 8,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_guid",
+			"column_name": "component_guid",
+			"column_order": 9,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_guid",
+			"column_name": "release_guid",
+			"column_order": 10,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_creationdatesvn",
+			"column_name": "release_creationdatesvn",
+			"column_order": 11,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_cmppkgname",
+			"column_name": "component_cmppkgname",
+			"column_order": 12,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.component_version",
+			"column_name": "component_version",
+			"column_order": 13,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_version",
+			"column_name": "release_version",
+			"column_order": 14,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.business key for hub xmlrelease",
+			"column_name": "business key for hub xmlrelease",
+			"column_order": 15,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules.release_revisionsvn",
+			"column_name": "release_revisionsvn",
+			"column_order": 16,
+			"complete_data_type": "varchar(8000)",
+			"jdbc_data_type": {
+				"character_maximum_length": 8000,
+				"data_type_name": "varchar",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": 0,
+				"numeric_scale": 0
+			}
+		}
+	],
+	"loading_batch_size": 50000,
+	"source_schema_name": "business_rules",
+	"source_schema_or_system_id": "psa",
+	"source_table_id": "business_rules.xmlrelease_s_xmlinterface",
+	"source_table_name": "xmlrelease_s_xmlinterface",
+	"source_table_staging_id": "xmlrelease_xmlinterface",
+	"source_table_type_id": "",
+	"staging_table_comment": null,
+	"staging_table_display_string": "Business Rules.Xmlrelease S Xmlinterface (business_rules) [psa_r_xmlrelease_xmlinterface_u_business_rules]",
+	"staging_table_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules",
+	"staging_table_name": "Business Rules.Xmlrelease S Xmlinterface",
+	"system_id": "psa",
+	"where_clause_delta_part_template": "updated = '{{DELIVERYDATE}}'",
+	"where_clause_general_part": ""
 }

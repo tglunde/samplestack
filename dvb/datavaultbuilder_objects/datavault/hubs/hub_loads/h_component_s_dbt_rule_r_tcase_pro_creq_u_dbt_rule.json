@@ -1,23 +1,23 @@
 {
-    "business_key_prefix": "",
-    "business_key_short": "component_name, component_version",
-    "column_ids": [
-        {
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_name",
-            "column_order": 1
-        },
-        {
-            "column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_version",
-            "column_order": 2
-        }
-    ],
-    "datavault_category_id": "business_vault",
-    "hub_id": "h_component",
-    "hub_load_display_name": "DBT_RULE: TCASE PRO CREQ U DBT RULE (COMPONENT_NAME, COMPONENT_VERSION)",
-    "hub_load_id": "h_component_s_dbt_rule_r_tcase_pro_creq_u_dbt_rule",
-    "keys_are_prehashed": false,
-    "keys_are_unique": true,
-    "staging_table_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule",
-    "system_id": "dbt_rule",
-    "system_name": "DBT_RULE"
+	"business_key_prefix": "",
+	"business_key_short": "component_name, component_version",
+	"column_ids": [
+		{
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_name",
+			"column_order": 1
+		},
+		{
+			"column_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule.component_version",
+			"column_order": 2
+		}
+	],
+	"datavault_category_id": "business_vault",
+	"hub_id": "h_component",
+	"hub_load_display_name": "DBT_RULE: TCASE PRO CREQ U DBT RULE (component_name, component_version)",
+	"hub_load_id": "h_component_s_dbt_rule_r_tcase_pro_creq_u_dbt_rule",
+	"keys_are_prehashed": false,
+	"keys_are_unique": true,
+	"staging_table_id": "staging.dbt_rule_r_tcase_pro_creq_u_dbt_rule",
+	"system_id": "dbt_rule",
+	"system_name": "DBT_RULE"
 }

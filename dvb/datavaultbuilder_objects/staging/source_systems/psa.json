@@ -1,12 +1,13 @@
 {
-    "deployable": true,
-    "hidden_in_system_deployment": false,
-    "source_type_id": "businessvaultload",
-    "source_type_name": "Businessvault Load",
-    "source_type_parameters": [],
-    "source_type_url": "",
-    "system_color": "#7A9900",
-    "system_comment": null,
-    "system_id": "psa",
-    "system_name": "PSA"
+	"deployable": true,
+	"hidden_in_system_deployment": false,
+	"source_type_id": "businessvaultload",
+	"source_type_name": "Businessvault Load",
+	"source_type_parameters": [
+	],
+	"source_type_url": "",
+	"system_color": "#990000",
+	"system_comment": null,
+	"system_id": "psa",
+	"system_name": "PSA"
 }

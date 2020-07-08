@@ -1,7 +1,7 @@
 {
-    "link_id": "l_component_t_delivery",
-    "link_load_display_name": "Component > PSA: XMLDELIVERY XMLINTERFACE U BUSINESS RULES (COMPONENT_NAME, COMPONENT_VERSION) TO Delivery > PSA: XMLDELIVERY XMLINTERFACE U BUSINESS RULES (DELIVERY_CBDNUMBER, DELIVERY_GUID)",
-    "link_load_id": "L_COMPONENT_T_DELIVERY_S_PSA_R_XMLDELIVERY_XMLINTERFACE_U_BUSINESS_RULES",
-    "staging_table_id": "staging.psa_r_xmldelivery_xmlinterface_u_business_rules",
-    "system_id": "psa"
+	"link_id": "l_component_t_delivery",
+	"link_load_display_name": "Component > PSA: XMLDELIVERY XMLINTERFACE U BUSINESS RULES (component_name, component_version) TO Delivery > PSA: XMLDELIVERY XMLINTERFACE U BUSINESS RULES (delivery_cbdnumber, delivery_guid)",
+	"link_load_id": "l_component_t_delivery_s_psa_r_xmldelivery_xmlinterface_u_business_rules",
+	"staging_table_id": "staging.psa_r_xmldelivery_xmlinterface_u_business_rules",
+	"system_id": "psa"
 }

@@ -1,99 +1,99 @@
 {
-    "businessobject_comment": "",
-    "businessobject_display_name": "Release > PSA > Release",
-    "businessobject_dropdown_entry_string": "Release - Release",
-    "businessobject_elements": [
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub Component",
-                    "column_id": "datavault.h_component.component_bk",
-                    "column_name": "bk component",
-                    "column_name_detail": "component_bk",
-                    "column_nq_id": "component_bk",
-                    "column_order": 1,
-                    "column_orig_name": "BK Component",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\",\"links\":[{\"link_id\":\"l_release_t_component\",\"hubs\":[{\"hub_id\":\"h_component\"}]}]}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "Business Key for Hub Release",
-                    "column_id": "datavault.h_release.release_bk",
-                    "column_name": "bk release",
-                    "column_name_detail": "release_bk",
-                    "column_nq_id": "release_bk",
-                    "column_order": 2,
-                    "column_orig_name": "BK Release",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\"}]}}"
-        },
-        {
-            "columns": [
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.product_name",
-                    "column_name": "product name",
-                    "column_name_detail": "",
-                    "column_nq_id": "product_name",
-                    "column_order": 3,
-                    "column_orig_name": "PRODUCT_NAME",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.release_guid",
-                    "column_name": "release guid",
-                    "column_name_detail": "",
-                    "column_nq_id": "release_guid",
-                    "column_order": 4,
-                    "column_orig_name": "RELEASE_GUID",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                },
-                {
-                    "column_comment": "",
-                    "column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.release_version",
-                    "column_name": "release version",
-                    "column_name_detail": "",
-                    "column_nq_id": "release_version",
-                    "column_order": 5,
-                    "column_orig_name": "RELEASE_VERSION",
-                    "complete_data_type": "varchar(8000)",
-                    "conversion_type": null
-                }
-            ],
-            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\",\"satellites\":[{\"satellite_id\":\"s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main\"}]}]}}"
-        }
-    ],
-    "businessobject_set_id": "businessobject_set_h_release_c_release",
-    "businessobject_structure": null,
-    "businessobject_view_id": "businessobjects.release_s_psa_c_release",
-    "dependent_objects": [
-        {
-            "object_id": "h_component",
-            "object_type": "hub"
-        },
-        {
-            "object_id": "h_release",
-            "object_type": "hub"
-        },
-        {
-            "object_id": "l_release_t_component",
-            "object_type": "link"
-        },
-        {
-            "object_id": "s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main",
-            "object_type": "satellite"
-        }
-    ],
-    "granularity_satellite_id": "s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main",
-    "system_id": "psa",
-    "system_name": "PSA"
+	"businessobject_comment": "",
+	"businessobject_display_name": "Release > PSA > Release",
+	"businessobject_dropdown_entry_string": "Release - Release",
+	"businessobject_elements": [
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Component",
+					"column_id": "datavault.h_component.component_bk",
+					"column_name": "bk component",
+					"column_name_detail": "component_bk",
+					"column_nq_id": "component_bk",
+					"column_order": 1,
+					"column_orig_name": "bk component",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\",\"links\":[{\"link_id\":\"l_release_t_component\",\"hubs\":[{\"hub_id\":\"h_component\"}]}]}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "Business Key for Hub Release",
+					"column_id": "datavault.h_release.release_bk",
+					"column_name": "bk release",
+					"column_name_detail": "release_bk",
+					"column_nq_id": "release_bk",
+					"column_order": 2,
+					"column_orig_name": "bk release",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\"}]}}"
+		},
+		{
+			"columns": [
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.product_name",
+					"column_name": "product name",
+					"column_name_detail": "",
+					"column_nq_id": "product_name",
+					"column_order": 3,
+					"column_orig_name": "product_name",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.release_guid",
+					"column_name": "release guid",
+					"column_name_detail": "",
+					"column_nq_id": "release_guid",
+					"column_order": 4,
+					"column_orig_name": "release_guid",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				},
+				{
+					"column_comment": "",
+					"column_id": "datavault.s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main_c.release_version",
+					"column_name": "release version",
+					"column_name_detail": "",
+					"column_nq_id": "release_version",
+					"column_order": 5,
+					"column_orig_name": "release_version",
+					"complete_data_type": "varchar(8000)",
+					"conversion_type": null
+				}
+			],
+			"path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_release\",\"satellites\":[{\"satellite_id\":\"s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main\"}]}]}}"
+		}
+	],
+	"businessobject_set_id": "businessobject_set_h_release_c_release",
+	"businessobject_structure": null,
+	"businessobject_view_id": "businessobjects.release_s_psa_c_release",
+	"dependent_objects": [
+		{
+			"object_id": "h_component",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "h_release",
+			"object_type": "hub"
+		},
+		{
+			"object_id": "l_release_t_component",
+			"object_type": "link"
+		},
+		{
+			"object_id": "s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main",
+			"object_type": "satellite"
+		}
+	],
+	"granularity_satellite_id": "s_release_s_psa_r_xmlrelease_xmlinterface_u_business_rules_f_main",
+	"system_id": "psa",
+	"system_name": "PSA"
 }

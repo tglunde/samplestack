@@ -1,12 +1,13 @@
 {
-    "deployable": true,
-    "hidden_in_system_deployment": false,
-    "source_type_id": "intradatabase",
-    "source_type_name": "Intra / Cross Database Staging",
-    "source_type_parameters": [],
-    "source_type_url": "",
-    "system_color": "#997A00",
-    "system_comment": "Business Rule RAW->Business Vault",
-    "system_id": "dbt_rule",
-    "system_name": "DBT_RULE"
+	"deployable": true,
+	"hidden_in_system_deployment": false,
+	"source_type_id": "intradatabase",
+	"source_type_name": "Intra / Cross Database Staging",
+	"source_type_parameters": [
+	],
+	"source_type_url": "",
+	"system_color": "#3D0099",
+	"system_comment": "Business Rule RAW->Business Vault",
+	"system_id": "dbt_rule",
+	"system_name": "DBT_RULE"
 }

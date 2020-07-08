@@ -1,30 +1,30 @@
 {
-    "accesslayer_priorization": 1,
-    "additional_deployment_parameters": {
-        "business_ruleset_hierarchy_level": 0
-    },
-    "business_rules_view_code": "create or replace view business_rules.xmlmetric_s_xmlinterface as\nselect \n    bo.\"business key for hub xmlmetric\",    -- business key for business layer\n    bo.ldts,                              -- load time satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.updated,                           -- updated from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.component_name,                    -- component_name from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.component_version,                 -- component_version from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.specmetric_name,                   -- specmetric_name from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.metric_name,                       -- metric_name from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n    bo.metric_value                       -- metric_value from satellite xmlmetric > xmlinterface > default of vi_xml_metric_u_staging\n\n  from businessobjects.xmlmetric_s_xmlinterface bo\n;",
-    "business_ruleset_comment": null,
-    "business_ruleset_name": "Unaltered default",
-    "business_ruleset_order": 1,
-    "business_ruleset_suffix_id": null,
-    "business_ruleset_view_id": "business_rules.xmlmetric_s_xmlinterface",
-    "container_id": "h_xmlmetric_c_dvb_default",
-    "dependent_objects": [
-        {
-            "object_id": "businessobjects.xmlmetric_s_xmlinterface",
-            "object_type": "business_object"
-        }
-    ],
-    "include_in_accesslayer": false,
-    "is_error_ruleset": false,
-    "is_unaltered_business_ruleset": true,
-    "quick_inserts": {
-        "quick_insert_list": [
-            {
-                "quick_insert_table_id": "businessobjects.xmlmetric_s_xmlinterface"
-            }
-        ]
-    },
-    "system_id": "xmlinterface"
+	"accesslayer_priorization": 1,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE VIEW [business_rules].[xmlmetric_s_xmlinterface]\nAS\n\n  SELECT \n    bo.[business key for hub xmlmetric],    -- Business Key for Business Layer\n    bo.[ldts],                              -- Load Time Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[updated],                           -- [updated] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[component_name],                    -- [component_name] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[component_version],                 -- [component_version] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[specmetric_name],                   -- [specmetric_name] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[metric_name],                       -- [metric_name] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n    bo.[metric_value]                       -- [metric_value] from Satellite XMLMetric > XMLINTERFACE > Default of VI_XML_METRIC_U_STAGING\n\n  FROM [businessobjects].[xmlmetric_s_xmlinterface] AS bo\n;\n",
+	"business_ruleset_comment": "",
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "business_rules.xmlmetric_s_xmlinterface",
+	"container_id": "h_xmlmetric_c_dvb_default",
+	"dependent_objects": [
+		{
+			"object_id": "businessobjects.xmlmetric_s_xmlinterface",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": false,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "businessobjects.xmlmetric_s_xmlinterface"
+			}
+		]
+	},
+	"system_id": "xmlinterface"
 }

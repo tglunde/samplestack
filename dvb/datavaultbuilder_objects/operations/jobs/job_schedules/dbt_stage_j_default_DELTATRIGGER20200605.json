@@ -1,0 +1,18 @@
+{
+	"crontab_string": "0 0 * * *",
+	"job_id": "dbt_stage_j_default",
+	"job_schedule_order": 3,
+	"schedule_begin": "2020-07-01T00:00:00+02:00",
+	"schedule_comment": "",
+	"schedule_end": null,
+	"schedule_id": "DELTATRIGGER20200605",
+	"schedule_is_delta_load": true,
+	"schedule_is_enabled": false,
+	"schedule_name": "Deltatrigger20200605",
+	"where_clause_parameters": [
+		{
+			"parameter": "DELIVERYDATE",
+			"value": "20200605"
+		}
+	]
+}

@@ -1,31 +1,31 @@
 {
-    "column_ids": [
-        {
-            "character_maximum_length": 8000,
-            "column_comment": "",
-            "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_h.component_qlevel",
-            "column_is_used": true,
-            "column_name": "almplus status",
-            "column_name_detail": "component_qlevel",
-            "column_nq_id": "component_qlevel",
-            "column_order": 1,
-            "column_type": "attribute",
-            "complete_data_type": "varchar(8000)",
-            "conversion_type": null,
-            "data_type": "varchar",
-            "datetime_precision": null,
-            "numeric_precision": null,
-            "numeric_scale": null
-        }
-    ],
-    "functional_suffix_id": "",
-    "functional_suffix_name": "ALMPlus Status",
-    "hub_id": "h_component",
-    "satellite_comment": "",
-    "satellite_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules",
-    "satellite_is_prototype": false,
-    "satellite_subject_area_name": "QM",
-    "staging_resource_id": "xmlcomponent_xmlinterface_u_business_rules",
-    "staging_table_id": "staging.psa_r_xmlcomponent_xmlinterface_u_business_rules",
-    "system_id": "psa"
+	"column_ids": [
+		{
+			"character_maximum_length": 8000,
+			"column_comment": "",
+			"column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_h.component_qlevel",
+			"column_is_used": true,
+			"column_name": "almplus status",
+			"column_name_detail": "component_qlevel",
+			"column_nq_id": "component_qlevel",
+			"column_order": 1,
+			"column_type": "attribute",
+			"complete_data_type": "varchar(8000)",
+			"conversion_type": null,
+			"data_type": "varchar",
+			"datetime_precision": null,
+			"numeric_precision": 0,
+			"numeric_scale": 0
+		}
+	],
+	"functional_suffix_id": "",
+	"functional_suffix_name": "ALMPlus Status",
+	"hub_id": "h_component",
+	"satellite_comment": "",
+	"satellite_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules",
+	"satellite_is_prototype": false,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": "xmlcomponent_xmlinterface_u_business_rules",
+	"staging_table_id": "staging.psa_r_xmlcomponent_xmlinterface_u_business_rules",
+	"system_id": "psa"
 }
