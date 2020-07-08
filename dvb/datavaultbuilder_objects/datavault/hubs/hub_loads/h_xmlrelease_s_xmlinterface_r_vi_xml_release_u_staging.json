@@ -1,0 +1,35 @@
+{
+    "business_key_prefix": "",
+    "business_key_short": "updated, product_name, release_guid, component_cmppkgname, component_version",
+    "column_ids": [
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_release_u_staging.updated",
+            "column_order": 1
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_release_u_staging.product_name",
+            "column_order": 2
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_release_u_staging.release_guid",
+            "column_order": 3
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_release_u_staging.component_cmppkgname",
+            "column_order": 4
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_release_u_staging.component_version",
+            "column_order": 5
+        }
+    ],
+    "datavault_category_id": "persistent_staging",
+    "hub_id": "h_xmlrelease",
+    "hub_load_display_name": "XMLINTERFACE: VI XML RELEASE U STAGING (UPDATED, PRODUCT_NAME, RELEASE_GUID, COMPONENT_CMPPKGNAME, COMPONENT_VERSION)",
+    "hub_load_id": "h_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging",
+    "keys_are_prehashed": false,
+    "keys_are_unique": true,
+    "staging_table_id": "staging.xmlinterface_r_vi_xml_release_u_staging",
+    "system_id": "xmlinterface",
+    "system_name": "XMLINTERFACE"
+}

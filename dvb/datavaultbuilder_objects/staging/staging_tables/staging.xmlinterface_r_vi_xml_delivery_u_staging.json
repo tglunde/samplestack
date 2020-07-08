@@ -1,0 +1,284 @@
+{
+    "columns": [
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.updated",
+            "column_name": "updated",
+            "column_order": 1,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_guid",
+            "column_name": "delivery_guid",
+            "column_order": 2,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_cbdnumber",
+            "column_name": "delivery_cbdnumber",
+            "column_order": 3,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_revisionalm",
+            "column_name": "delivery_revisionalm",
+            "column_order": 4,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_title",
+            "column_name": "delivery_title",
+            "column_order": 5,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_customer",
+            "column_name": "delivery_customer",
+            "column_order": 6,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_delivereddate",
+            "column_name": "delivery_delivereddate",
+            "column_order": 7,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_deliverytype",
+            "column_name": "delivery_deliverytype",
+            "column_order": 8,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_deliverynumber",
+            "column_name": "delivery_deliverynumber",
+            "column_order": 9,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_ecuname",
+            "column_name": "delivery_ecuname",
+            "column_order": 10,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_indbdate",
+            "column_name": "delivery_indbdate",
+            "column_order": 11,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_producttitle",
+            "column_name": "delivery_producttitle",
+            "column_order": 12,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_programtitle",
+            "column_name": "delivery_programtitle",
+            "column_order": 13,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_reltype",
+            "column_name": "delivery_reltype",
+            "column_order": 14,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_bisbeta",
+            "column_name": "delivery_bisbeta",
+            "column_order": 15,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_bissafetyrelevantc",
+            "column_name": "delivery_bissafetyrelevantc",
+            "column_order": 16,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_testedderivate",
+            "column_name": "delivery_testedderivate",
+            "column_order": 17,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.component_name",
+            "column_name": "component_name",
+            "column_order": 18,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.component_version",
+            "column_name": "component_version",
+            "column_order": 19,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        }
+    ],
+    "loading_batch_size": 50000,
+    "source_schema_name": "STAGING",
+    "source_schema_or_system_id": "STAGING",
+    "source_table_id": "staging.vi_xml_delivery",
+    "source_table_name": "VI_XML_DELIVERY",
+    "source_table_staging_id": "vi_xml_delivery",
+    "source_table_type_id": "VIEW",
+    "staging_table_comment": null,
+    "staging_table_display_string": "Vi Xml Delivery (STAGING) [XMLINTERFACE_R_VI_XML_DELIVERY_U_STAGING]",
+    "staging_table_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging",
+    "staging_table_name": "Vi Xml Delivery",
+    "system_id": "xmlinterface",
+    "where_clause_delta_part_template": null,
+    "where_clause_general_part": null
+}

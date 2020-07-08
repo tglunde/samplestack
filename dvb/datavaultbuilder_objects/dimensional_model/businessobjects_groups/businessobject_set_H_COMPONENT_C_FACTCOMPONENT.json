@@ -1,8 +1,0 @@
-{
-	"businessobject_set_display_name": "Component > FactComponent",
-	"businessobject_set_id": "businessobject_set_H_COMPONENT_C_FACTCOMPONENT",
-	"functional_suffix_id": "FACTCOMPONENT",
-	"functional_suffix_name": "FactComponent",
-	"start_hub_id": "H_COMPONENT",
-	"start_hub_name": "Component"
-}

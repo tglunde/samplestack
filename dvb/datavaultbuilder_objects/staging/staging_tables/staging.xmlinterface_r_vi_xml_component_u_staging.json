@@ -1,0 +1,494 @@
+{
+    "columns": [
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.namespace_guid",
+            "column_name": "namespace_guid",
+            "column_order": 1,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.namespace_name",
+            "column_name": "namespace_name",
+            "column_order": 2,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_guid",
+            "column_name": "package_guid",
+            "column_order": 3,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_name",
+            "column_name": "package_name",
+            "column_order": 4,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_autosarcluster",
+            "column_name": "package_autosarcluster",
+            "column_order": 5,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_currentqualityprocess",
+            "column_name": "package_currentqualityprocess",
+            "column_order": 6,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_description",
+            "column_name": "package_description",
+            "column_order": 7,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_hassafetyrequirements",
+            "column_name": "package_hassafetyrequirements",
+            "column_order": 8,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_layer",
+            "column_name": "package_layer",
+            "column_order": 9,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_reportclassification",
+            "column_name": "package_reportclassification",
+            "column_order": 10,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_reportingqstatus",
+            "column_name": "package_reportingqstatus",
+            "column_order": 11,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_shortname",
+            "column_name": "package_shortname",
+            "column_order": 12,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_targetqualityprocess",
+            "column_name": "package_targetqualityprocess",
+            "column_order": 13,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_targetqualitystatus",
+            "column_name": "package_targetqualitystatus",
+            "column_order": 14,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_usedinproduct",
+            "column_name": "package_usedinproduct",
+            "column_order": 15,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_userguidresponsible",
+            "column_name": "package_userguidresponsible",
+            "column_order": 16,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_guid",
+            "column_name": "component_guid",
+            "column_order": 17,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_version",
+            "column_name": "component_version",
+            "column_order": 18,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_implementationversion",
+            "column_name": "component_implementationversion",
+            "column_order": 19,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_creationdatealm",
+            "column_name": "component_creationdatealm",
+            "column_order": 20,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_modtimealm",
+            "column_name": "component_modtimealm",
+            "column_order": 21,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_revisionalm",
+            "column_name": "component_revisionalm",
+            "column_order": 22,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_creationdatesvn",
+            "column_name": "component_creationdatesvn",
+            "column_order": 23,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_revisionsvn",
+            "column_name": "component_revisionsvn",
+            "column_order": 24,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_lastmoddate",
+            "column_name": "component_lastmoddate",
+            "column_order": 25,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_serverurl",
+            "column_name": "component_serverurl",
+            "column_order": 26,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_description",
+            "column_name": "component_description",
+            "column_order": 27,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_pathtestreports",
+            "column_name": "component_pathtestreports",
+            "column_order": 28,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_qaapprovalnote",
+            "column_name": "component_qaapprovalnote",
+            "column_order": 29,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_qacheck",
+            "column_name": "component_qacheck",
+            "column_order": 30,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_qlevel",
+            "column_name": "component_qlevel",
+            "column_order": 31,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_releasestatement",
+            "column_name": "component_releasestatement",
+            "column_order": 32,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_revisiontestreports",
+            "column_name": "component_revisiontestreports",
+            "column_order": 33,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        },
+        {
+            "column_comment": null,
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.updated",
+            "column_name": null,
+            "column_order": 34,
+            "complete_data_type": "varchar(8000)",
+            "jdbc_data_type": {
+                "character_maximum_length": 8000,
+                "data_type_name": "varchar",
+                "jdbc_data_type_id": 12,
+                "numeric_precision": null,
+                "numeric_scale": null
+            }
+        }
+    ],
+    "loading_batch_size": 50000,
+    "source_schema_name": "STAGING",
+    "source_schema_or_system_id": "STAGING",
+    "source_table_id": "staging.vi_xml_component",
+    "source_table_name": "VI_XML_COMPONENT",
+    "source_table_staging_id": "vi_xml_component",
+    "source_table_type_id": "Unknown",
+    "staging_table_comment": null,
+    "staging_table_display_string": "Vi Xml Component (STAGING) [XMLINTERFACE_R_VI_XML_COMPONENT_U_STAGING]",
+    "staging_table_id": "staging.xmlinterface_r_vi_xml_component_u_staging",
+    "staging_table_name": "Vi Xml Component",
+    "system_id": "xmlinterface",
+    "where_clause_delta_part_template": null,
+    "where_clause_general_part": null
+}

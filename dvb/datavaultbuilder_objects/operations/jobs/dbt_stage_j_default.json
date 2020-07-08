@@ -1,0 +1,12 @@
+{
+    "job_comment": "Automatically created job on system creation",
+    "job_enabled": true,
+    "job_id": "DBT_STAGE_J_DEFAULT",
+    "job_loads": [],
+    "job_name": "Default",
+    "job_sql_queries": [],
+    "job_suffix_id": "default",
+    "job_type": "auto",
+    "parallel_loads": -1,
+    "system_id": "dbt_stage"
+}

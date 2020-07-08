@@ -1,0 +1,13 @@
+{
+    "column_ids": [],
+    "functional_suffix_id": "main",
+    "functional_suffix_name": "Main",
+    "hub_id": "h_customerqm",
+    "satellite_comment": "",
+    "satellite_id": "s_customerqm_s__f_main",
+    "satellite_is_prototype": true,
+    "satellite_subject_area_name": "QM",
+    "staging_resource_id": null,
+    "staging_table_id": "",
+    "system_id": "dvb_prototype"
+}

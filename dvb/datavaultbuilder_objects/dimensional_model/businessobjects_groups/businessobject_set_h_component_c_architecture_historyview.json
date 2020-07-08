@@ -1,0 +1,8 @@
+{
+    "businessobject_set_display_name": "Component > Architecture Historyview",
+    "businessobject_set_id": "businessobject_set_h_component_c_architecture_historyview",
+    "functional_suffix_id": "architecture_historyview",
+    "functional_suffix_name": "Architecture Historyview",
+    "start_hub_id": "h_component",
+    "start_hub_name": "Component"
+}

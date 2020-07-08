@@ -1,0 +1,12 @@
+{
+    "business_rules_businessobject_container_display_name": "XMLRelease",
+    "business_rules_businessobject_container_id": "h_xmlrelease_c_dvb_default",
+    "business_rules_businessobject_container_order": 10,
+    "business_rules_businessobject_systems": [
+        {
+            "related_businessobject_view_id": "businessobjects.xmlrelease_s_xmlinterface",
+            "system_id": "xmlinterface",
+            "system_order": 1
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "businessobject_comment": "",
+    "businessobject_display_name": "Component > PSA > Architecture Historyview",
+    "businessobject_dropdown_entry_string": "Component - Architecture Historyview",
+    "businessobject_elements": [
+        {
+            "columns": [
+                {
+                    "column_comment": "Business Key for Hub Component",
+                    "column_id": "datavault.h_component.component_bk",
+                    "column_name": "bk component",
+                    "column_name_detail": "component_bk",
+                    "column_nq_id": "component_bk",
+                    "column_order": 1,
+                    "column_orig_name": "BK Component",
+                    "conversion_type": null
+                }
+            ],
+            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\"}]}}"
+        },
+        {
+            "columns": [
+                {
+                    "column_comment": "Load Time Satellite Component > PSA > AutoSAR",
+                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_c.component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_ltc",
+                    "column_name": "ldts_from",
+                    "column_name_detail": "component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_ltc",
+                    "column_nq_id": "component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_ltc",
+                    "column_order": 2,
+                    "column_orig_name": "LTS Component - PSA - AutoSAR",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_c.package_autosarcluster",
+                    "column_name": "cluster",
+                    "column_name_detail": "package_autosarcluster",
+                    "column_nq_id": "package_autosarcluster",
+                    "column_order": 3,
+                    "column_orig_name": "Cluster",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_c.package_shortname",
+                    "column_name": "modul",
+                    "column_name_detail": "package_shortname",
+                    "column_nq_id": "package_shortname",
+                    "column_order": 4,
+                    "column_orig_name": "Modul",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                }
+            ],
+            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_component\",\"satellites\":[{\"satellite_id\":\"s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar\"}]}]}}"
+        }
+    ],
+    "businessobject_set_id": "businessobject_set_h_component_c_architecture_historyview",
+    "businessobject_structure": null,
+    "businessobject_view_id": "businessobjects.component_s_psa_c_architecture_historyview",
+    "dependent_objects": [
+        {
+            "object_id": "h_component",
+            "object_type": "hub"
+        },
+        {
+            "object_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar",
+            "object_type": "satellite"
+        }
+    ],
+    "granularity_satellite_id": "s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar",
+    "system_id": "psa",
+    "system_name": "PSA"
+}

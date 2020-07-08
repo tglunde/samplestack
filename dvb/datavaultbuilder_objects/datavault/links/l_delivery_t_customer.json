@@ -1,0 +1,10 @@
+{
+    "hub_a_id": "h_delivery",
+    "hub_b_id": "h_customer",
+    "link_comment": "",
+    "link_id": "l_delivery_t_customer",
+    "link_subject_area_name": "QM",
+    "link_suffix_id": null,
+    "link_suffix_name": "",
+    "link_type": "many_to_many"
+}

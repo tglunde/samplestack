@@ -1,0 +1,30 @@
+{
+    "accesslayer_priorization": 0,
+    "additional_deployment_parameters": {
+        "business_ruleset_hierarchy_level": 0
+    },
+    "business_rules_view_code": "create view business_rules.component_s_psa_c_architecture_historyview\nas\n\n  select \n    bo.\"bk component\",    -- business key for hub component\n    bo.\"ldts_from\",             -- technische g\u00fcltigkeit\n    bo.\"ldts_to\",             -- technische g\u00fcltigkeit\n    bo.\"cluster\",         -- package_autosarcluster from satellite component > psa > autosar\n    bo.\"modul\"            -- package_shortname from satellite component > psa > autosar\n  from (\nselect\n    h00_h_component.component_bk as \"bk component\",\n    s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_lth ldts_from,     \n    coalesce(lead(s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_lth) over (partition by h00_h_component.component_bk order by s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_lth asc ), datetime2fromparts(9999,12,31,23,59,59,0,0)) as ldts_to,    \n    s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.package_autosarcluster as \"cluster\",\n    s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.package_shortname as \"modul\"\n  from   datavault.h_component h00_h_component \n  join datavault.s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar_h \n  \ts0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar\n    \ton (h00_h_component.component_h = s0000_s_component_s_psa_r_xmlcomponent_xmlinterface_u_business_rules_f_autosar.component_h)\n  ) bo\n",
+    "business_ruleset_comment": "",
+    "business_ruleset_name": "Altered default",
+    "business_ruleset_order": 1,
+    "business_ruleset_suffix_id": null,
+    "business_ruleset_view_id": "business_rules.component_s_psa_c_architecture_historyview",
+    "container_id": "h_component_c_architecture_historyview",
+    "dependent_objects": [
+        {
+            "object_id": "businessobjects.component_s_psa_c_architecture_historyview",
+            "object_type": "business_object"
+        }
+    ],
+    "include_in_accesslayer": true,
+    "is_error_ruleset": false,
+    "is_unaltered_business_ruleset": false,
+    "quick_inserts": {
+        "quick_insert_list": [
+            {
+                "quick_insert_table_id": "businessobjects.component_s_psa_c_architecture_historyview"
+            }
+        ]
+    },
+    "system_id": "psa"
+}

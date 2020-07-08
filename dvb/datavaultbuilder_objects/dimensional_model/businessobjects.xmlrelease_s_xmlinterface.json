@@ -1,0 +1,208 @@
+{
+    "businessobject_comment": "",
+    "businessobject_display_name": "XMLRelease > XMLINTERFACE > Default",
+    "businessobject_dropdown_entry_string": "XMLRelease",
+    "businessobject_elements": [
+        {
+            "columns": [
+                {
+                    "column_comment": "Business Key for Hub XMLRelease",
+                    "column_id": "datavault.h_xmlrelease.xmlrelease_bk",
+                    "column_name": "business key for hub xmlrelease",
+                    "column_name_detail": "xmlrelease_bk",
+                    "column_nq_id": "xmlrelease_bk",
+                    "column_order": 1,
+                    "column_orig_name": "Business Key for Hub XMLRelease",
+                    "conversion_type": null
+                }
+            ],
+            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlrelease\"}]}}"
+        },
+        {
+            "columns": [
+                {
+                    "column_comment": "Entry Present in Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.v_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_epc",
+                    "column_name": "ps xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+                    "column_name_detail": "",
+                    "column_nq_id": "v_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_epc",
+                    "column_order": 2,
+                    "column_orig_name": "PS XMLRelease - XMLINTERFACE - Default of VI_XML_RELEASE_U_STAGING",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "Load Time Satellite XMLRelease > XMLINTERFACE > Default of VI_XML_RELEASE_U_STAGING",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_ltc",
+                    "column_name": "lts xmlrelease - xmlinterface - default of vi_xml_release_u_staging",
+                    "column_name_detail": "xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_ltc",
+                    "column_nq_id": "xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_ltc",
+                    "column_order": 3,
+                    "column_orig_name": "LTS XMLRelease - XMLINTERFACE - Default of VI_XML_RELEASE_U_STAGING",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.updated",
+                    "column_name": "updated",
+                    "column_name_detail": "",
+                    "column_nq_id": "updated",
+                    "column_order": 4,
+                    "column_orig_name": "UPDATED",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.product_name",
+                    "column_name": "product_name",
+                    "column_name_detail": "",
+                    "column_nq_id": "product_name",
+                    "column_order": 5,
+                    "column_orig_name": "PRODUCT_NAME",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_creationdatealm",
+                    "column_name": "release_creationdatealm",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_creationdatealm",
+                    "column_order": 6,
+                    "column_orig_name": "RELEASE_CREATIONDATEALM",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_creationdatesvn",
+                    "column_name": "release_creationdatesvn",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_creationdatesvn",
+                    "column_order": 7,
+                    "column_orig_name": "RELEASE_CREATIONDATESVN",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_guid",
+                    "column_name": "release_guid",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_guid",
+                    "column_order": 8,
+                    "column_orig_name": "RELEASE_GUID",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_lastmoddate",
+                    "column_name": "release_lastmoddate",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_lastmoddate",
+                    "column_order": 9,
+                    "column_orig_name": "RELEASE_LASTMODDATE",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_modtimealm",
+                    "column_name": "release_modtimealm",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_modtimealm",
+                    "column_order": 10,
+                    "column_orig_name": "RELEASE_MODTIMEALM",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_revisionalm",
+                    "column_name": "release_revisionalm",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_revisionalm",
+                    "column_order": 11,
+                    "column_orig_name": "RELEASE_REVISIONALM",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_revisionsvn",
+                    "column_name": "release_revisionsvn",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_revisionsvn",
+                    "column_order": 12,
+                    "column_orig_name": "RELEASE_REVISIONSVN",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.release_version",
+                    "column_name": "release_version",
+                    "column_name_detail": "",
+                    "column_nq_id": "release_version",
+                    "column_order": 13,
+                    "column_orig_name": "RELEASE_VERSION",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.component_guid",
+                    "column_name": "component_guid",
+                    "column_name_detail": "",
+                    "column_nq_id": "component_guid",
+                    "column_order": 14,
+                    "column_orig_name": "COMPONENT_GUID",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.component_cmppkgname",
+                    "column_name": "component_cmppkgname",
+                    "column_name_detail": "",
+                    "column_nq_id": "component_cmppkgname",
+                    "column_order": 15,
+                    "column_orig_name": "COMPONENT_CMPPKGNAME",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                },
+                {
+                    "column_comment": "",
+                    "column_id": "datavault.s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging_c.component_version",
+                    "column_name": "component_version",
+                    "column_name_detail": "",
+                    "column_nq_id": "component_version",
+                    "column_order": 16,
+                    "column_orig_name": "COMPONENT_VERSION",
+                    "complete_data_type": "varchar(8000)",
+                    "conversion_type": null
+                }
+            ],
+            "path_id": "{\"businessobject_path\":{\"hubs\":[{\"hub_id\":\"h_xmlrelease\",\"satellites\":[{\"satellite_id\":\"s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging\"}]}]}}"
+        }
+    ],
+    "businessobject_set_id": "businessobject_set_h_xmlrelease",
+    "businessobject_structure": null,
+    "businessobject_view_id": "businessobjects.xmlrelease_s_xmlinterface",
+    "dependent_objects": [
+        {
+            "object_id": "h_xmlrelease",
+            "object_type": "hub"
+        },
+        {
+            "object_id": "s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging",
+            "object_type": "satellite"
+        }
+    ],
+    "granularity_satellite_id": "s_xmlrelease_s_xmlinterface_r_vi_xml_release_u_staging",
+    "system_id": "xmlinterface",
+    "system_name": "XMLINTERFACE"
+}

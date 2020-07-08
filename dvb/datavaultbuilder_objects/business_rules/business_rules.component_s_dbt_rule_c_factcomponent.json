@@ -1,0 +1,30 @@
+{
+    "accesslayer_priorization": 0,
+    "additional_deployment_parameters": {
+        "business_ruleset_hierarchy_level": 0
+    },
+    "business_rules_view_code": "create or replace view business_rules.component_s_dbt_rule_c_factcomponent as\nselect \n    bo.\"business key for hub component\",    -- business key for hub component\n    bo.tcases,                            -- tcases from satellite component > dbt_rule > test metrics calculation\n    bo.creqs,                             -- creqs from satellite component > dbt_rule > test metrics calculation\n    bo.creqswithtracetotcase,             -- creqswithtracetotcase from satellite component > dbt_rule > test metrics calculation\n    bo.tcase_pro_creq,                    -- tcase_pro_creq from satellite component > dbt_rule > test metrics calculation\n    bo.\"minpth\",                            -- \"minpth\" from satellite component > dbt_stage > test metric pth\n    bo.\"maxpth\",                            -- \"maxpth\" from satellite component > dbt_stage > test metric pth\n    bo.\"implpth\"                            -- \"implpth\" from satellite component > dbt_stage > test metric pth\n\n  from businessobjects.component_s_dbt_rule_c_factcomponent bo\n;",
+    "business_ruleset_comment": null,
+    "business_ruleset_name": "Unaltered default",
+    "business_ruleset_order": 1,
+    "business_ruleset_suffix_id": null,
+    "business_ruleset_view_id": "business_rules.component_s_dbt_rule_c_factcomponent",
+    "container_id": "h_component_c_factcomponent",
+    "dependent_objects": [
+        {
+            "object_id": "businessobjects.component_s_dbt_rule_c_factcomponent",
+            "object_type": "business_object"
+        }
+    ],
+    "include_in_accesslayer": true,
+    "is_error_ruleset": false,
+    "is_unaltered_business_ruleset": true,
+    "quick_inserts": {
+        "quick_insert_list": [
+            {
+                "quick_insert_table_id": "businessobjects.component_s_dbt_rule_c_factcomponent"
+            }
+        ]
+    },
+    "system_id": "dbt_rule"
+}

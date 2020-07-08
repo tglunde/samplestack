@@ -1,0 +1,30 @@
+{
+    "accesslayer_priorization": 1,
+    "additional_deployment_parameters": {
+        "business_ruleset_hierarchy_level": 0
+    },
+    "business_rules_view_code": "create view business_rules.delivery_s_psa_c_componentdelivery\nas\n\n  select \n    bo.\"bk component\",         -- business key for hub component\n    bo.\"bk delivery\",          -- business key for hub delivery\n    bo.\"delivery guid\",        -- delivery_guid from satellite delivery > psa > main\n    bo.\"component name\",       -- package_name from satellite component > psa > main\n    bo.\"cbd number\",           -- delivery_cbdnumber from satellite delivery > psa > main\n    bo.\"component version\",    -- component_version from satellite component > psa > main\n    bo.\"component guid\",       -- component_guid from satellite component > psa > main\n    bo.\"delivery number\",      -- delivery_deliverynumber from satellite delivery > psa > main\n    bo.\"customer\"              -- delivery_customer from satellite delivery > psa > main\n\n  from businessobjects.delivery_s_psa_c_componentdelivery bo",
+    "business_ruleset_comment": "",
+    "business_ruleset_name": "Unaltered default",
+    "business_ruleset_order": 1,
+    "business_ruleset_suffix_id": null,
+    "business_ruleset_view_id": "business_rules.delivery_s_psa_c_componentdelivery",
+    "container_id": "h_delivery_c_componentdelivery",
+    "dependent_objects": [
+        {
+            "object_id": "businessobjects.delivery_s_psa_c_componentdelivery",
+            "object_type": "business_object"
+        }
+    ],
+    "include_in_accesslayer": true,
+    "is_error_ruleset": false,
+    "is_unaltered_business_ruleset": true,
+    "quick_inserts": {
+        "quick_insert_list": [
+            {
+                "quick_insert_table_id": "businessobjects.delivery_s_psa_c_componentdelivery"
+            }
+        ]
+    },
+    "system_id": "psa"
+}

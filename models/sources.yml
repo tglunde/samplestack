@@ -9,10 +9,10 @@ sources:
         - name: vi_xml_metric
         - name: vi_xml_release
     - name: PSA
-      schema: BUSINESS_RULES
+      schema: business_rules
       tables:
-        - name: XMLMETRIC_S_XMLINTERFACE
+        - name: xmlmetric_s_xmlinterface
     - name: RAW
-      schema: BUSINESS_RULES
+      schema: business_rules
       tables:
-        - name: COMPONENT_S_DBT_STAGE
+        - name: component_s_dbt_stage

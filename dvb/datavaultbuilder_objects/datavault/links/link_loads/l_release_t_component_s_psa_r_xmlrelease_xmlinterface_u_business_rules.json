@@ -1,0 +1,7 @@
+{
+    "link_id": "l_release_t_component",
+    "link_load_display_name": "Release > PSA: XMLRELEASE XMLINTERFACE U BUSINESS RULES (RELEASE_GUID) TO Component > PSA: XMLRELEASE XMLINTERFACE U BUSINESS RULES (COMPONENT_CMPPKGNAME, COMPONENT_VERSION)",
+    "link_load_id": "L_RELEASE_T_COMPONENT_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES",
+    "staging_table_id": "staging.psa_r_xmlrelease_xmlinterface_u_business_rules",
+    "system_id": "psa"
+}

@@ -1,8 +1,8 @@
 name: samplestack
 version: 0.0.1
-config-version: 2
+#config-version: 2
 
-profile: exasol
+profile: sqlserver
 
 models:
   samplestack:

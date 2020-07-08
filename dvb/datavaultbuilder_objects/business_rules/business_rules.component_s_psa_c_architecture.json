@@ -1,0 +1,30 @@
+{
+    "accesslayer_priorization": 1,
+    "additional_deployment_parameters": {
+        "business_ruleset_hierarchy_level": 0
+    },
+    "business_rules_view_code": "create or replace view business_rules.component_s_psa_c_architecture as\nselect \n    bo.\"bk component\",    -- business key for hub component\n    bo.\"cluster\",         -- package_autosarcluster from satellite component > psa > autosar\n    bo.\"modul\"            -- package_shortname from satellite component > psa > autosar\n\n  from businessobjects.component_s_psa_c_architecture bo\n;",
+    "business_ruleset_comment": null,
+    "business_ruleset_name": "Unaltered default",
+    "business_ruleset_order": 1,
+    "business_ruleset_suffix_id": null,
+    "business_ruleset_view_id": "business_rules.component_s_psa_c_architecture",
+    "container_id": "h_component_c_architecture",
+    "dependent_objects": [
+        {
+            "object_id": "businessobjects.component_s_psa_c_architecture",
+            "object_type": "business_object"
+        }
+    ],
+    "include_in_accesslayer": true,
+    "is_error_ruleset": false,
+    "is_unaltered_business_ruleset": true,
+    "quick_inserts": {
+        "quick_insert_list": [
+            {
+                "quick_insert_table_id": "businessobjects.component_s_psa_c_architecture"
+            }
+        ]
+    },
+    "system_id": "psa"
+}

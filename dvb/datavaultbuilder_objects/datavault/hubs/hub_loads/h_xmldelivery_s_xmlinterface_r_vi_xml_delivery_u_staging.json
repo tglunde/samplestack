@@ -1,0 +1,35 @@
+{
+    "business_key_prefix": "",
+    "business_key_short": "updated, delivery_guid, delivery_cbdnumber, component_name, component_version",
+    "column_ids": [
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.updated",
+            "column_order": 1
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_guid",
+            "column_order": 2
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.delivery_cbdnumber",
+            "column_order": 3
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.component_name",
+            "column_order": 4
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging.component_version",
+            "column_order": 5
+        }
+    ],
+    "datavault_category_id": "persistent_staging",
+    "hub_id": "h_xmldelivery",
+    "hub_load_display_name": "XMLINTERFACE: VI XML DELIVERY U STAGING (UPDATED, DELIVERY_GUID, DELIVERY_CBDNUMBER, COMPONENT_NAME, COMPONENT_VERSION)",
+    "hub_load_id": "h_xmldelivery_s_xmlinterface_r_vi_xml_delivery_u_staging",
+    "keys_are_prehashed": false,
+    "keys_are_unique": true,
+    "staging_table_id": "staging.xmlinterface_r_vi_xml_delivery_u_staging",
+    "system_id": "xmlinterface",
+    "system_name": "XMLINTERFACE"
+}

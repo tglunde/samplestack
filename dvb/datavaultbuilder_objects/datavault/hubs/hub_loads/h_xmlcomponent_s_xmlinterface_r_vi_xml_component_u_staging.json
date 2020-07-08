@@ -1,0 +1,31 @@
+{
+    "business_key_prefix": "",
+    "business_key_short": "updated, namespace_name, package_name, component_version",
+    "column_ids": [
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.updated",
+            "column_order": 1
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.namespace_name",
+            "column_order": 2
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.package_name",
+            "column_order": 3
+        },
+        {
+            "column_id": "staging.xmlinterface_r_vi_xml_component_u_staging.component_version",
+            "column_order": 4
+        }
+    ],
+    "datavault_category_id": "persistent_staging",
+    "hub_id": "h_xmlcomponent",
+    "hub_load_display_name": "XMLINTERFACE: VI XML COMPONENT U STAGING (UPDATED, NAMESPACE_NAME, PACKAGE_NAME, COMPONENT_VERSION)",
+    "hub_load_id": "h_xmlcomponent_s_xmlinterface_r_vi_xml_component_u_staging",
+    "keys_are_prehashed": false,
+    "keys_are_unique": true,
+    "staging_table_id": "staging.xmlinterface_r_vi_xml_component_u_staging",
+    "system_id": "xmlinterface",
+    "system_name": "XMLINTERFACE"
+}

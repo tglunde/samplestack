@@ -13,6 +13,19 @@ exasol:
       pass: exasol
       dbname: dbt
       schema: dbt
-
+      
+sqlserver:
+  target: dev
+  outputs:
+    dev:
+      type: sqlserver
+      driver: 'ODBC Driver 17 for SQL Server'
+      server: 172.105.76.56
+      port: 1433
+      user: sa
+      password: xxxxx
+      database: datavaultbuilder
+      schema: dbt
+    
 config:
   send_anonymous_usage_stats: False

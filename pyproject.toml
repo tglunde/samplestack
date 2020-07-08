@@ -6,7 +6,7 @@ authors = ["torsten <torsten@glunde.de>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-dbt = "^0.17.0"
+dbt = "^0.15.2"
 
 [tool.poetry.dev-dependencies]
 
