@@ -1,4 +1,3 @@
-/* {"app": "dbt", "dbt_version": "0.17.0", "profile_name": "exasol", "target_name": "dev", "node_id": "model.samplestack.component_metric"} */
 with metrics as (
 select 
     updated, ldts,
@@ -38,7 +37,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "misraConfigOpenDeviation"
+            as misraconfigopendeviation
       
     
     ,
@@ -52,7 +51,8 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxDecCov"
+            as maxdeccov
+
       
     
     ,
@@ -66,7 +66,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_Relevant_FulfilledWithDeviations"
+            as nrofspecitems_relevant_fulfilledwithdeviations
       
     
     ,
@@ -80,7 +80,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DesignFunctions"
+            as designfunctions
       
     
     ,
@@ -94,7 +94,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_NotRelevant"
+            as nrofspecitems_notrelevant
       
     
     ,
@@ -108,7 +108,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_RelevantNS_Fulfilled"
+            as nrofspecitems_relevantns_fulfilled
       
     
     ,
@@ -122,7 +122,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinPAR"
+            as minpar
       
     
     ,
@@ -136,7 +136,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_TestReport_Plan"
+            as status_testreport_plan
       
     
     ,
@@ -150,7 +150,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationDecisionCoverage_Measured"
+            as configurationdecisioncoverage_measured
       
     
     ,
@@ -164,7 +164,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsNotOK"
+            as tcasesnotok
       
     
     ,
@@ -178,7 +178,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "CREQsWithSafetyLevel"
+            as creqswithsafetylevel
       
     
     ,
@@ -192,7 +192,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_CodeMetrics"
+            as status_codemetrics
       
     
     ,
@@ -206,7 +206,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TcasesFromVtrNotInTestSpec"
+            as tcasesfromvtrnotintestspec
       
     
     ,
@@ -220,7 +220,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_Relevant_Fulfilled"
+            as nrofspecitems_relevant_fulfilled
       
     
     ,
@@ -234,7 +234,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_RelevantNS_FulfilledWithDeviations"
+            as nrofspecitems_relevantns_fulfilledwithdeviations
       
     
     ,
@@ -248,7 +248,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_TestReport_PlanCoverage"
+            as status_testreport_plancoverage
       
     
     ,
@@ -262,7 +262,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DesignSubModules"
+            as designsubmodules
       
     
     ,
@@ -276,7 +276,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems"
+            as nrofspecitems
       
     
     ,
@@ -290,7 +290,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_NotRelevant_FulfilledNS"
+            as nrofspecitems_notrelevant_fulfilledns
       
     
     ,
@@ -304,7 +304,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ImplCAL"
+            as implcal
       
     
     ,
@@ -318,7 +318,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationDecisionCoverage"
+            as configurationdecisioncoverage
       
     
     ,
@@ -332,7 +332,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfRelevantSpecItemsWithMissingFulfillment"
+            as nrofrelevantspecitemswithmissingfulfillment
       
     
     ,
@@ -346,7 +346,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationFunctionCoverage_Measured"
+            as configurationfunctioncoverage_measured
       
     
     ,
@@ -360,7 +360,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "PPCoverage"
+            as ppcoverage
       
     
     ,
@@ -374,7 +374,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallFunctionCoverage"
+            as overallfunctioncoverage
       
     
     ,
@@ -388,7 +388,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxFctCov"
+            as maxfctcov
       
     
     ,
@@ -402,7 +402,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxPAR"
+            as maxpar
       
     
     ,
@@ -416,7 +416,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "UnjustifiedCodeMetricViolations"
+            as unjustifiedcodemetricviolations
       
     
     ,
@@ -430,7 +430,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfIrrelevantSpecItemsWithFulfillment"
+            as nrofirrelevantspecitemswithfulfillment
       
     
     ,
@@ -444,7 +444,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_TestReport"
+            as status_testreport
       
     
     ,
@@ -458,7 +458,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallBranchCoverage_Measured"
+            as overallbranchcoverage_measured
       
     
     ,
@@ -472,7 +472,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_Relevant_FulfilledNS"
+            as nrofspecitems_relevant_fulfilledns
       
     
     ,
@@ -486,7 +486,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsPlanned"
+            as tcasesplanned
       
     
     ,
@@ -500,7 +500,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_RelevantNS_FulfilledNS"
+            as nrofspecitems_relevantns_fulfilledns
       
     
     ,
@@ -514,7 +514,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ImplPTH"
+            as implpth
       
     
     ,
@@ -528,7 +528,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "PPCoverageQM"
+            as ppcoverageqm
       
     
     ,
@@ -542,7 +542,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_RelevantNS_NotFulfilled"
+            as nrofspecitems_relevantns_notfulfilled
       
     
     ,
@@ -556,7 +556,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "CREQsWithTraceToTCASE"
+            as creqswithtracetotcase
       
     
     ,
@@ -570,7 +570,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DescContainer"
+            as desccontainer
       
     
     ,
@@ -584,7 +584,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_NotRelevant_FulfilledWithDeviations"
+            as nrofspecitems_notrelevant_fulfilledwithdeviations
       
     
     ,
@@ -598,7 +598,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ImplPAR"
+            as implpar
       
     
     ,
@@ -612,7 +612,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxPTH"
+            as maxpth
       
     
     ,
@@ -626,7 +626,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsExecutionCoverage"
+            as tcasesexecutioncoverage
       
     
     ,
@@ -640,7 +640,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallFunctionCoverage_Measured"
+            as overallfunctioncoverage_measured
       
     
     ,
@@ -654,7 +654,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DescParameter"
+            as descparameter
       
     
     ,
@@ -668,7 +668,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_MISRA"
+            as status_misra
       
     
     ,
@@ -682,7 +682,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MISRA_RuleSet"
+            as misra_ruleset
       
     
     ,
@@ -696,7 +696,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationBranchCoverage"
+            as configurationbranchcoverage
       
     
     ,
@@ -710,7 +710,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinPTH"
+            as minpth
       
     
     ,
@@ -724,7 +724,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_Relevant"
+            as nrofspecitems_relevant
       
     
     ,
@@ -738,7 +738,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinCYC"
+            as mincyc
       
     
     ,
@@ -752,7 +752,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "misraConfigurations"
+            as misraconfigurations
       
     
     ,
@@ -766,7 +766,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxCYC"
+            as maxcyc
       
     
     ,
@@ -780,7 +780,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEs"
+            as tcases
       
     
     ,
@@ -794,7 +794,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsPassedOrJustified"
+            as tcasespassedorjustified
       
     
     ,
@@ -808,7 +808,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallDecisionCoverage_Measured"
+            as overalldecisioncoverage_measured
       
     
     ,
@@ -822,7 +822,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "CReqSpecChapters"
+            as creqspecchapters
       
     
     ,
@@ -836,7 +836,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASESFromTestSpec"
+            as tcasesfromtestspec
       
     
     ,
@@ -850,7 +850,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_NotRelevant_Fulfilled"
+            as nrofspecitems_notrelevant_fulfilled
       
     
     ,
@@ -864,7 +864,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinCAL"
+            as mincal
       
     
     ,
@@ -878,7 +878,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DesignFiles"
+            as designfiles
       
     
     ,
@@ -892,7 +892,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "SafetyManualChapter"
+            as safetymanualchapter
       
     
     ,
@@ -906,7 +906,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "misraRules"
+            as misrarules
       
     
     ,
@@ -920,7 +920,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TcasesFromTestSpecNotInVtr"
+            as tcasesfromtestspecnotinvtr
       
     
     ,
@@ -934,7 +934,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ImplCYC"
+            as implcyc
       
     
     ,
@@ -948,7 +948,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_NotRelevant_NotFulfilled"
+            as nrofspecitems_notrelevant_notfulfilled
       
     
     ,
@@ -962,7 +962,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItemsWithMissingRelevance"
+            as nrofspecitemswithmissingrelevance
       
     
     ,
@@ -976,7 +976,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_RelevantNS"
+            as nrofspecitems_relevantns
       
     
     ,
@@ -990,7 +990,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ImplMIF"
+            as implmif
       
     
     ,
@@ -1004,7 +1004,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItemsWhichAreFulfilledAndHaveNoTrace"
+            as nrofspecitemswhicharefulfilledandhavenotrace
       
     
     ,
@@ -1018,7 +1018,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxCAL"
+            as maxcal
       
     
     ,
@@ -1032,7 +1032,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationFunctionCoverage"
+            as configurationfunctioncoverage
       
     
     ,
@@ -1046,7 +1046,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "misraConfigOpenNotJustyfied"
+            as misraconfigopennotjustyfied
       
     
     ,
@@ -1060,7 +1060,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsLinkedWithASILCREQ_ExecutionCoverage"
+            as tcaseslinkedwithasilcreq_executioncoverage
       
     
     ,
@@ -1074,7 +1074,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "SafetyManualItems"
+            as safetymanualitems
       
     
     ,
@@ -1088,7 +1088,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallBranchCoverage"
+            as overallbranchcoverage
       
     
     ,
@@ -1102,7 +1102,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinMIF"
+            as minmif
       
     
     ,
@@ -1116,7 +1116,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_PreprocessorCoverage"
+            as status_preprocessorcoverage
       
     
     ,
@@ -1130,7 +1130,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DesignDiagram"
+            as designdiagram
       
     
     ,
@@ -1144,7 +1144,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinDecCov"
+            as mindeccov
       
     
     ,
@@ -1158,7 +1158,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TestReportVerdict"
+            as testreportverdict
       
     
     ,
@@ -1172,7 +1172,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_RuntimeCoverage"
+            as status_runtimecoverage
       
     
     ,
@@ -1186,7 +1186,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MinFctCov"
+            as minfctcov
       
     
     ,
@@ -1200,7 +1200,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Deviations_MaxOpenPerConfig"
+            as deviations_maxopenperconfig
       
     
     ,
@@ -1214,7 +1214,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "misraMessages"
+            as misramessages
       
     
     ,
@@ -1228,7 +1228,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItemsWhichAreFulfilledWithDeviationAndHaveNoDeviationText"
+            as nrofspecitemswhicharefulfilledwithdeviationandhavenodeviationtext
       
     
     ,
@@ -1242,7 +1242,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "vtrTCASEs"
+            as vtrtcases
       
     
     ,
@@ -1256,7 +1256,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OpenMajorDeviations"
+            as openmajordeviations
       
     
     ,
@@ -1270,7 +1270,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TCASEsTested"
+            as tcasestested
       
     
     ,
@@ -1284,7 +1284,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "CREQs"
+            as creqs
       
     
     ,
@@ -1298,7 +1298,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "MaxMIF"
+            as maxmif
       
     
     ,
@@ -1312,7 +1312,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "DesignFeatures"
+            as designfeatures
       
     
     ,
@@ -1326,7 +1326,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OpenRequiredDeviations"
+            as openrequireddeviations
       
     
     ,
@@ -1340,7 +1340,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Deviations_MaxPerConfig"
+            as deviations_maxperconfig
       
     
     ,
@@ -1354,7 +1354,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "TestSpecChapters"
+            as testspecchapters
       
     
     ,
@@ -1368,7 +1368,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "ConfigurationBranchCoverage_Measured"
+            as configurationbranchcoverage_measured
       
     
     ,
@@ -1382,7 +1382,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "Status_TestReport_TestResult"
+            as status_testreport_testresult
       
     
     ,
@@ -1396,7 +1396,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "OverallDecisionCoverage"
+            as overalldecisioncoverage
       
     
     ,
@@ -1410,7 +1410,7 @@ from {{ source('PSA','xmlmetric_s_xmlinterface')}}
     )
     
       
-            as "NrOfSpecItems_Relevant_NotFulfilled"
+            as nrofspecitems_relevant_notfulfilled
       
     
     
