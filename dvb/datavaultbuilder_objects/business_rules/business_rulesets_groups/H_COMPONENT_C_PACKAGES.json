@@ -1,7 +1,7 @@
 {
 	"business_rules_businessobject_container_display_name": "Component - Packages",
 	"business_rules_businessobject_container_id": "H_COMPONENT_C_PACKAGES",
-	"business_rules_businessobject_container_order": 3,
+	"business_rules_businessobject_container_order": 4,
 	"business_rules_businessobject_systems": [
 		{
 			"related_businessobject_view_id": "BUSINESSOBJECTS.COMPONENT_S_PSA_C_PACKAGES",

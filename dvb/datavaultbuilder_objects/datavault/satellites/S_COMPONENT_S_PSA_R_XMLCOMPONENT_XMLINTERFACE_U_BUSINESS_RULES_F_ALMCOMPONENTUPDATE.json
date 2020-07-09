@@ -1,0 +1,56 @@
+{
+	"column_ids": [
+		{
+			"character_maximum_length": 10,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES_F_ALMCOMPONENTUPDATE_H.UPDATED",
+			"column_is_used": true,
+			"column_name": "UPDATED",
+			"column_name_detail": "",
+			"column_nq_id": "UPDATED",
+			"column_order": 1,
+			"column_type": "attribute",
+			"complete_data_type": "DATE",
+			"conversion_type": {
+				"conversion_type_id": "varchar2date",
+				"conversion_type_parameters": [
+					{
+						"conversion_type_parameter": "YYYYMMDD",
+						"conversion_type_parameter_id": "varchar2date_format"
+					}
+				]
+			},
+			"data_type": "DATE",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		},
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES_F_ALMCOMPONENTUPDATE_H.UPDATED_RAW",
+			"column_is_used": true,
+			"column_name": "UPDATED_RAW",
+			"column_name_detail": "",
+			"column_nq_id": "UPDATED_RAW",
+			"column_order": 2,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		}
+	],
+	"functional_suffix_id": "ALMCOMPONENTUPDATE",
+	"functional_suffix_name": "ALMComponentUpdate",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S_PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES_F_ALMCOMPONENTUPDATE",
+	"satellite_is_prototype": false,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": "XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"staging_table_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"system_id": "PSA"
+}
