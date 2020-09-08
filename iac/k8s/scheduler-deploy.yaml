@@ -1,0 +1,63 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scheduler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scheduler
+  template:
+    metadata:
+      labels:
+        app: scheduler
+    spec:
+      containers:
+      - name: scheduler
+        image: "datavaultbuilder/scheduler:rel_5_tg"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: MAX_SERVICE_CONNECTION_AGE
+          value: "3600"
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: DVB_TAG
+          value: "rel_5_b2.4"
+        volumeMounts:
+        - name: dvb-secrets-vol
+          mountPath: /etc/secrets
+        - name: files
+          mountPath: /files
+      volumes:
+      - name: dvb-secrets-vol
+        secret:
+          secretName: dvb-secrets
+      - name: files
+        persistentVolumeClaim:
+          claimName: files
+---
+apiVersion: v1  
+kind: PersistentVolumeClaim
+metadata:
+  name: files
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: scheduler
+spec:
+  clusterIP: None
+  selector:
+    app: scheduler
+  ports:
+  - port: 80
+    targetPort: 80

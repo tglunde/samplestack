@@ -1,0 +1,81 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: core
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: core
+  template:
+    metadata:
+      labels:
+        app: core
+    spec:
+      containers:
+      - name: core
+        image: "datavaultbuilder/core:rel_5_tg"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: CLIENT_DB_CONNECTIONSTRING
+          value: jdbc:exa:exasol-db:8888
+        - name: CLIENT_DB_TYPE
+          value: exasol_client_db
+        - name: DOWNLOAD_DEMO_DATA
+          value: "false"
+        - name: DVB_TAG
+          value: "rel_5_b2.4"
+        - name: ENABLE_BETA_FEATURES
+          value: "false"
+        - name: GUI_USER_EMAIL
+          value: your@mail.com
+        - name: GUI_USER_GROUP
+          value: dvb_admin
+        - name: GUI_USER_NAME
+          value: dvb
+        - name: GUI_USER_PASSWORD
+          value: start123
+        - name: PLJAVA_VMOPTIONS
+          value: -Djava.security.egd=file:///dev/urandom -Xms128M -Xss2M
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: USE_UNSECURE_DEFAULT_ENCRYPTION_KEYS
+          value: "false"
+        volumeMounts:
+        - name: core-dbadmin-password
+          mountPath: /etc/secrets
+        - name: files
+          mountPath: /files
+      volumes:
+      - name: core-dbadmin-password
+        secret:
+          secretName: dvb-secrets
+      - name: files
+        persistentVolumeClaim:
+          claimName: files
+---
+apiVersion: v1  
+kind: PersistentVolumeClaim
+metadata:
+  name: files
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: core
+spec:
+  clusterIP: None
+  selector:
+    app: core
+  ports:
+  - port: 80
+    targetPort: 80

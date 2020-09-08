@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: exasol-db
+spec:
+  selector:
+    matchLabels:
+      app: exasol-db
+  serviceName: exasol-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: exasol-db
+    spec:
+      containers:
+        - ports:
+          - containerPort: 8888
+          - containerPort: 443
+          - containerPort: 6583
+          securityContext:
+            privileged: true  
+          image: "exasol/docker-db:6.2.9-d1"
+          name: exasol-db
+          volumeMounts:
+            - name: exasol-disk
+              mountPath: /exa
+  volumeClaimTemplates:
+    - metadata:
+        name: exasol-disk
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 10Gi
