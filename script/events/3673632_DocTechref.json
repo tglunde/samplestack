@@ -1,0 +1,35 @@
+{
+	"ALM_PACKAGE_NAMESPACE": {
+		"title": "SysService",
+		"guid": "PCKGNS-EBA7F635-C4CC-9F41-947C-90755BAFB8A2"
+	},
+	"changesetNumber": 3673632,
+	"ALM_PACKAGE_SUBPACKAGE": {
+		"title": "Doc_TechRef",
+		"rootPackage": "false",
+		"guid": "PCKG-06737886-64A0-4DDA-86E5-3D12884734DF"
+	},
+	"ALM_PACKAGE_BASE": {
+		"userProperties": {
+			"Component.CurrentQualityProcess": "Process3",
+			"Component.HasSafetyRequirements": "no",
+			"Component.Layer": "SLP",
+			"Component.TargetQualityStatus": "QM",
+			"Component.TargetQualityProcess": "Process3",
+			"SWCP.TargetFolder": "Etm",
+			"Component.UsedInProduct": "MSR4",
+			"Component.ReportClassification": "Component",
+			"Component.AutosarCluster": "ETH"
+		},
+		"componentShortName": "Etm",
+		"guid": "PCKGBASE-C294324B-4937-4808-BED8-1A305BD8920D",
+		"title": "SysService_AsrEtm"
+	},
+	"DEPENDENCIES": [
+	],
+	"ALM_PACKAGE_INSTANCE": {
+		"title": "8.00.01",
+		"guid": "PCKGINST-999736EF-D56B-4DC2-918E-DD5A2565ADA2"
+	},
+	"timestamp": "2020-01-15T14:26:17.267Z"
+}

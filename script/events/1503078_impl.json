@@ -1,0 +1,24 @@
+{
+	"ALM_PACKAGE_NAMESPACE": {
+		"title": "TestApp",
+		"guid": "PCKGNS-49EB228F-9587-433C-B6F7-C1825B0D9EF9"
+	},
+	"changesetNumber": 1503078,
+	"ALM_PACKAGE_SUBPACKAGE": {
+		"title": "Implementation",
+		"rootPackage": "false",
+		"guid": "PCKG-F30F3D30-3E5B-4265-A7AC-A647E0592C77"
+	},
+	"ALM_PACKAGE_BASE": {
+		"title": "TestApp_EtiTcpIp_Ixia",
+		"componentShortName": "EtiTcpIpIx",
+		"guid": "PCKGBASE-C294324B-4937-4808-BED8-1A305BD8920D"
+	},
+	"DEPENDENCIES": [
+	],
+	"ALM_PACKAGE_INSTANCE": {
+		"title": "2.00.01",
+		"guid": "PCKGINST-F6E540EF-E8C6-45AC-A2AA-EA6CB5F9C076"
+	},
+	"timestamp": "2015-11-26T08:43:13.827Z"
+}

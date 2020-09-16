@@ -9,14 +9,10 @@ services:
     volumes:
             - mydata:/exa
     ports:
-      - '9001:8888'
+      - '8888:8888'
       - '9043:443'
+      - '9583:6583'
     privileged: true
 
 volumes:
   mydata:
-    driver: local
-    driver_opts:
-        type: none
-        device: /exa 
-        o: bind
