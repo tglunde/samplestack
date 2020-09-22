@@ -1,0 +1,143 @@
+{
+    "name": "ALMPlus2DWH",
+    "type": "record",
+    "namespace": "com.vector.dwh.avro",
+    "fields": [
+        {
+            "name": "timestamp",
+            "type": "int",
+            "logicalType": "date"
+        },
+        {
+            "name": "changesetNumber",
+            "type": "int"
+        },
+        {
+            "name": "ALM_PACKAGE_NAMESPACE",
+            "type": {
+                "name": "ALM_PACKAGE_NAMESPACE",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "guid",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ALM_PACKAGE_SUBPACKAGE",
+            "type": {
+                "name": "ALM_PACKAGE_SUBPACKAGE",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "rootPackage",
+                        "type": "string"
+                    },
+                    {
+                        "name": "guid",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "ALM_PACKAGE_BASE",
+            "type": {
+                "name": "ALM_PACKAGE_BASE",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "userProperties",
+                        "type": {
+                            "name": "userProperties",
+                            "type": "record",
+                            "fields": [
+                                {
+                                    "name": "Component.CurrentQualityProcess",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.HasSafetyRequirements",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.Layer",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.TargetQualityStatus",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.TargetQualityProcess",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "SWCP.TargetFolder",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.UsedInProduct",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.ReportClassification",
+                                    "type": "string"
+                                },
+                                {
+                                    "name": "Component.AutosarCluster",
+                                    "type": "string"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "componentShortName",
+                        "type": "string"
+                    },
+                    {
+                        "name": "guid",
+                        "type": "string"
+                    },
+                    {
+                        "name": "title",
+                        "type": "string"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "DEPENDENCIES",
+            "type": {
+                "type": "array"
+            }
+        },
+        {
+            "name": "ALM_PACKAGE_INSTANCE",
+            "type": {
+                "name": "ALM_PACKAGE_INSTANCE",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "title",
+                        "type": "string"
+                    },
+                    {
+                        "name": "guid",
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    ]
+}

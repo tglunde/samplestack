@@ -12,7 +12,8 @@ for filename in *.json; do
     EVENT_LDTS=$(jq -r ".timestamp" $filename | sed 's/T/ /' | sed 's/Z//')
     EVENT_JSON=$(jq -r "." $filename)
 #    echo $EVENT_LDTS
-    docker exec 334dc18b70f6 exaplus -u $EXAUSER -p $EXAPWD -c localhost:8888 \
+    docker-compose -f ../../iac/services/exa/docker-compose.yml \ 
+        exec exasol exaplus -u $EXAUSER -p $EXAPWD -c localhost:8888 \
         -sql "INSERT INTO EXA_TOOLBOX.EVENT values (to_timestamp('$EVENT_LDTS','YYYY-MM-DD HH24:MI:SS.FF3'),'$EVENT_NAME','$EVENT_JSON');"
 #    echo $JSON
 #    curl -X PUT -T "$filename" http://w:$PWDWRITE@localhost:9583/default/sql/$filename
