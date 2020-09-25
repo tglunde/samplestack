@@ -169,3 +169,5 @@ logs/*
 # End of https://www.toptal.com/developers/gitignore/api/m2e,python,visualstudiocode,xtext
 .terraform
 .terraform/*
+*.plan
+*.tfstate

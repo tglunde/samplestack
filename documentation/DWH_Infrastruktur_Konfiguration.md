@@ -65,6 +65,9 @@ Windows Terminal
 CMDer.net
 Unterstützung für git muss gegeben sein
 WLS-2 wäre empfehlenswert
+azure-cli missing
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+https://aka.ms/installazurecliwindows
 
 ### 4.3.2. Docker Desktop Edge
 https://docs.docker.com/docker-for-windows/edge-release-notes/
