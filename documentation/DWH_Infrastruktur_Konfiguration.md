@@ -54,10 +54,13 @@ Die benötigten Docker images (iac/services/*) werden in der ACR registry abgele
 ## 3.6. Airflow
 
 # 4. Entwicklungsumgebung (lokal)
+https://github1.vg.vector.int/pes
 
 ## 4.1. Berechtigungsgruppen AD
 
 ## 4.2. Proxyeinstellungen
+set NO_PROXY=localhost, 127.0.0.*, 172.31.31.* *.vector.int, 10.49.*, 10.149.*,kubernetes.docker.internal,github1.vg.vector.int
+git config --global http.sslVerify false
 
 ## 4.3. Installations for local dev (laptop)
 ### 4.3.1. Empfohlene Commandline
