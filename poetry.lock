@@ -180,14 +180,14 @@ description = "With dbt, data analysts and engineers can build analytics the way
 name = "dbt"
 optional = false
 python-versions = ">=3.6.2"
-version = "0.17.0"
+version = "0.17.2"
 
 [package.dependencies]
-dbt-bigquery = "0.17.0"
-dbt-core = "0.17.0"
-dbt-postgres = "0.17.0"
-dbt-redshift = "0.17.0"
-dbt-snowflake = "0.17.0"
+dbt-bigquery = "0.17.2"
+dbt-core = "0.17.2"
+dbt-postgres = "0.17.2"
+dbt-redshift = "0.17.2"
+dbt-snowflake = "0.17.2"
 
 [[package]]
 category = "main"
@@ -195,10 +195,10 @@ description = "The bigquery adapter plugin for dbt (data build tool)"
 name = "dbt-bigquery"
 optional = false
 python-versions = ">=3.6.2"
-version = "0.17.0"
+version = "0.17.2"
 
 [package.dependencies]
-dbt-core = "0.17.0"
+dbt-core = "0.17.2"
 google-api-core = ">=1.16.0,<1.17.0"
 google-cloud-bigquery = ">=1.24.0,<1.25.0"
 google-cloud-core = ">=1.3.0,<1.4"
@@ -211,8 +211,8 @@ category = "main"
 description = "dbt (data build tool) is a command line tool that helps analysts and engineers transform data in their warehouse more effectively"
 name = "dbt-core"
 optional = false
-python-versions = ">=3.6.2"
-version = "0.17.0"
+python-versions = ">=3.6.3"
+version = "0.17.2"
 
 [package.dependencies]
 Jinja2 = "2.11.2"
@@ -234,14 +234,25 @@ werkzeug = ">=0.15,<0.17"
 
 [[package]]
 category = "main"
+description = "The exasol adpter plugin for dbt (data build tool)"
+name = "dbt-exasol"
+optional = false
+python-versions = "*"
+version = "0.1.1"
+
+[package.dependencies]
+dbt-core = ">=0.14.0"
+
+[[package]]
+category = "main"
 description = "The postgres adpter plugin for dbt (data build tool)"
 name = "dbt-postgres"
 optional = false
 python-versions = ">=3.6.2"
-version = "0.17.0"
+version = "0.17.2"
 
 [package.dependencies]
-dbt-core = "0.17.0"
+dbt-core = "0.17.2"
 psycopg2-binary = ">=2.8,<3.0"
 
 [[package]]
@@ -250,13 +261,13 @@ description = "The redshift adapter plugin for dbt (data build tool)"
 name = "dbt-redshift"
 optional = false
 python-versions = ">=3.6.2"
-version = "0.17.0"
+version = "0.17.2"
 
 [package.dependencies]
 boto3 = ">=1.4.4,<1.12"
 botocore = ">=1.5.0,<1.15"
-dbt-core = "0.17.0"
-dbt-postgres = "0.17.0"
+dbt-core = "0.17.2"
+dbt-postgres = "0.17.2"
 
 [[package]]
 category = "main"
@@ -264,13 +275,13 @@ description = "The snowflake adapter plugin for dbt (data build tool)"
 name = "dbt-snowflake"
 optional = false
 python-versions = ">=3.6.2"
-version = "0.17.0"
+version = "0.17.2"
 
 [package.dependencies]
 azure-common = "<2.0.0"
 azure-storage-blob = "<12.0.0"
 cryptography = ">=2,<3"
-dbt-core = "0.17.0"
+dbt-core = "0.17.2"
 snowflake-connector-python = "2.2.1"
 urllib3 = ">=1.20,<1.26.0"
 
@@ -648,6 +659,25 @@ version = "3.9.7"
 
 [[package]]
 category = "main"
+description = "Exasol python driver with extra features"
+name = "pyexasol"
+optional = false
+python-versions = ">=3.6"
+version = "0.14.1"
+
+[package.dependencies]
+rsa = "*"
+websocket-client = ">=0.47.0"
+
+[package.extras]
+encrypt = ["pyopenssl (>=17.5.0)"]
+examples = ["pproxy", "psutil"]
+pandas = ["pandas (>=0.22,<0.23.1 || >0.23.1)"]
+rapidjson = ["python-rapidjson"]
+ujson = ["ujson"]
+
+[[package]]
+category = "main"
 description = "JSON Web Token implementation in Python"
 name = "pyjwt"
 optional = false
@@ -756,7 +786,6 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
 [[package]]
 category = "main"
 description = "Pure-Python RSA implementation"
-marker = "python_version >= \"3\""
 name = "rsa"
 optional = false
 python-versions = ">=3.5, <4"
@@ -855,6 +884,17 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7,<2.0)"]
 
 [[package]]
 category = "main"
+description = "WebSocket client for Python. hybi13 is supported."
+name = "websocket-client"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+version = "0.57.0"
+
+[package.dependencies]
+six = "*"
+
+[[package]]
+category = "main"
 description = "The comprehensive WSGI web application library."
 name = "werkzeug"
 optional = false
@@ -879,7 +919,8 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "9ad14afe0a1dd8d3ac93a783d2c7a9216ee900ee1b807eccbf871189752609bb"
+content-hash = "3a966153032bd72e2f5a2f6aa72788afdce7936723c8f59daa3b4f54bd1bf757"
+lock-version = "1.0"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -992,28 +1033,31 @@ cryptography = [
     {file = "cryptography-2.9.2.tar.gz", hash = "sha256:a0c30272fb4ddda5f5ffc1089d7405b7a71b0b0f51993cb4e5dbb4590b2fc229"},
 ]
 dbt = [
-    {file = "dbt-0.17.0-py3-none-any.whl", hash = "sha256:1efa24ee9bc76845eec1165f0471b044b9b88388d0b7302936baae3d45af3656"},
-    {file = "dbt-0.17.0.tar.gz", hash = "sha256:ad4bd85b91c32e1aca265411b3030742d8b144f86eed13b51ab969a48f49852d"},
+    {file = "dbt-0.17.2-py3-none-any.whl", hash = "sha256:d0963d69ed4fa96f199f16f60cb040331dd0ef5d2a6683cd6381a76d090634d8"},
+    {file = "dbt-0.17.2.tar.gz", hash = "sha256:135cfd5636b0f52dcae65754b87bb4ec78ea31daf44b97a7bcf1c3acfb225fc7"},
 ]
 dbt-bigquery = [
-    {file = "dbt-bigquery-0.17.0.tar.gz", hash = "sha256:c20cebea7336aab45d3202ef728ed6920e122c3c981f5b4b93afd59fcb3918ab"},
-    {file = "dbt_bigquery-0.17.0-py3-none-any.whl", hash = "sha256:7a6f32cb5403ad866f6d7d3d438e826fcdffc0e598b3d56cafb7cc9b44739085"},
+    {file = "dbt-bigquery-0.17.2.tar.gz", hash = "sha256:238c3ebf5d35440cc41646f50d70d0e59e554ceeb2536ea3dcca960ff80b1ffd"},
+    {file = "dbt_bigquery-0.17.2-py3-none-any.whl", hash = "sha256:cd2e4e968ee550bf39c69fd290f8609813d6a20f80ec1f190e27a4f8c08cc1cb"},
 ]
 dbt-core = [
-    {file = "dbt-core-0.17.0.tar.gz", hash = "sha256:c4ef5033f676260083a8cc3bdc1f3d84052645f09fba37c83f678166d5b17f5b"},
-    {file = "dbt_core-0.17.0-py3-none-any.whl", hash = "sha256:226d36f273e96a87741a0b0defa8759cbc9808ea9a2cc16a1f1bd8e3eb90f04b"},
+    {file = "dbt-core-0.17.2.tar.gz", hash = "sha256:fd8e349ab833adb9c89ee5397bcd34e86723053b5fdfa4fb27795223272d9a7a"},
+    {file = "dbt_core-0.17.2-py3-none-any.whl", hash = "sha256:0894dac568893b84eddb883b405dee117a817c481e5cae71dd24c114af855c8f"},
+]
+dbt-exasol = [
+    {file = "dbt-exasol-0.1.1.tar.gz", hash = "sha256:903f7597a6773a7d484818ad061462e4a82b29eff4aae8571244205e40f1dacd"},
 ]
 dbt-postgres = [
-    {file = "dbt-postgres-0.17.0.tar.gz", hash = "sha256:41c3aaa065daa9916a41badfce4cf6c596d36b90362f8cc876bc3eb9ae4f68c5"},
-    {file = "dbt_postgres-0.17.0-py3-none-any.whl", hash = "sha256:6012899db1960c7d512dac8ceabcb026a38183ce7d70f1650ef4afadd0b997d4"},
+    {file = "dbt-postgres-0.17.2.tar.gz", hash = "sha256:cda2d9f369ab396f757308f6aa4553ae688c9e062f9f050b048cb9a4461ecaec"},
+    {file = "dbt_postgres-0.17.2-py3-none-any.whl", hash = "sha256:666353c26eefa37a82e6f33ff6a84a6b2c833ee02c6332af5f4a2e73a56e55ed"},
 ]
 dbt-redshift = [
-    {file = "dbt-redshift-0.17.0.tar.gz", hash = "sha256:1fdd9aa6fd55da1d163b946426003c0be46f2eceb3ebb463d62c1fe0e7f0af70"},
-    {file = "dbt_redshift-0.17.0-py3-none-any.whl", hash = "sha256:331729c6155e2ba89a7e7f5bb575eb27dba010b59c043358ba287f601bbcc969"},
+    {file = "dbt-redshift-0.17.2.tar.gz", hash = "sha256:762d4fa78f7462d48c7f57c8cb7a4775436299d5f198794e43ca42338153391e"},
+    {file = "dbt_redshift-0.17.2-py3-none-any.whl", hash = "sha256:4036a6747df7ea348d6c719892b086e66b2dc5426b7367b631312c355a84ca54"},
 ]
 dbt-snowflake = [
-    {file = "dbt-snowflake-0.17.0.tar.gz", hash = "sha256:7bb87b280b7458639c13cb3a677f4d591da08b6dc1813c9196c83eddb4d1511b"},
-    {file = "dbt_snowflake-0.17.0-py3-none-any.whl", hash = "sha256:b44407d539b0e92e081ff3cdb00194691cf7a0830d3f1495df48f05c92911075"},
+    {file = "dbt-snowflake-0.17.2.tar.gz", hash = "sha256:3282610d0e9889a050839acb78fbac3479de0477d89344c946b5592e7a851e4c"},
+    {file = "dbt_snowflake-0.17.2-py3-none-any.whl", hash = "sha256:517a80873542dd6d58dd149f4abf9768efb4b5be48cc301f239757115a30eda9"},
 ]
 decorator = [
     {file = "decorator-4.4.2-py2.py3-none-any.whl", hash = "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760"},
@@ -1277,6 +1321,10 @@ pycryptodomex = [
     {file = "pycryptodomex-3.9.7-cp38-cp38-win_amd64.whl", hash = "sha256:1ecc9db7409db67765eb008e558879d298406642d33ade43a6488224d23e8081"},
     {file = "pycryptodomex-3.9.7.tar.gz", hash = "sha256:50163324834edd0c9ce3e4512ded3e221c969086e10fdd5d3fdcaadac5e24a78"},
 ]
+pyexasol = [
+    {file = "pyexasol-0.14.1-py3-none-any.whl", hash = "sha256:2879182643bb6729feeab54cc5188499ff24dab080e46ed0135d08f98f9e537e"},
+    {file = "pyexasol-0.14.1.tar.gz", hash = "sha256:fda8cc1e2d8f4df175490d55db37a5050108642d3c671c6350d5ea9e69748984"},
+]
 pyjwt = [
     {file = "PyJWT-1.7.1-py2.py3-none-any.whl", hash = "sha256:5c6eca3c2940464d106b99ba83b00c6add741c9becaec087fb7ccdefea71350e"},
     {file = "PyJWT-1.7.1.tar.gz", hash = "sha256:8d59a976fb773f3e6a39c85636357c4f0e242707394cadadd9814f5cbaa20e96"},
@@ -1360,6 +1408,10 @@ typing-extensions = [
 urllib3 = [
     {file = "urllib3-1.25.9-py2.py3-none-any.whl", hash = "sha256:88206b0eb87e6d677d424843ac5209e3fb9d0190d0ee169599165ec25e9d9115"},
     {file = "urllib3-1.25.9.tar.gz", hash = "sha256:3018294ebefce6572a474f0604c2021e33b3fd8006ecd11d62107a5d2a963527"},
+]
+websocket-client = [
+    {file = "websocket_client-0.57.0-py2.py3-none-any.whl", hash = "sha256:0fc45c961324d79c781bab301359d5a1b00b13ad1b10415a4780229ef71a5549"},
+    {file = "websocket_client-0.57.0.tar.gz", hash = "sha256:d735b91d6d1692a6a181f2a8c9e0238e5f6373356f561bb9dc4c7af36f452010"},
 ]
 werkzeug = [
     {file = "Werkzeug-0.16.1-py2.py3-none-any.whl", hash = "sha256:1e0dedc2acb1f46827daa2e399c1485c8fa17c0d8e70b6b875b4e7f54bf408d2"},

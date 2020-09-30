@@ -1,0 +1,5 @@
+IP=$(kubectl get pods -n dev -l app=exasol -o json | jq -r '.items[0].status.podIP')
+DVB_TAG=rel_5_b2.8
+kubectl run -it --rm exa-deploy --image=datavaultbuilder/clientdb_exasol:$DVB_TAG \
+        --restart=Never --namespace dev --env="AUTHENTICATOR_PASSWORD=start123" --command /bin/bash -- \
+        /dvb_sql/create_db.sh $IP:8888 sys exasol

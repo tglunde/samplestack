@@ -39,6 +39,28 @@ Anschließend wird im Github ein entpsrechender Commit-Hook angelegt, der alle �
 CI-Server um die Commits auf der Azure Cloud Staging Instanz zu verproben. Entsprechende Pipeline erzeugt die Testjobs und führt die Tests aus.
 dbt seed - dbt+dvb run - dbt test
 
+image signatures, siging images after dependency check, vulnerability check, integration tests
+google distroless base images
+
+pod-specs security
+- do not use hostPath
+- do not use host network
+- pods service account - default is exposed credentials in /var/run/secrets/ - using a namespace (security isolation rbac)
+  automountServiceAccountToken: false
+
+cluster
+- updates
+- isolate the cluster from the internet
+- use secrets for secrets
+
+users and groups
+- rbacs
+- subjects, groups, roles, role-bindings - role-bind groups - not users directly
+sre, engineering, cicd, security
+- admissioncontroller in kubernetes - falco, opa gatekeeper, ... cncf
+bit.ly/SamK8sSec
+
+
 ## 2.3. ArgoCD
 CD-Server für Kubernetes. Erfolgreich Tests erzeugen ein neues Tag - das entsprechend in den Kubernetes.yaml gepushed wird. Dieser IAC-change gilt als trigger für das ArgoCD und das Test-Deployment.
 
