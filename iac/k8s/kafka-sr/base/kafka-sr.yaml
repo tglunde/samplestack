@@ -1,0 +1,80 @@
+---
+# Source: schema-registry/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: kafka-sr-schema-registry
+  labels:
+    app: schema-registry
+    chart: schema-registry-1.2.0
+    release: "kafka-sr"
+    heritage: "Helm"
+spec:
+  ports:
+    - name: schema-registry
+      port: 8081
+  selector:
+    app: schema-registry
+    release: "kafka-sr"
+---
+# Source: schema-registry/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kafka-sr-schema-registry
+  labels:
+    app: schema-registry
+    chart: schema-registry-1.2.0
+    release: kafka-sr
+    heritage: Helm
+spec:
+  selector:
+    matchLabels:
+      app: schema-registry
+      release: kafka-sr
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: schema-registry
+        release: kafka-sr
+    spec:
+      containers:
+        - name: schema-registry
+          image: "confluentinc/cp-schema-registry:5.0.1"
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+            - containerPort: 5555
+              name: jmx
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8081
+            initialDelaySeconds: 10
+            timeoutSeconds: 5
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /
+              port: 8081
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 5
+          env:
+          - name: SCHEMA_REGISTRY_HOST_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          - name: SCHEMA_REGISTRY_KAFKASTORE_BOOTSTRAP_SERVERS
+            value: localhost:9093
+          - name: SCHEMA_REGISTRY_KAFKASTORE_GROUP_ID
+            value: kafka-sr
+          
+          - name: JMX_PORT
+            value: "5555"
+          resources:
+            {}
+          volumeMounts:
+      volumes:
