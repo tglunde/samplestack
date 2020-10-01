@@ -1,3 +1,17 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dvb
+  namespace: dev
+spec:
+  selector:
+    app: dvb
+  type: LoadBalancer
+  ports:
+    - port: 8000
+      targetPort: 80
+---
 apiVersion: v1
 kind: Secret
 data:
@@ -147,7 +161,7 @@ spec:
         - "connectionpool"
       containers:
       - name: core
-        image: "datavaultbuilder/core:rel_5_b2.8"
+        image: "datavaultbuilder/core:rel_5.3.0.1_initial_install_only"
         env:
         - name: CLIENT_DB_CONNECTIONSTRING
           value: jdbc:exa:exasol:8888
@@ -157,7 +171,7 @@ spec:
         - name: DOWNLOAD_DEMO_DATA
           value: "false"
         - name: DVB_TAG
-          value: "rel_5_b2.8"
+          value: "rel_5.3.0.1_initial_install_only"
         - name: ENABLE_BETA_FEATURES
           value: "false"
         - name: GUI_USER_EMAIL
@@ -206,7 +220,7 @@ spec:
         - name: files
           mountPath: /files
       - name: webgui
-        image: "datavaultbuilder/webgui:rel_5_b2.8"
+        image: "datavaultbuilder/webgui:rel_5.3.0.1_initial_install_only"
         ports:
         - containerPort: 80
         resources:
@@ -223,12 +237,12 @@ spec:
         - name: TIMEZONE
           value: "Europe/Berlin"
         - name: DVB_TAG
-          value: "rel_5_b2.8"
+          value: "rel_5.3.0.1_initial_install_only"
         volumeMounts:
         - name: files
           mountPath: /files
       - name: scheduler
-        image: "datavaultbuilder/scheduler:rel_5_b2.8"
+        image: "datavaultbuilder/scheduler:rel_5.3.0.1_initial_install_only"
         resources:
           limits:
             memory: "128Mi"
@@ -239,7 +253,7 @@ spec:
         - name: TIMEZONE
           value: "Europe/Berlin"
         - name: DVB_TAG
-          value: "rel_5_b2.8"
+          value: "rel_5.3.0.1_initial_install_only"
         volumeMounts:
         - name: dvb-secrets
           mountPath: /run/secrets/scheduler_password
@@ -248,7 +262,7 @@ spec:
         - name: files
           mountPath: /files
       - name: connectionpool
-        image: "datavaultbuilder/connection_pool:rel_5_b2.8"
+        image: "datavaultbuilder/connection_pool:rel_5.3.0.1_initial_install_only"
         env:
         - name: CORE_POOL_MAX_CONNECTIONS
           value: "20"
@@ -257,7 +271,7 @@ spec:
         - name: TIMEZONE
           value: "Europe/Berlin"
         - name: DVB_TAG
-          value: "rel_5_b2.8"
+          value: "rel_5.3.0.1_initial_install_only"
         volumeMounts:
         - name: dvb-secrets
           mountPath: /run/secrets/systems_password_private_key
@@ -284,7 +298,7 @@ spec:
         - name: pddb
           mountPath: /opt/datavaultbuilder7var/lib/pddb
       - name: api
-        image: "datavaultbuilder/api:rel_5_b2.8"
+        image: "datavaultbuilder/api:rel_5.3.0.1_initial_install_only"
         resources:
           limits:
             memory: "128Mi"
@@ -295,7 +309,7 @@ spec:
         - name: TIMEZONE
           value: "Europe/Berlin"
         - name: DVB_TAG
-          value: "rel_5_b2.8"
+          value: "rel_5.3.0.1_initial_install_only"
         volumeMounts:
         - name: dvb-secrets
           mountPath: /run/secrets/core_dbadmin_password
@@ -341,16 +355,3 @@ spec:
   resources:
     requests:
       storage: 100Mi
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: dvb
-  namespace: dev
-spec:
-  selector:
-    app: dvb
-  type: LoadBalancer
-  ports:
-    - port: 8000
-      targetPort: 80

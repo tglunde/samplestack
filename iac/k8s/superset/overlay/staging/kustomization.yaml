@@ -1,6 +1,5 @@
 resources:
 - ../../base
-namePrefix: staging-
 namespace: staging
 commonLabels:
   environment: staging

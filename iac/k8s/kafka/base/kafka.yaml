@@ -238,7 +238,7 @@ metadata:
     component: server
 spec:
   serviceName: kafka-zookeeper-headless
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: zookeeper

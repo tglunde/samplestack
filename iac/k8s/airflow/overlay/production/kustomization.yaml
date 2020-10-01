@@ -1,6 +1,5 @@
 resources:
 - ../../base
-namePrefix: production-
 namespace: production
 commonLabels:
   environment: production

@@ -1,6 +1,5 @@
 resources:
 - ../../base
-namePrefix: dev-
 namespace: dev
 commonLabels:
   environment: dev
