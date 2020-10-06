@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+components:
+- ../../component/airflow
+- ../../component/exasol
+- ../../component/dvb
+- ../../component/superset
+- ../../component/jasper
+
+namespace: stagin
+commonLabels:
+  environment: staging

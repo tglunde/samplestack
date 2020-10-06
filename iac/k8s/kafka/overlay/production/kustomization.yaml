@@ -1,5 +1,0 @@
-resources:
-- ../../base
-namespace: production
-commonLabels:
-  environment: production
