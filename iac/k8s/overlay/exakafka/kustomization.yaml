@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../base
+
+components:
+- ../../component/exasol
+- ../../component/kafka-operator
+- ../../component/kafka-broker
+- ../../component/kafka-sr
+
+namespace: dev
+commonLabels:
+  environment: dev
