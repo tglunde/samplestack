@@ -5,11 +5,4 @@ resources:
   - ../../base
 
 components:
-- ../../component/exasol
 - ../../component/kafka-operator
-- ../../component/kafka-broker
-- ../../component/kafka-sr
-
-namespace: dev
-commonLabels:
-  environment: dev
