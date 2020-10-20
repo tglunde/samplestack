@@ -11,6 +11,6 @@ components:
 - ../../component/superset
 - ../../component/jasper
 
-namespace: stagin
+namespace: staging
 commonLabels:
   environment: staging

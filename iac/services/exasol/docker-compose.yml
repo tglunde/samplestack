@@ -5,11 +5,11 @@ version: '3.3'
 services:
 
   exasol:
-    image: 'exasol/docker-db:6.2.10-d1'
+    build: .
     volumes:
             - mydata:/exa
     ports:
-      - '8888:8888'
+      - '8888:8563'
       - '9043:443'
       - '9583:6583'
     privileged: true

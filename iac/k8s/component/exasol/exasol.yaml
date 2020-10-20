@@ -9,7 +9,7 @@ spec:
   type: LoadBalancer
   ports:
     - port: 8888
-      targetPort: 8888
+      targetPort: 8563
 ---
 apiVersion: v1
 kind: Service
@@ -22,7 +22,7 @@ spec:
   type: LoadBalancer
   ports:
     - port: 8889
-      targetPort: 6583
+      targetPort: 2580
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -42,12 +42,12 @@ spec:
     spec:
       containers:
         - ports:
-          - containerPort: 8888
+          - containerPort: 8563
           - containerPort: 443
-          - containerPort: 6583
+          - containerPort: 2580
           securityContext:
             privileged: true  
-          image: "exasol/docker-db:6.2.10-d1"
+          image: "exasol/docker-db:7.0.2"
           name: exasol
           volumeMounts:
             - name: exasol-disk
