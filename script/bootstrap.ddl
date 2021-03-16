@@ -2455,7 +2455,7 @@ suc, colNames = pquery([[
 -- insert the data into the result table
 suc, ins = pquery([[
                   insert into ]]..result_table_schema..[[.]]..result_table_name..[[ 
-                  select GET_DATA(]]..json_column..[[, :fl, :fd, :cols)
+                  select EXA_TOOLBOX.GET_DATA(]]..json_column..[[, :fl, :fd, :cols)
                   from ]]..json_table_schema..[[.]]..json_table_name..[[;
                   ]],{fl = flatten_array, fd = flatten_depth, cols=colNames[1][1]}) 
 

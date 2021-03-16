@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: schema-registry
-          image: "confluentinc/cp-schema-registry:5.0.1"
+          image: "alligatorcompany/acs-schema-registry:1.0.0"
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
