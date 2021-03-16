@@ -47,11 +47,25 @@ spec:
           - containerPort: 2580
           securityContext:
             privileged: true  
-          image: "exasol/docker-db:7.0.2"
+          image: "alligatorcompany/acs-exasol:1.0.2"
           name: exasol
+          readinessProbe:
+            exec: 
+              command:
+              - /work/readiness.sh
+            initialDelaySeconds: 60
+            periodSeconds: 5
+            failureThreshold: 5
+          livenessProbe:
+            tcpSocket:
+              port: 8563
+            initialDelaySeconds: 90
+            periodSeconds: 60
           volumeMounts:
             - name: exasol-disk
               mountPath: /exa
+
+            
   volumeClaimTemplates:
     - metadata:
         name: exasol-disk
