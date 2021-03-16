@@ -1,0 +1,1185 @@
+---
+# Source: airflow/templates/scheduler/scheduler-pdb.yaml
+apiVersion: policy/v1beta1
+kind: PodDisruptionBudget
+metadata:
+  name: airflow-scheduler
+  labels:
+    app: airflow
+    component: scheduler
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  maxUnavailable: 100%
+  selector:
+    matchLabels:
+      app: airflow
+      component: scheduler
+      release: airflow
+---
+# Source: airflow/templates/rbac/airflow-serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: airflow
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+---
+# Source: airflow/charts/postgresql/templates/secrets.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: airflow-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.6.4
+    release: "airflow"
+    heritage: "Helm"
+type: Opaque
+data:
+  postgresql-password: "YWlyZmxvdw=="
+---
+# Source: airflow/charts/redis/templates/secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: airflow-redis
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    release: "airflow"
+    heritage: "Helm"
+type: Opaque
+data:
+  redis-password: "YWlyZmxvdw=="
+---
+# Source: airflow/charts/redis/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-redis
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    heritage: Helm
+    release: airflow
+data:
+  redis.conf: |-
+    # User-supplied configuration:
+    # Enable AOF https://redis.io/topics/persistence#append-only-file
+    appendonly yes
+    # Disable RDB persistence, AOF persistence already enabled.
+    save ""
+  master.conf: |-
+    dir /data
+    rename-command FLUSHDB ""
+    rename-command FLUSHALL ""
+  replica.conf: |-
+    dir /data
+    slave-read-only yes
+    rename-command FLUSHDB ""
+    rename-command FLUSHALL ""
+---
+# Source: airflow/charts/redis/templates/health-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-redis-health
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    heritage: Helm
+    release: airflow
+data:
+  ping_readiness_local.sh: |-
+    response=$(
+      timeout -s 9 $1 \
+      redis-cli \
+        -a $REDIS_PASSWORD --no-auth-warning \
+        -h localhost \
+        -p $REDIS_PORT \
+        ping
+    )
+    if [ "$response" != "PONG" ]; then
+      echo "$response"
+      exit 1
+    fi
+  ping_liveness_local.sh: |-
+    response=$(
+      timeout -s 9 $1 \
+      redis-cli \
+        -a $REDIS_PASSWORD --no-auth-warning \
+        -h localhost \
+        -p $REDIS_PORT \
+        ping
+    )
+    if [ "$response" != "PONG" ] && [ "$response" != "LOADING Redis is loading the dataset in memory" ]; then
+      echo "$response"
+      exit 1
+    fi
+  ping_readiness_master.sh: |-
+    response=$(
+      timeout -s 9 $1 \
+      redis-cli \
+        -a $REDIS_MASTER_PASSWORD --no-auth-warning \
+        -h $REDIS_MASTER_HOST \
+        -p $REDIS_MASTER_PORT_NUMBER \
+        ping
+    )
+    if [ "$response" != "PONG" ]; then
+      echo "$response"
+      exit 1
+    fi
+  ping_liveness_master.sh: |-
+    response=$(
+      timeout -s 9 $1 \
+      redis-cli \
+        -a $REDIS_MASTER_PASSWORD --no-auth-warning \
+        -h $REDIS_MASTER_HOST \
+        -p $REDIS_MASTER_PORT_NUMBER \
+        ping
+    )
+    if [ "$response" != "PONG" ] && [ "$response" != "LOADING Redis is loading the dataset in memory" ]; then
+      echo "$response"
+      exit 1
+    fi
+  ping_readiness_local_and_master.sh: |-
+    script_dir="$(dirname "$0")"
+    exit_status=0
+    "$script_dir/ping_readiness_local.sh" $1 || exit_status=$?
+    "$script_dir/ping_readiness_master.sh" $1 || exit_status=$?
+    exit $exit_status
+  ping_liveness_local_and_master.sh: |-
+    script_dir="$(dirname "$0")"
+    exit_status=0
+    "$script_dir/ping_liveness_local.sh" $1 || exit_status=$?
+    "$script_dir/ping_liveness_master.sh" $1 || exit_status=$?
+    exit $exit_status
+---
+# Source: airflow/templates/config/configmap-env.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-env
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+data:
+  ## Force UTC timezone
+  TZ: Etc/UTC
+
+  ## Database
+  DATABASE_HOST: "airflow-postgresql"
+  DATABASE_PORT: "5432"
+  DATABASE_USER: "postgres"
+  DATABASE_DB: "airflow"
+  ## Redis
+  REDIS_HOST: "airflow-redis-master"
+  REDIS_PORT: "6379"
+  REDIS_DBNUM: "1"
+  ## Airflow (Flower)
+  AIRFLOW__CELERY__FLOWER_URL_PREFIX: ""
+  AIRFLOW__CELERY__FLOWER_PORT: "5555"
+  ## Airflow (Worker)
+  AIRFLOW__CELERY__WORKER_CONCURRENCY: "16"
+  AIRFLOW__CELERY__WORKER_LOG_SERVER_PORT: "8793"
+
+  ## Airflow (Logs)
+  AIRFLOW__CORE__BASE_LOG_FOLDER: "/opt/airflow/logs"
+  AIRFLOW__CORE__DAG_PROCESSOR_MANAGER_LOG_LOCATION: "/opt/airflow/logs/dag_processor_manager/dag_processor_manager.log"
+  AIRFLOW__SCHEDULER__CHILD_PROCESS_LOG_DIRECTORY: "/opt/airflow/logs/scheduler"
+
+  ## Airflow
+  AIRFLOW__CORE__DAGS_FOLDER: "/opt/airflow/dags"
+  AIRFLOW__CORE__DONOT_PICKLE: "false"
+  AIRFLOW__CORE__ENABLE_XCOM_PICKLING: "false" # for forward compatibility with 2.0
+  AIRFLOW__CORE__EXECUTOR: "CeleryExecutor"
+  AIRFLOW__WEBSERVER__BASE_URL: "http://localhost:8080"
+  AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "8080"
+  AIRFLOW__CORE__FERNET_KEY: "7T512UXSSmBOkpWimFHIVb8jK6lfmSAvx4mO6Arehnc="
+---
+# Source: airflow/templates/config/configmap-scripts-git.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-scripts-git
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+data:
+  git-clone.sh: |
+    #!/bin/sh -e
+    REPO=$1
+    REF=$2
+    DIR=$3
+    REPO_HOST=$4
+    REPO_PORT=$5
+    PRIVATE_KEY=$6
+
+    mkdir -p ~/.ssh/
+
+    # ensure the git directory is empty, so we can safely clone
+    if [ -d "$DIR" ]; then
+      rm -rf $( find $DIR -mindepth 1 )
+    fi
+
+    git clone $REPO -b $REF $DIR
+  git-sync.sh: |
+    #!/bin/sh -e
+    REPO=$1
+    REF=$2
+    DIR=$3
+    REPO_HOST=$4
+    REPO_PORT=$5
+    PRIVATE_KEY=$6
+    SYNC_TIME=$7
+
+    mkdir -p ~/.ssh/
+
+    # to break the infinite loop when we receive SIGTERM
+    trap "exit 0" SIGTERM
+
+    cd $DIR
+    while true; do
+      git fetch origin $REF;
+      git reset --hard origin/$REF;
+      git clean -fd;
+      date;
+      sleep $SYNC_TIME;
+    done
+---
+# Source: airflow/templates/config/configmap-scripts.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: airflow-scripts
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+data:
+  install-requirements.sh: |
+    #!/bin/bash -e
+    if [ ! -d "/opt/airflow/dags" ]; then
+      echo 'No folder "/opt/airflow/dags"'
+      exit 0
+    fi
+
+    cd "/opt/airflow/dags"
+    if [ -f requirements.txt ]; then
+      pip install --user -r requirements.txt
+    else
+      exit 0
+    fi
+  graceful-stop-celery-worker.sh: |
+    #!/bin/bash -e
+    echo "*** starting graceful worker shutdown"
+
+    # source the required environment variables
+    source /home/airflow/airflow_env.sh
+
+    # prevent the worker accepting new tasks
+    echo "*** preventing worker accepting new tasks"
+    celery control --broker $AIRFLOW__CELERY__BROKER_URL --destination celery@$HOSTNAME cancel_consumer default
+    sleep 5
+
+    # loop until all active task are finished
+    echo "*** waiting for active tasks to finish"
+    while (( celery inspect --broker $AIRFLOW__CELERY__BROKER_URL --destination celery@$HOSTNAME --json active | python3 -c "import json; active_tasks = json.loads(input())['celery@$HOSTNAME']; print(len(active_tasks))" > 0 )); do
+      sleep 10
+    done
+  preinit-db.sh: |
+    #!/bin/bash
+    # export the required environment variables
+    export AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgresql+psycopg2://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"
+
+    echo "*** Waiting 10s for postgres"
+    sleep 10
+
+    COUNT=0
+    while [ "${COUNT}" -lt 5 ]; do
+      echo "*** Initializing airflow db"
+      if airflow initdb; then
+        echo "*** Initdb succeeded"
+        exit 0
+      else
+        ((COUNT++))
+        echo "*** Initdb failed: waiting 5s before retry #${COUNT}"
+        sleep 5
+      fi
+    done
+
+    echo "*** Initdb failed after ${COUNT} retries; failed."
+    exit 1
+---
+# Source: airflow/templates/config/configmap-variables-pools.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: airflow-variables-pools
+    labels:
+        app: airflow
+        chart: airflow-7.9.0
+        release: airflow
+        heritage: Helm
+data:
+  variables.json: |
+    {}
+    
+  pools.json: |
+    {}
+---
+# Source: airflow/templates/rbac/airflow-role.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: airflow
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - "create"
+  - "get"
+  - "delete"
+  - "list"
+  - "watch"
+- apiGroups:
+  - ""
+  resources:
+  - "pods/log"
+  verbs:
+  - "get"
+  - "list"
+- apiGroups:
+  - ""
+  resources:
+  - "pods/exec"
+  verbs:
+  - "create"
+  - "get"
+---
+# Source: airflow/templates/rbac/airflow-rolebinding.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: airflow
+  labels:
+    app: airflow
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: airflow
+subjects:
+- kind: ServiceAccount
+  name: airflow
+  namespace: dev-scheduler
+---
+# Source: airflow/charts/postgresql/templates/svc-headless.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-postgresql-headless
+  labels:
+    app: postgresql
+    chart: postgresql-8.6.4
+    release: "airflow"
+    heritage: "Helm"
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+    - name: tcp-postgresql
+      port: 5432
+      targetPort: tcp-postgresql
+  selector:
+    app: postgresql
+    release: "airflow"
+---
+# Source: airflow/charts/postgresql/templates/svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.6.4
+    release: "airflow"
+    heritage: "Helm"
+spec:
+  type: ClusterIP
+  ports:
+    - name: tcp-postgresql
+      port: 5432
+      targetPort: tcp-postgresql
+  selector:
+    app: postgresql
+    release: "airflow"
+    role: master
+---
+# Source: airflow/charts/redis/templates/headless-svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-redis-headless
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    release: airflow
+    heritage: Helm
+spec:
+  type: ClusterIP
+  clusterIP: None
+  ports:
+  - name: redis
+    port: 6379
+    targetPort: redis
+  selector:
+    app: redis
+    release: airflow
+---
+# Source: airflow/charts/redis/templates/redis-master-svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-redis-master
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    release: airflow
+    heritage: Helm
+spec:
+  type: ClusterIP
+  ports:
+  - name: redis
+    port: 6379
+    targetPort: redis
+  selector:
+    app: redis
+    release: airflow
+    role: master
+---
+# Source: airflow/templates/flower/flower-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-flower
+  labels:
+    app: airflow
+    component: flower
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+  annotations:
+spec:
+  type: ClusterIP
+  selector:
+    app: airflow
+    component: flower
+    release: airflow
+  ports:
+    - name: flower
+      protocol: TCP
+      port: 5555
+      targetPort: 5555
+---
+# Source: airflow/templates/webserver/webserver-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-web
+  labels:
+    app: airflow
+    component: web
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+  annotations:
+spec:
+  type: ClusterIP
+  selector:
+    app: airflow
+    component: web
+    release: airflow
+  sessionAffinity: None
+  ports:
+    - name: web
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+---
+# Source: airflow/templates/worker/worker-service.yaml
+# Headless service for stable DNS entries of StatefulSet members.
+apiVersion: v1
+kind: Service
+metadata:
+  name: airflow-worker
+  labels:
+    app: airflow
+    component: worker
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  ports:
+    - name: worker
+      protocol: TCP
+      port: 8793
+  clusterIP: None
+  selector:
+    app: airflow
+    component: worker
+---
+# Source: airflow/templates/flower/flower-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airflow-flower
+  labels:
+    app: airflow
+    component: flower
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  replicas: 1
+  minReadySeconds: 5
+  strategy:
+    # this is safe - multiple flower pods can run concurrently
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: airflow
+      component: flower
+      release: airflow
+  template:
+    metadata:
+      annotations:
+        checksum/config-env: 79c6958a25d8628e1a9b1220b80144ed9f281d9d0e1bf316c5fcc9e45eb0cb8d
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      labels:
+        app: airflow
+        component: flower
+        release: airflow
+    spec:
+      restartPolicy: Always
+      serviceAccountName: airflow
+      containers:
+        - name: airflow-flower
+          image: apache/airflow:1.10.12-python3.6
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: "airflow-env"
+          env:            
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-postgresql
+                  key: postgresql-password
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-redis
+                  key: redis-password
+          ports:
+            - name: flower
+              containerPort: 5555
+              protocol: TCP
+          command:
+            - "/usr/bin/dumb-init"
+            - "--"
+          args:
+            - "bash"
+            - "-c"
+            - >
+              true \
+               && mkdir -p /home/airflow/.local/bin \
+               && echo 'export PATH="/home/airflow/.local/bin:$PATH"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgresql+psycopg2://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__RESULT_BACKEND="db+postgresql://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__BROKER_URL="redis://$( echo ${REDIS_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(f\":{encoded_pass}@\") if len(encoded_pass) > 0 else None" )${REDIS_HOST}:${REDIS_PORT}/${REDIS_DBNUM}"' >> /home/airflow/airflow_env.sh \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.profile \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.bashrc \
+               && source /home/airflow/airflow_env.sh \
+               && echo "*** running flower..." \
+               && exec airflow flower
+          livenessProbe:
+            httpGet:
+              path: "/"
+              port: flower
+            initialDelaySeconds: 60
+            periodSeconds: 30
+            timeoutSeconds: 1
+            successThreshold: 1
+            failureThreshold: 3
+          resources:
+            {}
+---
+# Source: airflow/templates/scheduler/scheduler-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airflow-scheduler
+  labels:
+    app: airflow
+    component: scheduler
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  replicas: 1
+  strategy:
+    # this is safe as long as `maxSurge` is 0
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 100%
+  selector:
+    matchLabels:
+      app: airflow
+      component: scheduler
+      release: airflow
+  template:
+    metadata:
+      annotations:
+        checksum/config-env: 79c6958a25d8628e1a9b1220b80144ed9f281d9d0e1bf316c5fcc9e45eb0cb8d
+        checksum/config-git-clone: 73b46e30cc10eb9bb7ac1c10b824b0a5c6c68fe7cad5ef8a51d6d3fdde5eb30e
+        checksum/config-scripts: 97cc629352d91a730892751bf9863dd63d9537de6e9ffb20e980ff688dcd7438
+        checksum/config-variables-pools: a995bde783b575c2f68e4930eb4e0b370f39d165c4579026d2ac995c998b4d63
+        checksum/secret-connections: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      labels:
+        app: airflow
+        component: scheduler
+        release: airflow
+    spec:
+      restartPolicy: Always
+      serviceAccountName: airflow
+      containers:
+        - name: airflow-scheduler
+          image: apache/airflow:1.10.12-python3.6
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - configMapRef:
+                name: "airflow-env"
+          env:            
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-postgresql
+                  key: postgresql-password
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-redis
+                  key: redis-password
+          resources:
+            {}
+          volumeMounts:
+            - name: scripts
+              mountPath: /home/airflow/scripts
+            - name: variables-pools
+              mountPath: /home/airflow/variables-pools/
+          command:
+            - "/usr/bin/dumb-init"
+            - "--"
+          args:
+            - "bash"
+            - "-c"
+            - >
+              true \
+               && mkdir -p /home/airflow/.local/bin \
+               && echo 'export PATH="/home/airflow/.local/bin:$PATH"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgresql+psycopg2://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__RESULT_BACKEND="db+postgresql://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__BROKER_URL="redis://$( echo ${REDIS_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(f\":{encoded_pass}@\") if len(encoded_pass) > 0 else None" )${REDIS_HOST}:${REDIS_PORT}/${REDIS_DBNUM}"' >> /home/airflow/airflow_env.sh \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.profile \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.bashrc \
+               && source /home/airflow/airflow_env.sh \
+               && echo "*** executing Airflow initdb..." \
+               && airflow initdb \
+               && echo "*** adding Airflow variables..." \
+               && airflow variables -i /home/airflow/variables-pools/variables.json \
+               && echo "*** adding Airflow pools..." \
+               && airflow pool -i /home/airflow/variables-pools/pools.json \
+               && echo "*** running scheduler..." \
+               && exec airflow scheduler -n -1
+          livenessProbe:
+            initialDelaySeconds: 300
+            periodSeconds: 30
+            failureThreshold: 5
+            exec:
+              command:
+              - python
+              - -Wignore
+              - -c
+              - |
+                import os
+                os.environ['AIRFLOW__CORE__LOGGING_LEVEL'] = 'ERROR'
+                os.environ['AIRFLOW__LOGGING__LOGGING_LEVEL'] = 'ERROR'
+                from airflow.jobs.scheduler_job import SchedulerJob
+                from airflow.utils.net import get_hostname
+                import sys
+                job = SchedulerJob.most_recent_job()
+                sys.exit(0 if job.is_alive() and job.hostname == get_hostname() else 1)
+      volumes:
+        - name: scripts
+          configMap:
+            name: airflow-scripts
+            defaultMode: 0755
+        - name: variables-pools
+          configMap:
+            name: airflow-variables-pools
+            defaultMode: 0755
+---
+# Source: airflow/templates/webserver/webserver-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: airflow-web
+  labels:
+    app: airflow
+    component: web
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  replicas: 1
+  minReadySeconds: 5
+  strategy:
+    # this is safe - multiple web pods can run concurrently
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: airflow
+      component: web
+      release: airflow
+  template:
+    metadata:
+      annotations:
+        checksum/config-env: 79c6958a25d8628e1a9b1220b80144ed9f281d9d0e1bf316c5fcc9e45eb0cb8d
+        checksum/config-git-clone: 73b46e30cc10eb9bb7ac1c10b824b0a5c6c68fe7cad5ef8a51d6d3fdde5eb30e
+        checksum/config-scripts: 97cc629352d91a730892751bf9863dd63d9537de6e9ffb20e980ff688dcd7438
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      labels:
+        app: airflow
+        component: web
+        release: airflow
+    spec:
+      restartPolicy: Always
+      serviceAccountName: airflow
+      containers:
+        - name: airflow-web
+          image: apache/airflow:1.10.12-python3.6
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: web
+              containerPort: 8080
+              protocol: TCP
+          envFrom:
+            - configMapRef:
+                name: "airflow-env"
+          env:            
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-postgresql
+                  key: postgresql-password
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-redis
+                  key: redis-password
+          resources:
+            {}
+          volumeMounts:
+            - name: scripts
+              mountPath: /home/airflow/scripts
+          command:
+            - "/usr/bin/dumb-init"
+            - "--"
+          args:
+            - "bash"
+            - "-c"
+            - >
+              true \
+               && mkdir -p /home/airflow/.local/bin \
+               && echo 'export PATH="/home/airflow/.local/bin:$PATH"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgresql+psycopg2://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__RESULT_BACKEND="db+postgresql://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__BROKER_URL="redis://$( echo ${REDIS_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(f\":{encoded_pass}@\") if len(encoded_pass) > 0 else None" )${REDIS_HOST}:${REDIS_PORT}/${REDIS_DBNUM}"' >> /home/airflow/airflow_env.sh \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.profile \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.bashrc \
+               && source /home/airflow/airflow_env.sh \
+               && echo "*** running webserver..." \
+               && exec airflow webserver
+          livenessProbe:
+            httpGet:
+              scheme: HTTP
+              path: "/health"
+              port: web
+            initialDelaySeconds: 300
+            periodSeconds: 30
+            timeoutSeconds: 3
+            successThreshold: 1
+            failureThreshold: 2
+      volumes:
+        - name: scripts
+          configMap:
+            name: airflow-scripts
+            defaultMode: 0755
+---
+# Source: airflow/charts/postgresql/templates/statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: airflow-postgresql
+  labels:
+    app: postgresql
+    chart: postgresql-8.6.4
+    release: "airflow"
+    heritage: "Helm"
+spec:
+  serviceName: airflow-postgresql-headless
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: postgresql
+      release: "airflow"
+      role: master
+  template:
+    metadata:
+      name: airflow-postgresql
+      labels:
+        app: postgresql
+        chart: postgresql-8.6.4
+        release: "airflow"
+        heritage: "Helm"
+        role: master
+      annotations:
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+    spec:      
+      securityContext:
+        fsGroup: 1001
+      initContainers:
+        # - name: do-something
+        #   image: busybox
+        #   command: ['do', 'something']
+        
+      containers:
+        - name: airflow-postgresql
+          image: docker.io/bitnami/postgresql:11.7.0-debian-10-r9
+          imagePullPolicy: "IfNotPresent"
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+          securityContext:
+            runAsUser: 1001
+          env:
+            - name: BITNAMI_DEBUG
+              value: "false"
+            - name: POSTGRESQL_PORT_NUMBER
+              value: "5432"
+            - name: POSTGRESQL_VOLUME_DIR
+              value: "/bitnami/postgresql"
+            - name: PGDATA
+              value: "/bitnami/postgresql/data"
+            - name: POSTGRES_USER
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-postgresql
+                  key: postgresql-password
+            - name: POSTGRES_DB
+              value: "airflow"
+            - name: POSTGRESQL_ENABLE_LDAP
+              value: "no"
+          ports:
+            - name: tcp-postgresql
+              containerPort: 5432
+          livenessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - exec pg_isready -U "postgres" -d "airflow" -h 127.0.0.1 -p 5432
+            initialDelaySeconds: 30
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
+          readinessProbe:
+            exec:
+              command:
+                - /bin/sh
+                - -c
+                - -e
+                - |
+                  exec pg_isready -U "postgres" -d "airflow" -h 127.0.0.1 -p 5432
+                  [ -f /opt/bitnami/postgresql/tmp/.initialized ] || [ -f /bitnami/postgresql/.initialized ]
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            timeoutSeconds: 5
+            successThreshold: 1
+            failureThreshold: 6
+          volumeMounts:
+            - name: dshm
+              mountPath: /dev/shm
+            - name: data
+              mountPath: /bitnami/postgresql
+              subPath: 
+      volumes:
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 1Gi
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes:
+          - "ReadWriteOnce"
+        resources:
+          requests:
+            storage: "8Gi"
+---
+# Source: airflow/charts/redis/templates/redis-master-statefulset.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: airflow-redis-master
+  labels:
+    app: redis
+    chart: redis-10.5.7
+    release: airflow
+    heritage: Helm
+spec:
+  selector:
+    matchLabels:
+      app: redis
+      release: airflow
+      role: master
+  serviceName: airflow-redis-headless
+  template:
+    metadata:
+      labels:
+        app: redis
+        chart: redis-10.5.7
+        release: airflow
+        role: master
+      annotations:
+        checksum/health: a5073935c8eb985cf8f3128ba7abbc4121cef628a9a1b0924c95cf97d33323bf
+        checksum/configmap: 2b82c78fd9186045e6e2b44cfbb38460310697cf2f2f175c9d8618dd4d42e1ca
+        checksum/secret: 2b847ea7129d7018fe67bde0a99fe18debd3dc92ce000033e05a221b924aa82c
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+    spec:      
+      securityContext:
+        fsGroup: 1001
+      serviceAccountName: "default"
+      containers:
+      - name: airflow-redis
+        image: "docker.io/bitnami/redis:5.0.7-debian-10-r32"
+        imagePullPolicy: "IfNotPresent"
+        securityContext:
+          runAsUser: 1001
+        command:
+        - /bin/bash
+        - -c
+        - |
+          if [[ -n $REDIS_PASSWORD_FILE ]]; then
+            password_aux=`cat ${REDIS_PASSWORD_FILE}`
+            export REDIS_PASSWORD=$password_aux
+          fi
+          if [[ ! -f /opt/bitnami/redis/etc/master.conf ]];then
+            cp /opt/bitnami/redis/mounted-etc/master.conf /opt/bitnami/redis/etc/master.conf
+          fi
+          if [[ ! -f /opt/bitnami/redis/etc/redis.conf ]];then
+            cp /opt/bitnami/redis/mounted-etc/redis.conf /opt/bitnami/redis/etc/redis.conf
+          fi
+          ARGS=("--port" "${REDIS_PORT}")
+          ARGS+=("--requirepass" "${REDIS_PASSWORD}")
+          ARGS+=("--masterauth" "${REDIS_PASSWORD}")
+          ARGS+=("--include" "/opt/bitnami/redis/etc/redis.conf")
+          ARGS+=("--include" "/opt/bitnami/redis/etc/master.conf")
+          /run.sh ${ARGS[@]}
+        env:
+        - name: REDIS_REPLICATION_MODE
+          value: master
+        - name: REDIS_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: airflow-redis
+              key: redis-password
+        - name: REDIS_PORT
+          value: "6379"
+        ports:
+        - name: redis
+          containerPort: 6379
+        livenessProbe:
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 5
+          successThreshold: 1
+          failureThreshold: 5
+          exec:
+            command:
+            - sh
+            - -c
+            - /health/ping_liveness_local.sh 5
+        readinessProbe:
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 1
+          successThreshold: 1
+          failureThreshold: 5
+          exec:
+            command:
+            - sh
+            - -c
+            - /health/ping_readiness_local.sh 5
+        resources:
+          {}
+        volumeMounts:
+        - name: health
+          mountPath: /health
+        - name: redis-data
+          mountPath: /data
+          subPath: 
+        - name: config
+          mountPath: /opt/bitnami/redis/mounted-etc
+        - name: redis-tmp-conf
+          mountPath: /opt/bitnami/redis/etc/
+      volumes:
+      - name: health
+        configMap:
+          name: airflow-redis-health
+          defaultMode: 0755
+      - name: config
+        configMap:
+          name: airflow-redis
+      - name: "redis-data"
+        emptyDir: {}
+      - name: redis-tmp-conf
+        emptyDir: {}
+  updateStrategy:
+    type: RollingUpdate
+---
+# Source: airflow/templates/worker/worker-statefulset.yaml
+## A StatefulSet is used to give workers consistent names for DNS,
+## allowing the web server to access the log files.
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: airflow-worker
+  labels:
+    app: airflow
+    component: worker
+    chart: airflow-7.9.0
+    release: airflow
+    heritage: Helm
+spec:
+  serviceName: "airflow-worker"
+  replicas: 1
+  updateStrategy:
+    type: RollingUpdate
+  ## we do not need to guarantee the order in which workers are scaled
+  podManagementPolicy: Parallel
+  selector:
+    matchLabels:
+      app: airflow
+      component: worker
+      release: airflow
+  template:
+    metadata:
+      annotations:
+        checksum/config-env: 79c6958a25d8628e1a9b1220b80144ed9f281d9d0e1bf316c5fcc9e45eb0cb8d
+        checksum/config-git-clone: 73b46e30cc10eb9bb7ac1c10b824b0a5c6c68fe7cad5ef8a51d6d3fdde5eb30e
+        checksum/config-scripts: 97cc629352d91a730892751bf9863dd63d9537de6e9ffb20e980ff688dcd7438
+        cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+      labels:
+        app: airflow
+        component: worker
+        release: airflow
+    spec:
+      restartPolicy: Always
+      terminationGracePeriodSeconds: 60
+      serviceAccountName: airflow
+      containers:
+        - name: airflow-worker
+          imagePullPolicy: IfNotPresent
+          image: "apache/airflow:1.10.12-python3.6"
+          envFrom:
+            - configMapRef:
+                name: "airflow-env"
+          env:            
+            - name: DATABASE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-postgresql
+                  key: postgresql-password
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: airflow-redis
+                  key: redis-password
+          volumeMounts:
+            - name: scripts
+              mountPath: /home/airflow/scripts
+          command:
+            - "/usr/bin/dumb-init"
+            - "--"
+          args:
+            - "bash"
+            - "-c"
+            - >
+              true \
+               && mkdir -p /home/airflow/.local/bin \
+               && echo 'export PATH="/home/airflow/.local/bin:$PATH"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CORE__SQL_ALCHEMY_CONN="postgresql+psycopg2://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__RESULT_BACKEND="db+postgresql://${DATABASE_USER}:$( echo ${DATABASE_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(encoded_pass)" )@${DATABASE_HOST}:${DATABASE_PORT}/${DATABASE_DB}"' >> /home/airflow/airflow_env.sh \
+               && echo 'export AIRFLOW__CELERY__BROKER_URL="redis://$( echo ${REDIS_PASSWORD} | python3 -c "import urllib.parse; encoded_pass = urllib.parse.quote(input()); print(f\":{encoded_pass}@\") if len(encoded_pass) > 0 else None" )${REDIS_HOST}:${REDIS_PORT}/${REDIS_DBNUM}"' >> /home/airflow/airflow_env.sh \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.profile \
+               && echo 'source /home/airflow/airflow_env.sh' >> /home/airflow/.bashrc \
+               && source /home/airflow/airflow_env.sh \
+               && echo "*** running scheduler..." \
+               && exec airflow worker
+          ports:
+            - name: wlog
+              containerPort: 8793
+              protocol: TCP
+          resources:
+            {}
+      volumes:
+        - name: scripts
+          configMap:
+            name: airflow-scripts
+            defaultMode: 0755

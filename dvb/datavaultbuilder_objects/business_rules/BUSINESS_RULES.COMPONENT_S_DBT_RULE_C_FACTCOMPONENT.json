@@ -1,0 +1,30 @@
+{
+	"accesslayer_priorization": 0,
+	"additional_deployment_parameters": {
+		"business_ruleset_hierarchy_level": 0
+	},
+	"business_rules_view_code": "CREATE OR REPLACE VIEW BUSINESS_RULES.COMPONENT_S_DBT_RULE_C_FACTCOMPONENT AS\nSELECT \n    bo.\"Business Key for Hub Component\",    -- Business Key for Hub Component\n    bo.TCASES,                            -- TCASES from Satellite Component > DBT_RULE > Test Metrics Calculation\n    bo.CREQS,                             -- CREQS from Satellite Component > DBT_RULE > Test Metrics Calculation\n    bo.CREQSWITHTRACETOTCASE,             -- CREQSWITHTRACETOTCASE from Satellite Component > DBT_RULE > Test Metrics Calculation\n    bo.TCASE_PRO_CREQ,                    -- TCASE_PRO_CREQ from Satellite Component > DBT_RULE > Test Metrics Calculation\n    bo.\"MinPTH\",                            -- \"MinPTH\" from Satellite Component > DBT_STAGE > Test Metric PTH\n    bo.\"MaxPTH\",                            -- \"MaxPTH\" from Satellite Component > DBT_STAGE > Test Metric PTH\n    bo.\"ImplPTH\"                            -- \"ImplPTH\" from Satellite Component > DBT_STAGE > Test Metric PTH\n\n  FROM BUSINESSOBJECTS.COMPONENT_S_DBT_RULE_C_FACTCOMPONENT bo\n;",
+	"business_ruleset_comment": null,
+	"business_ruleset_name": "Unaltered default",
+	"business_ruleset_order": 1,
+	"business_ruleset_suffix_id": null,
+	"business_ruleset_view_id": "BUSINESS_RULES.COMPONENT_S_DBT_RULE_C_FACTCOMPONENT",
+	"container_id": "H_COMPONENT_C_FACTCOMPONENT",
+	"dependent_objects": [
+		{
+			"object_id": "BUSINESSOBJECTS.COMPONENT_S_DBT_RULE_C_FACTCOMPONENT",
+			"object_type": "business_object"
+		}
+	],
+	"include_in_accesslayer": true,
+	"is_error_ruleset": false,
+	"is_unaltered_business_ruleset": true,
+	"quick_inserts": {
+		"quick_insert_list": [
+			{
+				"quick_insert_table_id": "BUSINESSOBJECTS.COMPONENT_S_DBT_RULE_C_FACTCOMPONENT"
+			}
+		]
+	},
+	"system_id": "DBT_RULE"
+}

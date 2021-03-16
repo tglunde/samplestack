@@ -1,0 +1,8 @@
+{
+	"businessobject_set_display_name": "Release > Release",
+	"businessobject_set_id": "businessobject_set_H_RELEASE_C_RELEASE",
+	"functional_suffix_id": "RELEASE",
+	"functional_suffix_name": "Release",
+	"start_hub_id": "H_RELEASE",
+	"start_hub_name": "Release"
+}

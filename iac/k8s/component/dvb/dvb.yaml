@@ -1,0 +1,357 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dvb
+  namespace: dev
+spec:
+  selector:
+    app: dvb
+  type: LoadBalancer
+  ports:
+    - port: 8000
+      targetPort: 80
+---
+apiVersion: v1
+kind: Secret
+data:
+  core_dbadmin_password: c3RhcnQxMjMK
+  authenticator_password: c3RhcnQxMjMK
+  scheduler_password: c3RhcnQxMjMK
+  systems_password_private_key_password: c3RhcnQxMjMgDQo=
+  systems_password_private_key: |-
+    LS0tLS1CRUdJTiBQR1AgUFJJVkFURSBLRVkgQkxPQ0stLS0tLQoKbFFQR0JGOXA3UEVCQ0FEUlVa
+    MkMxWXlwY1NkdUtteVNxSVVTakc5ekMzZzYyYkpNd1V6cGNlZmdWdDZLZDRoRwp0S1duWWhFd1dI
+    aFoxZ2ZKRnlRRVFqUkxuZTdrNlVrSm9GaGw5ZlIzSzlQZEZtWHpLTGl4MHdwNGRGMVlGR253ClFO
+    WXF3NUJ4cW9scEUzMGtLN3NUMGdML0tkbGpNdnMveVNsU29LNThPdzJJU2g4cFdIei9NNjZVQnlC
+    M0p2L2gKRmJnSC9iS1RQZUlPNnFJcWZUdmlYaDFGazlNU1hEWGJnMEFhdlFWZzZ1WnEwd3V2cVhE
+    MWZjY3hnTWN4a1VsQwo2TWVmb2lDMEFRdGRZRldJeG5xQVRlNHNsa085SEorMUgvV3JDWlgrSmUv
+    Q20xMndlRG5lWG90a3ZOdlk3bXJWClRhMmtUTldnalRWaUZLMU50UVJyd2VjOHBlaUw0bW9CaGxt
+    QkFCRUJBQUgrQndNQ0JSY29zVUpYODFmejVpMVIKaTZYdE1MY0pXamRneWJLMWxiR0dxbXBBSjUx
+    QklteDdmMFZ1aW8wRkh5QW9sSHc2TzZrREIxVWkvNzJnMlY2YgpZa2x1aGpLemJxTkZLR3dwdkVl
+    aWFNcUhjVnp4Tzl3ZUg2RzhFNHhqV0praDcrUk1ZcStnb2pwK0I4aEp3UlVSCnB5d2E4cm9pMWdL
+    L0U0QjlMQ1ZBalhmQzErMHk5eXphVGdmSEVLeEVaWnorQWNVUkxMdkN5YXJ6WTZuc2N0N3MKY1RW
+    N0srb0N1WGQ4ZGVqem80YkY5WDlvWWRvZEIrK0N6WWJNaWdxUjRlay9zd21Ibjg3SkZMblBBTXlw
+    ZWJLVwpaem1TRDl0QSthT050cDI5blRXZHVaSHJTZTNqcWpSOStNUytGOGkramVwVkxCZjVadEI5
+    L0RuNm5OUStlcWJzClhWd2JUOVFITy9TSmV1bnBpaW1wMDcwYmdMUXA1VXZhbXM1S3RJTXJoaDNK
+    MXdCZ1JTRUJEdHBvakdvZ0NtQWEKYTdwdWZtYU44N2hJSDZzRUhLdWo4cmVkVkduaTJralB1dXor
+    S3ZiTVNSV3dzZ1FHc2NJb0dYZkZ5ZCt2RHNHeQoxNEtDKzJGZ2JMZnc4WVF0MlFKclRRaFpHRjZT
+    MkpKNW5KcjdiQXdwK2c3Z3dwblVDdFpjNGRPcW1UYUJXcFhUClFRZnZBZjMwcUhMTWo3ZzRaT1Bq
+    MHU2aEE4SW85TXdndXN3ampIaDV2UGdmcW1nZEpGRWVpazgyY2tjUzZqNXEKTFlFUkV5K3dDeU1F
+    YTdDMmNhN1E5Vkg2NVgzTmtURFF3bmFCOElzQjBxeitxaGdnYitiUFFpQ080SHFtSkdObgovS1Uy
+    QmFOSEFmejg5U0kxcm83M2tNWW5CbXRIS0o1VXJIUXVCSDJxb3ZTQkNtVXJWOXBQSE4wY3JNMDJw
+    SzU2CncwbE4xVU9hRHBmVzMxVzZwVWZHYS8zcnc3ak9uRVU4bDZTR1JaaGVzekxnY2hCMkZtd2RP
+    M2NISGxxRlk5WFkKMEJtdlh5MzVlaVN0NE95V3RHeUx3VFo2aExTVm5ETHplM2tVRndncHlRc1Nt
+    RUZWT3VPSkQ4bEgyandyNVZoUgpTY3YzWVJKaklLWHd4WWc1UmczVEVuTVgzR0FXVGk3Z0NURXRH
+    UXRmUS9sajlGS2NEYyszUXRmcjZTN3poQzRLCnUwM0FkaC9GMkVJL3RCQmtZWFJoZG1GMWJIUmlk
+    V2xzWkdWeWlRRlVCQk1CQ0FBK0ZpRUVEQStreWp2RGc2MlgKeUt2d1hRdDRvcGJwWXpVRkFsOXA3
+    UEVDR3dNRkNRUENad0FGQ3drSUJ3SUdGUW9KQ0FzQ0JCWUNBd0VDSGdFQwpGNEFBQ2drUVhRdDRv
+    cGJwWXpYZEh3Z0F0MStFNU1EdVM4QWFpRjh5ZWNKdk10SjBzeml3Qk52VTF2WXhIQzR6CmtadWgz
+    V3FNU3lWRjBxa0EyQU1BUEJObEFtcDByR2orNXlSUXQxWVh2T3VDQnRCN3JsSmVjTy84VldySnJK
+    NCsKdm1UVFcyTkxHaXhldU9pTE5ydmwxQUw1cG9RWFJ1WlBOdzhzczFEaDJoakhhTWozNmhPOHlY
+    SVozblVsaVd0QQpuVWRlMDdRNllMdmhwbTdJVVl1b0RoY2czVVRHQXhnT1FudDRrSlZwM0xsKzhH
+    MzZxcjNmUHUyMmE5NVFIZ0lGCjRHUXBSNEVBbUt6b0V6Z2x1ZHlRWk85UGVwU2EyVksrdkdybEpJ
+    Ky8vTHU3cnVrMG83Y2NiamwzNWdRU1VYVWYKdysxTENxcnhERWxoQ09hYkZBQmNRRkQ5U05pY3ZO
+    Smk3cDBNbnAvTVpia3I4WjBEeGdSZmFlenhBUWdBeXlMTQpiR0xRb3VTOFpEd0hNVGJJUjd5N2lI
+    eW50RXRDSW5GaEorK01vMS9URGN0RStrWERrYTRubWJpUC9RM1A1NHkxCjhyK3VMUTNMUm9IN04y
+    ZDI1ays1MHNBSFdJeWwrc1dXQXY3T1BzMmU0dHN5U0h6dVJrMU1zKzhXdVlUcFFTWU8KRml5S1Ju
+    YjFwZGtSSUtEV1pZVkd4bWlmQVlvUEx2SSs2ZEVlM3VTQ0lvQTlyUVRjaW1yTWhySk1VcVQyS1RT
+    eQpKN05RcytlNGZIMVJURFVHYjQ3dkdkbnE1ZU1mbVA5eGFFOVVnSnYzS0swYXJZc1k5STJZUzln
+    b0pLU24vdlJzCnVkcXV1YmdkVng0VHRpc0ZZYWpJWStqUUQ1Mk9hOW5YZVRFcEk1STNtdWJGV2Z3
+    MElQNEVic2ZFN3RWaEZUNmcKbDBCaWtCNkhwNzlhZklqSnF3QVJBUUFCL2djREFvcDhyYU56TjVu
+    TDh3ZklBaEdZbXFFWU82VVZQYnkzSzJIKwpEV0tBTVRIY2p3MTZqVTg1d3F0MzltZXYvSElFZUUx
+    UFdzZHpyL1RQcWJMZmhYZFJQc1dPVzR3SFhmSzFYdVAvCmNBYzFtNUdZR0N5b1MxWEh5b2twSDNm
+    dlAzOXl1akhTc0ljSnlaU09HZVJlWUpQR2JQU21ISDlxVFlUeDd5M3MKekM0Wnl2TWdOUDZhaEIy
+    TUhZOEtqUGU1MWtPL3Q5SzhXUUxRRFd4NnMwRGFEWU4vSWdCSW1sTURSUjNlbEl0RApzb2FORUVS
+    ajQ2NjFKUlExSXJ3bDF1TEtqdUpkU0JHc09aOTFGUWhHLzdGM3d3SDNIR2pGV3NBRVFXU0EwQVZi
+    CjR0dG8yaTFoYldPdDBXRmJNUW5ob1A5c2ZMdG91T1hQY2l6ZDNLL0dEN2FQbUFpS0pmeUFzWXUv
+    NFR5NWhhVmkKZE5CK1RNU203ZFI5MVFadUtXb0tyL1RjcWNkU3pVQ2h5Z0htL21QYm1aTGJuZVRo
+    QkMzMUFnRHVTNitWdGxBSgprQ3B4R2Rkc05BTDhDQWNGMzI2ZmFkSVZPQ0J3dkc1QUd6TnZwcklQ
+    SHBIL2hER1l6RTV5dVUrVkJ5UmVDYmlNClg2NXFwNDhLNXU2VnNXRUZIaGVTVlBJZSs1UFYvYXpm
+    U21nUnVmMlI5N3l6dnBzdExwY2UrVkhBQVVFMEJac1IKVGZQbnF1TW00WnpUUE1jVytQRWcrdHRW
+    cVlEdm9pemREUHVBVzFSa01Ob01rRE85a1ZDZU1pV2RoekxUeWcyMgpVRGRXSEplNFlZckNYUTRV
+    MTltdGFEeHJWR3F0ZXlQc1d2a2Z1OGtuV2Nub1Awek0yZnBFSEpKdHEwcVR3TTdRCmFXYXdsRk1k
+    RXprS2FXUjVuWjNiM1VMNHlleWtHdnNXUmxtK0Rpa1JYR3ZNMUtEa1pOYmdLM0xTczNSYzhOamUK
+    NjJvdHZqVWFEb2k2RUM1YU12aWF4M05ETHp1empiNSswbWp2REFXWjVCQURuS09BR2wxcnpFQjZE
+    R3YwSytrWAovcU1vRkJzWXJHQTlFWFh0bXNpdVZOK3pRejRmdytKU2RFY3hReDNxd3gxblpyajdD
+    Z0d3THorMjN1a2EwbXRJCmJaUC9UbXpYS0RISlAxZjVaeXZ6N1pYeHlBcHAzbnNvTWxNRTJRcE90
+    aTJWSmViUVowK2t4eWt4Q0lrQlBBUVkKQVFnQUpoWWhCQXdQcE1vN3c0T3RsOGlyOEYwTGVLS1c2
+    V00xQlFKZmFlenhBaHNNQlFrRHdtY0FBQW9KRUYwTAplS0tXNldNMXVySUlBSmFHTWpMV0I3aE13
+    K1Z3eEN3OHExY2dBZTlISkFKRWs3clA1L0k2ZzUwdTZzY1lqcEdKCldIS2NDV3RVM3o1RG82K2Vt
+    Mlh6WmpJM0hpMUZjTXA5ekp4dC91MEk2dUNjb1ZnYnkyb214QzM5dTc0UHYreSsKSGFPdmNuRkJo
+    YVd4a2xPRXQ0eUhCYUZReXdtNzhFc0lwOWRnVHNXR05GbnhwREJ2Y2dUNU9OYW9helI5U2VkTAow
+    NmNVU3VCaS9wYWMzVWdOVVpxRjdWQkJDM1ZiNHJhVWp5VDUvUWhPM2x4S2Z6dU1ndFFSaFZiQnBF
+    emhNWnJaCmkxM3FPKzVtZUx0WUs5VkNIekRXTFV1MFlzRTBqL1ZhYS9ZczNSQW04YzFqUGZVRzVC
+    TWZCWk55cjZTUlZ2UHMKTEVYS3A4RVAyZGdvS2wzVU9oQUY4RE5keklNZlRlL0J5T3c9Cj13M0xS
+    Ci0tLS0tRU5EIFBHUCBQUklWQVRFIEtFWSBCTE9DSy0tLS0tCg==
+  systems_password_public_key: |-
+    LS0tLS1CRUdJTiBQR1AgUFVCTElDIEtFWSBCTE9DSy0tLS0tCgptUUVOQkY5cDdQRUJDQURSVVoy
+    QzFZeXBjU2R1S215U3FJVVNqRzl6QzNnNjJiSk13VXpwY2VmZ1Z0NktkNGhHCnRLV25ZaEV3V0ho
+    WjFnZkpGeVFFUWpSTG5lN2s2VWtKb0ZobDlmUjNLOVBkRm1YektMaXgwd3A0ZEYxWUZHbncKUU5Z
+    cXc1Qnhxb2xwRTMwa0s3c1QwZ0wvS2Rsak12cy95U2xTb0s1OE93MklTaDhwV0h6L002NlVCeUIz
+    SnYvaApGYmdIL2JLVFBlSU82cUlxZlR2aVhoMUZrOU1TWERYYmcwQWF2UVZnNnVacTB3dXZxWEQx
+    ZmNjeGdNY3hrVWxDCjZNZWZvaUMwQVF0ZFlGV0l4bnFBVGU0c2xrTzlISisxSC9XckNaWCtKZS9D
+    bTEyd2VEbmVYb3Rrdk52WTdtclYKVGEya1ROV2dqVFZpRksxTnRRUnJ3ZWM4cGVpTDRtb0JobG1C
+    QUJFQkFBRzBFR1JoZEdGMllYVnNkR0oxYVd4awpaWEtKQVZRRUV3RUlBRDRXSVFRTUQ2VEtPOE9E
+    clpmSXEvQmRDM2lpbHVsak5RVUNYMm5zOFFJYkF3VUpBOEpuCkFBVUxDUWdIQWdZVkNna0lDd0lF
+    RmdJREFRSWVBUUlYZ0FBS0NSQmRDM2lpbHVsak5kMGZDQUMzWDRUa3dPNUwKd0JxSVh6SjV3bTh5
+    MG5Tek9MQUUyOVRXOWpFY0xqT1JtNkhkYW94TEpVWFNxUURZQXdBOEUyVUNhblNzYVA3bgpKRkMz
+    VmhlODY0SUcwSHV1VWw1dzcveFZhc21zbmo2K1pOTmJZMHNhTEY2NDZJczJ1K1hVQXZtbWhCZEc1
+    azgzCkR5eXpVT0hhR01kb3lQZnFFN3pKY2huZWRTV0phMENkUjE3VHREcGd1K0dtYnNoUmk2Z09G
+    eURkUk1ZREdBNUMKZTNpUWxXbmN1WDd3YmZxcXZkOCs3YlpyM2xBZUFnWGdaQ2xIZ1FDWXJPZ1RP
+    Q1c1M0pCazcwOTZsSnJaVXI2OAphdVVrajcvOHU3dXU2VFNqdHh4dU9YZm1CQkpSZFIvRDdVc0tx
+    dkVNU1dFSTVwc1VBRnhBVVAxSTJKeTgwbUx1Cm5ReWVuOHhsdVN2eHVRRU5CRjlwN1BFQkNBRExJ
+    c3hzWXRDaTVMeGtQQWN4TnNoSHZMdUlmS2UwUzBJaWNXRW4KNzR5alg5TU55MFQ2UmNPUnJpZVp1
+    SS85RGMvbmpMWHl2NjR0RGN0R2dmczNaM2JtVDduU3dBZFlqS1g2eFpZQwovczQrelo3aTJ6Sklm
+    TzVHVFV5ejd4YTVoT2xCSmc0V0xJcEdkdldsMlJFZ29OWmxoVWJHYUo4QmlnOHU4ajdwCjBSN2U1
+    SUlpZ0QydEJOeUthc3lHc2t4U3BQWXBOTEluczFDejU3aDhmVkZNTlFadmp1OFoyZXJsNHgrWS8z
+    Rm8KVDFTQW0vY29yUnF0aXhqMGpaaEwyQ2drcEtmKzlHeTUycTY1dUIxWEhoTzJLd1ZocU1oajZO
+    QVBuWTVyMmRkNQpNU2tqa2plYTVzVlovRFFnL2dSdXg4VHUxV0VWUHFDWFFHS1FIb2VudjFwOGlN
+    bXJBQkVCQUFHSkFUd0VHQUVJCkFDWVdJUVFNRDZUS084T0RyWmZJcS9CZEMzaWlsdWxqTlFVQ1gy
+    bnM4UUliREFVSkE4Sm5BQUFLQ1JCZEMzaWkKbHVsak5icXlDQUNXaGpJeTFnZTRUTVBsY01Rc1BL
+    dFhJQUh2UnlRQ1JKTzZ6K2Z5T29PZEx1ckhHSTZSaVZoeQpuQWxyVk44K1E2T3ZucHRsODJZeU54
+    NHRSWERLZmN5Y2JmN3RDT3JnbktGWUc4dHFKc1F0L2J1K0Q3L3N2aDJqCnIzSnhRWVdsc1pKVGhM
+    ZU1od1doVU1zSnUvQkxDS2ZYWUU3RmhqUlo4YVF3YjNJRStUaldxR3MwZlVublM5T24KRkVyZ1l2
+    NlduTjFJRFZHYWhlMVFRUXQxVytLMmxJOGsrZjBJVHQ1Y1NuODdqSUxVRVlWV3dhUk00VEdhMll0
+    ZAo2anZ1Wm5pN1dDdlZRaDh3MWkxTHRHTEJOSS8xV212MkxOMFFKdkhOWXozMUJ1UVRId1dUY3Er
+    a2tWYno3Q3hGCnlxZkJEOW5ZS0NwZDFEb1FCZkF6WGN5REgwM3Z3Y2pzCj1GbjRJCi0tLS0tRU5E
+    IFBHUCBQVUJMSUMgS0VZIEJMT0NLLS0tLS0K
+  datavault_builder_license: |-
+    d2NGTUE3b3djS1M2K2Z6c0FSQUFnQVQ4TXNlbC8zajRHSkwzV25KeXpoVDF5R2R1ZnYxbUU3Zllt
+    ZjRHNlV6bUI1Tk81SWlldlBsVA0Ka2tiaUxjaFNtTzNiVkRTdjQzT284K0dNUFZlNTQwU21ObXFL
+    eEl4K1p5SWppQ3FPYmlWNzY2YWRFN3RqL1RtOWo3YkhKMlE0ZFplUw0KbTIzNDV5Y3NNVDlFMHVi
+    N0IwZkpOdDBpWjJyUXd2bXJBYTUyZjNQQXROYyt4b1pHcnBaVFpJdW9ZQXpLRWJNZGFWTHFaSThu
+    MHdVTA0KZ1dUTjErSGIySFQ2RjgwNjdsNEdWeXBOVUlJRm5OOGQ0OXpPTzd6Z3ozaTdPUUtsSmhL
+    K24yTkNLeUNjNzc1TGtNTWhIZE1laWxzTQ0KV3BhQ0VNMG1iK3R5VjFqTWhGaFdSQ0RnVVN2L3d0
+    dFhNTmRUUVJOVGhJTTdIYUpaQTAyOE5wR2dXR20wQ3RtWk4yTGc4L2pSMnFlNw0KNE9iMGRFcTZ3
+    eUxqcVh0RWh6eTd5UVIrTlgxVXNqVFpYQnY2Rjd2eHdzcm9Mdkx1RHNldzIrOEh1UGZpZnhJRkJE
+    R3ZGMXU2VCtLTw0KTDJwNWYwejlsV1czcmtnVGNxeTBhV1FuMFJlRVYxbGVmd1FRWmRTcFFrN2xR
+    OThUcnBwTHcrNS9kMGxPZjFyT0V2MHNYK25YcjUwUQ0KT1RWVnk5Q1J3TFhPaWNHUFA4WFNBNjBs
+    SEorcmdMTlFjREh0SklYTjZzVlVlYS9nVXNQNzJPZHFscEtxWGtvNy9Cek1Ec3R4d1hKTw0KTWlu
+    M3VtS3NKSlFqc3FJVmZwU1BraUNzdTlPUXQvQWRKN1JGM0RwTUpQVTZxSmErRUNPY2NnNjZlOXdS
+    cnZTT01qdDVLaVVpNXArRA0KblBPS1ZyU2w1cS9aM3hXWC9TUFN3QlFCbWVXOVU4WmxDUkxtQnNQ
+    L2pJRFE0dGdINEczYXRPVVVZM2J0V2dSSlNWc2JPQTBITlJkag0KNzFNNHN1UGNDNE41cE1ZUnNY
+    eVVDcTR1TUNDaTFpcHBpcWE5amJ4YUE0VXpIMEZIZ0tBeWZGemordjNEREZPaWFwMU5LM01SS3RO
+    RQ0KN3VIeW1aRjFLSnVlUHFEK2tqTHpLdEFxRHdldy9SUTE3TzY0cytlYWxKaG4xRGczeGc3K0xX
+    SGVVc0N1L3lDRlhwMS9kNVp2U1NONA0KckxqN1E3cHFIeWk5QUw5eVNUZWtkdVJUMU9pZXFlaCtP
+    QVByNXRpaVNpZ09EdkxCR3dCNkI5T0dVZXRPbXlVT1MzOG1iTzE4TS9xTw0KeWc9PQ==
+metadata:
+  name: dvb-secrets
+type: Opaque
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dvb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dvb
+  template:
+    metadata:
+      labels:
+        app: dvb
+    spec:
+      hostAliases:
+      - ip: "127.0.0.1"
+        hostnames:
+        - "core"
+        - "api"
+        - "connectionpool"
+      containers:
+      - name: core
+        image: "datavaultbuilder/core:rel_5.3.0.1_initial_install_only"
+        env:
+        - name: CLIENT_DB_CONNECTIONSTRING
+          value: jdbc:exa:exasol:8888
+        - name: CLIENT_DB_TYPE
+          value: exasol_client_db
+          #          value: postgres_client_db
+        - name: DOWNLOAD_DEMO_DATA
+          value: "false"
+        - name: DVB_TAG
+          value: "rel_5.3.0.1_initial_install_only"
+        - name: ENABLE_BETA_FEATURES
+          value: "false"
+        - name: GUI_USER_EMAIL
+          value: your@mail.com
+        - name: GUI_USER_GROUP
+          value: dvb_admin
+        - name: GUI_USER_NAME
+          value: dvb
+        - name: GUI_USER_PASSWORD
+          value: start123
+        - name: PLJAVA_VMOPTIONS
+          value: -Djava.security.egd=file:///dev/urandom -Xms128M -Xss2M
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: USE_UNSECURE_DEFAULT_ENCRYPTION_KEYS
+          value: "false"
+        volumeMounts:
+        - name: dvb-secrets
+          mountPath: /run/secrets/core_dbadmin_password
+          readOnly: true
+          subPath: core_dbadmin_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/authenticator_password
+          readOnly: true
+          subPath: authenticator_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/scheduler_password
+          readOnly: true
+          subPath: scheduler_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/datavault_builder_license
+          readOnly: true
+          subPath: datavault_builder_license
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_private_key
+          readOnly: true
+          subPath: systems_password_private_key
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_private_key_password
+          readOnly: true
+          subPath: systems_password_private_key_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_public_key
+          readOnly: true
+          subPath: systems_password_public_key
+        - name: files
+          mountPath: /files
+      - name: webgui
+        image: "datavaultbuilder/webgui:rel_5.3.0.1_initial_install_only"
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: DAV_USER
+          value: dvb
+        - name: DAV_PASSWORD
+          value: start123
+        - name: DISABLE_IPV6
+          value: "false"
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: DVB_TAG
+          value: "rel_5.3.0.1_initial_install_only"
+        volumeMounts:
+        - name: files
+          mountPath: /files
+      - name: scheduler
+        image: "datavaultbuilder/scheduler:rel_5.3.0.1_initial_install_only"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: MAX_SERVICE_CONNECTION_AGE
+          value: "3600"
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: DVB_TAG
+          value: "rel_5.3.0.1_initial_install_only"
+        volumeMounts:
+        - name: dvb-secrets
+          mountPath: /run/secrets/scheduler_password
+          readOnly: true
+          subPath: scheduler_password
+        - name: files
+          mountPath: /files
+      - name: connectionpool
+        image: "datavaultbuilder/connection_pool:rel_5.3.0.1_initial_install_only"
+        env:
+        - name: CORE_POOL_MAX_CONNECTIONS
+          value: "20"
+        - name: CLIENTDB_POOL_MAX_CONNECTIONS
+          value: "20"
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: DVB_TAG
+          value: "rel_5.3.0.1_initial_install_only"
+        volumeMounts:
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_private_key
+          readOnly: true
+          subPath: systems_password_private_key
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_private_key_password
+          readOnly: true
+          subPath: systems_password_private_key_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/systems_password_public_key
+          readOnly: true
+          subPath: systems_password_public_key
+        - name: dvb-secrets
+          mountPath: /run/secrets/core_dbadmin_password
+          readOnly: true
+          subPath: core_dbadmin_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/authenticator_password
+          readOnly: true
+          subPath: authenticator_password
+        - name: files
+          mountPath: /files
+        - name: pddb
+          mountPath: /opt/datavaultbuilder7var/lib/pddb
+      - name: api
+        image: "datavaultbuilder/api:rel_5.3.0.1_initial_install_only"
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        env:
+        - name: CONNECTION_POOL
+          value: "30"
+        - name: TIMEZONE
+          value: "Europe/Berlin"
+        - name: DVB_TAG
+          value: "rel_5.3.0.1_initial_install_only"
+        volumeMounts:
+        - name: dvb-secrets
+          mountPath: /run/secrets/core_dbadmin_password
+          readOnly: true
+          subPath: core_dbadmin_password
+        - name: dvb-secrets
+          mountPath: /run/secrets/authenticator_password
+          readOnly: true
+          subPath: authenticator_password
+        - name: files
+          mountPath: /files
+      imagePullSecrets:
+      - name: regcred
+      volumes:
+      - name: dvb-secrets
+        secret:
+          secretName: dvb-secrets
+      - name: files
+        persistentVolumeClaim:
+          claimName: files
+      - name: pddb
+        persistentVolumeClaim:
+          claimName: pddb
+---
+apiVersion: v1  
+kind: PersistentVolumeClaim
+metadata:
+  name: files
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi
+---
+apiVersion: v1  
+kind: PersistentVolumeClaim
+metadata:
+  name: pddb
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 100Mi

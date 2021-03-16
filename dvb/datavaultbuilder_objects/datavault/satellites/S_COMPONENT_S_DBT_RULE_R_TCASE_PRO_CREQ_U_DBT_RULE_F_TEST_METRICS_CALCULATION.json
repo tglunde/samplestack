@@ -1,0 +1,145 @@
+{
+	"column_ids": [
+		{
+			"character_maximum_length": 18,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.TCASES",
+			"column_is_used": true,
+			"column_name": "TCASES",
+			"column_name_detail": "",
+			"column_nq_id": "TCASES",
+			"column_order": 1,
+			"column_type": "attribute",
+			"complete_data_type": "DECIMAL(18,0)",
+			"conversion_type": {
+				"conversion_type_id": "varchar2integer",
+				"conversion_type_parameters": [
+				]
+			},
+			"data_type": "DECIMAL",
+			"datetime_precision": null,
+			"numeric_precision": 18,
+			"numeric_scale": 0
+		},
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.TCASES_RAW",
+			"column_is_used": true,
+			"column_name": "TCASES_RAW",
+			"column_name_detail": "",
+			"column_nq_id": "TCASES_RAW",
+			"column_order": 2,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		},
+		{
+			"character_maximum_length": 18,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.CREQS",
+			"column_is_used": true,
+			"column_name": "CREQS",
+			"column_name_detail": "",
+			"column_nq_id": "CREQS",
+			"column_order": 3,
+			"column_type": "attribute",
+			"complete_data_type": "DECIMAL(18,0)",
+			"conversion_type": {
+				"conversion_type_id": "varchar2integer",
+				"conversion_type_parameters": [
+				]
+			},
+			"data_type": "DECIMAL",
+			"datetime_precision": null,
+			"numeric_precision": 18,
+			"numeric_scale": 0
+		},
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.CREQS_RAW",
+			"column_is_used": true,
+			"column_name": "CREQS_RAW",
+			"column_name_detail": "",
+			"column_nq_id": "CREQS_RAW",
+			"column_order": 4,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		},
+		{
+			"character_maximum_length": 18,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.CREQSWITHTRACETOTCASE",
+			"column_is_used": true,
+			"column_name": "CREQSWITHTRACETOTCASE",
+			"column_name_detail": "",
+			"column_nq_id": "CREQSWITHTRACETOTCASE",
+			"column_order": 5,
+			"column_type": "attribute",
+			"complete_data_type": "DECIMAL(18,0)",
+			"conversion_type": {
+				"conversion_type_id": "varchar2integer",
+				"conversion_type_parameters": [
+				]
+			},
+			"data_type": "DECIMAL",
+			"datetime_precision": null,
+			"numeric_precision": 18,
+			"numeric_scale": 0
+		},
+		{
+			"character_maximum_length": 2000000,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.CREQSWITHTRACETOTCASE_RAW",
+			"column_is_used": true,
+			"column_name": "CREQSWITHTRACETOTCASE_RAW",
+			"column_name_detail": "",
+			"column_nq_id": "CREQSWITHTRACETOTCASE_RAW",
+			"column_order": 6,
+			"column_type": "attribute",
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"conversion_type": null,
+			"data_type": "VARCHAR UTF8",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		},
+		{
+			"character_maximum_length": 64,
+			"column_comment": "",
+			"column_id": "DATAVAULT.S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION_H.TCASE_PRO_CREQ",
+			"column_is_used": true,
+			"column_name": "TCASE_PRO_CREQ",
+			"column_name_detail": "",
+			"column_nq_id": "TCASE_PRO_CREQ",
+			"column_order": 7,
+			"column_type": "attribute",
+			"complete_data_type": "DOUBLE PRECISION",
+			"conversion_type": null,
+			"data_type": "DOUBLE PRECISION",
+			"datetime_precision": null,
+			"numeric_precision": null,
+			"numeric_scale": null
+		}
+	],
+	"functional_suffix_id": "TEST_METRICS_CALCULATION",
+	"functional_suffix_name": "Test Metrics Calculation",
+	"hub_id": "H_COMPONENT",
+	"satellite_comment": "",
+	"satellite_id": "S_COMPONENT_S_DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE_F_TEST_METRICS_CALCULATION",
+	"satellite_is_prototype": false,
+	"satellite_subject_area_name": "QM",
+	"staging_resource_id": "TCASE_PRO_CREQ_U_DBT_RULE",
+	"staging_table_id": "STAGING.DBT_RULE_R_TCASE_PRO_CREQ_U_DBT_RULE",
+	"system_id": "DBT_RULE"
+}

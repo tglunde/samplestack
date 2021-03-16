@@ -6,7 +6,9 @@ authors = ["torsten <torsten@glunde.de>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-dbt = "^0.17.0"
+dbt = "0.17.2"
+dbt-exasol = "^0.1.1"
+pyexasol = "^0.14.1"
 
 [tool.poetry.dev-dependencies]
 

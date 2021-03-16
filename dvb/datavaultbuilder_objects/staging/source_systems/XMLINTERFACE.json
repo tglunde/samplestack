@@ -23,7 +23,7 @@
 	],
 	"source_type_url": "jdbc:exa:172.105.76.56:8888",
 	"system_color": "#3D0099",
-	"system_comment": "",
+	"system_comment": null,
 	"system_id": "XMLINTERFACE",
 	"system_name": "XMLINTERFACE"
 }

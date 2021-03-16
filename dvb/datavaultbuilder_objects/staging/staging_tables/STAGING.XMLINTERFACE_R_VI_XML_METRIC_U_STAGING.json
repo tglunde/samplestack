@@ -1,7 +1,7 @@
 {
 	"columns": [
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.UPDATED",
 			"column_name": "UPDATED",
 			"column_order": 1,
@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.COMPONENT_NAME",
 			"column_name": "COMPONENT_NAME",
 			"column_order": 2,
@@ -29,7 +29,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.COMPONENT_VERSION",
 			"column_name": "COMPONENT_VERSION",
 			"column_order": 3,
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.SPECMETRIC_NAME",
 			"column_name": "SPECMETRIC_NAME",
 			"column_order": 4,
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.METRIC_NAME",
 			"column_name": "METRIC_NAME",
 			"column_order": 5,
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_METRIC_U_STAGING.METRIC_VALUE",
 			"column_name": "METRIC_VALUE",
 			"column_order": 6,

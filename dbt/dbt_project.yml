@@ -1,0 +1,20 @@
+name: samplestack
+version: 0.0.1
+config-version: 2
+
+profile: exasol
+
+models:
+  samplestack:
+    post-hook:
+      - "grant select on {{this}} to public"
+    staging:
+      schema: stage
+      materialized: view
+    datavault:
+      materialized: ephemeral
+    supernova:
+      materialized: view
+    businessrule:
+      schema: rule
+      materialized: view

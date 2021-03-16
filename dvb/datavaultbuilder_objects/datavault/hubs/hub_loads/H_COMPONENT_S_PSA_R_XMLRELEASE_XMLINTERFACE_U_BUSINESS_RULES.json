@@ -1,0 +1,23 @@
+{
+	"business_key_prefix": "",
+	"business_key_short": "COMPONENT_CMPPKGNAME, COMPONENT_VERSION",
+	"column_ids": [
+		{
+			"column_id": "STAGING.PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_CMPPKGNAME",
+			"column_order": 1
+		},
+		{
+			"column_id": "STAGING.PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_VERSION",
+			"column_order": 2
+		}
+	],
+	"datavault_category_id": "raw_vault",
+	"hub_id": "H_COMPONENT",
+	"hub_load_display_name": "PSA: XMLRELEASE XMLINTERFACE U BUSINESS RULES (COMPONENT_CMPPKGNAME, COMPONENT_VERSION)",
+	"hub_load_id": "H_COMPONENT_S_PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES",
+	"keys_are_prehashed": false,
+	"keys_are_unique": false,
+	"staging_table_id": "STAGING.PSA_R_XMLRELEASE_XMLINTERFACE_U_BUSINESS_RULES",
+	"system_id": "PSA",
+	"system_name": "PSA"
+}

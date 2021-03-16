@@ -1,0 +1,24 @@
+{
+	"ALM_PACKAGE_NAMESPACE": {
+		"title": "TestApp",
+		"guid": "PCKGNS-49EB228F-9587-433C-B6F7-C1825B0D9EF9"
+	},
+	"changesetNumber": 1503078,
+	"ALM_PACKAGE_SUBPACKAGE": {
+		"title": "GenTool_GeneratorMsr",
+		"rootPackage": "false",
+		"guid": "PCKG-77FA781E-D9A3-4893-9D05-2A526C64E50C"
+	},
+	"ALM_PACKAGE_BASE": {
+		"title": "TestApp_EtiTcpIp_Ixia",
+		"componentShortName": "EtiTcpIpIx",
+		"guid": "PCKGBASE-C294324B-4937-4808-BED8-1A305BD8920D"
+	},
+	"DEPENDENCIES": [
+	],
+	"ALM_PACKAGE_INSTANCE": {
+		"title": "2.00.01",
+		"guid": "PCKGINST-C307E09C-2FA9-4692-8820-22A69F6E39AA"
+	},
+	"timestamp": "2015-11-26T08:43:13.827Z"
+}

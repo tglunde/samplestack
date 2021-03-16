@@ -1,0 +1,6 @@
+kubectl create namespace dev
+kustomize build exasol/overlay/dev | kubectl apply -f - && ./waitforit -host localhost -port 8888
+
+kustomize build dvb/overlay/dev | kubectl apply -f - && ./waitforit -host localhost -port 8000
+
+kustomize build superset/overlay/dev | kubectl apply -f - && ./waitforit -host localhost -port 8001

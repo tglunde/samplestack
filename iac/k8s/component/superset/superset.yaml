@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: superset
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: superset
+  template:
+    metadata:
+      labels:
+        app: superset
+    spec:
+      containers:
+      - name: superset
+        image: "preset/superset:latest"
+        command: ["flask"]
+        args: ["run", "-p", "8088", "--with-threads", "--reload", "--debugger", "--host=0.0.0.0"]
+        ports:
+        - containerPort: 8088
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: superset
+  namespace: dev
+spec:
+  selector:
+    app: superset
+  type: LoadBalancer
+  ports:
+    - port: 8001
+      targetPort: 8088

@@ -1,7 +1,7 @@
 {
 	"columns": [
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.UPDATED",
 			"column_name": "UPDATED",
 			"column_order": 1,
@@ -15,7 +15,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.PRODUCT_NAME",
 			"column_name": "PRODUCT_NAME",
 			"column_order": 2,
@@ -29,7 +29,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_CREATIONDATEALM",
 			"column_name": "RELEASE_CREATIONDATEALM",
 			"column_order": 3,
@@ -43,7 +43,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_CREATIONDATESVN",
 			"column_name": "RELEASE_CREATIONDATESVN",
 			"column_order": 4,
@@ -57,7 +57,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_GUID",
 			"column_name": "RELEASE_GUID",
 			"column_order": 5,
@@ -71,7 +71,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_LASTMODDATE",
 			"column_name": "RELEASE_LASTMODDATE",
 			"column_order": 6,
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_MODTIMEALM",
 			"column_name": "RELEASE_MODTIMEALM",
 			"column_order": 7,
@@ -99,7 +99,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_REVISIONALM",
 			"column_name": "RELEASE_REVISIONALM",
 			"column_order": 8,
@@ -113,7 +113,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_REVISIONSVN",
 			"column_name": "RELEASE_REVISIONSVN",
 			"column_order": 9,
@@ -127,7 +127,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.RELEASE_VERSION",
 			"column_name": "RELEASE_VERSION",
 			"column_order": 10,
@@ -141,7 +141,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.COMPONENT_GUID",
 			"column_name": "COMPONENT_GUID",
 			"column_order": 11,
@@ -155,7 +155,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.COMPONENT_CMPPKGNAME",
 			"column_name": "COMPONENT_CMPPKGNAME",
 			"column_order": 12,
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"column_comment": "",
+			"column_comment": null,
 			"column_id": "STAGING.XMLINTERFACE_R_VI_XML_RELEASE_U_STAGING.COMPONENT_VERSION",
 			"column_name": "COMPONENT_VERSION",
 			"column_order": 13,

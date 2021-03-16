@@ -1,0 +1,494 @@
+{
+	"columns": [
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_USEDINPRODUCT",
+			"column_name": "PACKAGE_USEDINPRODUCT",
+			"column_order": 1,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_SERVERURL",
+			"column_name": "COMPONENT_SERVERURL",
+			"column_order": 2,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_REVISIONALM",
+			"column_name": "COMPONENT_REVISIONALM",
+			"column_order": 3,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_DESCRIPTION",
+			"column_name": "PACKAGE_DESCRIPTION",
+			"column_order": 4,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.UPDATED",
+			"column_name": "UPDATED",
+			"column_order": 5,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.NAMESPACE_GUID",
+			"column_name": "NAMESPACE_GUID",
+			"column_order": 6,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_CREATIONDATESVN",
+			"column_name": "COMPONENT_CREATIONDATESVN",
+			"column_order": 7,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_GUID",
+			"column_name": "COMPONENT_GUID",
+			"column_order": 8,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_QAAPPROVALNOTE",
+			"column_name": "COMPONENT_QAAPPROVALNOTE",
+			"column_order": 9,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_LAYER",
+			"column_name": "PACKAGE_LAYER",
+			"column_order": 10,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_TARGETQUALITYSTATUS",
+			"column_name": "PACKAGE_TARGETQUALITYSTATUS",
+			"column_order": 11,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_REPORTCLASSIFICATION",
+			"column_name": "PACKAGE_REPORTCLASSIFICATION",
+			"column_order": 12,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_NAME",
+			"column_name": "PACKAGE_NAME",
+			"column_order": 13,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_HASSAFETYREQUIREMENTS",
+			"column_name": "PACKAGE_HASSAFETYREQUIREMENTS",
+			"column_order": 14,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_QLEVEL",
+			"column_name": "COMPONENT_QLEVEL",
+			"column_order": 15,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_QACHECK",
+			"column_name": "COMPONENT_QACHECK",
+			"column_order": 16,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_PATHTESTREPORTS",
+			"column_name": "COMPONENT_PATHTESTREPORTS",
+			"column_order": 17,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_REVISIONTESTREPORTS",
+			"column_name": "COMPONENT_REVISIONTESTREPORTS",
+			"column_order": 18,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_TARGETQUALITYPROCESS",
+			"column_name": "PACKAGE_TARGETQUALITYPROCESS",
+			"column_order": 19,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_CURRENTQUALITYPROCESS",
+			"column_name": "PACKAGE_CURRENTQUALITYPROCESS",
+			"column_order": 20,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_AUTOSARCLUSTER",
+			"column_name": "PACKAGE_AUTOSARCLUSTER",
+			"column_order": 21,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_SHORTNAME",
+			"column_name": "PACKAGE_SHORTNAME",
+			"column_order": 22,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_VERSION",
+			"column_name": "COMPONENT_VERSION",
+			"column_order": 23,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.NAMESPACE_NAME",
+			"column_name": "NAMESPACE_NAME",
+			"column_order": 24,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_REVISIONSVN",
+			"column_name": "COMPONENT_REVISIONSVN",
+			"column_order": 25,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_MODTIMEALM",
+			"column_name": "COMPONENT_MODTIMEALM",
+			"column_order": 26,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_CREATIONDATEALM",
+			"column_name": "COMPONENT_CREATIONDATEALM",
+			"column_order": 27,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_IMPLEMENTATIONVERSION",
+			"column_name": "COMPONENT_IMPLEMENTATIONVERSION",
+			"column_order": 28,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_USERGUIDRESPONSIBLE",
+			"column_name": "PACKAGE_USERGUIDRESPONSIBLE",
+			"column_order": 29,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_REPORTINGQSTATUS",
+			"column_name": "PACKAGE_REPORTINGQSTATUS",
+			"column_order": 30,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.PACKAGE_GUID",
+			"column_name": "PACKAGE_GUID",
+			"column_order": 31,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_LASTMODDATE",
+			"column_name": "COMPONENT_LASTMODDATE",
+			"column_order": 32,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_RELEASESTATEMENT",
+			"column_name": "COMPONENT_RELEASESTATEMENT",
+			"column_order": 33,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		},
+		{
+			"column_comment": null,
+			"column_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES.COMPONENT_DESCRIPTION",
+			"column_name": "COMPONENT_DESCRIPTION",
+			"column_order": 34,
+			"complete_data_type": "VARCHAR(2000000) UTF8",
+			"jdbc_data_type": {
+				"character_maximum_length": 2000000,
+				"data_type_name": "VARCHAR UTF8",
+				"jdbc_data_type_id": 12,
+				"numeric_precision": null,
+				"numeric_scale": null
+			}
+		}
+	],
+	"loading_batch_size": 50000,
+	"source_schema_name": "BUSINESS_RULES",
+	"source_schema_or_system_id": "PSA",
+	"source_table_id": "BUSINESS_RULES.XMLCOMPONENT_S_XMLINTERFACE",
+	"source_table_name": "XMLCOMPONENT_S_XMLINTERFACE",
+	"source_table_staging_id": "XMLCOMPONENT_XMLINTERFACE",
+	"source_table_type_id": "",
+	"staging_table_comment": null,
+	"staging_table_display_string": "Business Rules.Xmlcomponent S Xmlinterface (BUSINESS_RULES) [PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES]",
+	"staging_table_id": "STAGING.PSA_R_XMLCOMPONENT_XMLINTERFACE_U_BUSINESS_RULES",
+	"staging_table_name": "Business Rules.Xmlcomponent S Xmlinterface",
+	"system_id": "PSA",
+	"where_clause_delta_part_template": "UPDATED = '{{DELIVERYDATE}}'",
+	"where_clause_general_part": ""
+}
