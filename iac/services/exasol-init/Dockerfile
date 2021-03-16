@@ -19,9 +19,9 @@ ENV EXA_DB_VERSION=6.2.9
 ENV PATH="/usr/opt/EXASuite-6/EXASolution-6.2.9/bin/Console/:${PATH}"
 COPY --chown=dvbuser:dvbuser sql /work/sql/
 COPY --chown=dvbuser:dvbuser *.sh /work/
-
-#ADD --chown=dvbuser:dvbuser https://github.com/exasol/kafka-connector-extension/releases/download/0.1.0/exasol-kafka-connector-extension-0.1.0.jar /work/
-ADD --chown=dvbuser:dvbuser https://drive.exasol.com/f/ca77b626f39c43fa8a1a/?dl=1 /work/exasol-kafka-connector-extension-0.1.0.jar
+RUN chmod +x /work/*.sh
+ADD --chown=dvbuser:dvbuser https://github.com/exasol/kafka-connector-extension/releases/download/0.2.1/exasol-kafka-connector-extension-0.2.1.jar /work/exasol-kafka-connector-extension-0.1.0.jar
+#ADD --chown=dvbuser:dvbuser https://drive.exasol.com/f/ca77b626f39c43fa8a1a/?dl=1 /work/exasol-kafka-connector-extension-0.1.0.jar
 
 WORKDIR /work
 ENTRYPOINT ["/work/entrypoint.sh"]
