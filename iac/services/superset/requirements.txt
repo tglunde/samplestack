@@ -10,7 +10,7 @@ amqp==2.6.0               # via kombu
 apispec[yaml]==3.3.1      # via flask-appbuilder
 async-timeout==3.0.1      # via aiohttp
 attrs==19.3.0             # via aiohttp, jsonschema
-babel==2.8.0              # via flask-babel
+babel==2.9.1              # via flask-babel
 backoff==1.10.0           # via apache-superset (setup.py)
 billiard==3.6.3.0         # via celery
 bleach==3.1.5             # via apache-superset (setup.py)
